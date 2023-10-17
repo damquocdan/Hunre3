@@ -1,0 +1,1489 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ShoeLike</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="container">
+          <div class="header-top">
+            <div class="header-language dropdow">
+              <div class="header-language-select">
+                <img src="./images/vn-logo.webp" alt="" class="header-nation" />
+                <span>Tiếng Việt <i class="fa-solid fa-chevron-down"></i></span>
+              </div>
+              <ul class="header-language-list dropdow-list">
+                <li class="header-language-item dropdow-item">
+                  <img
+                    src="./images/vn-logo.webp"
+                    alt=""
+                    class="header-nation"
+                  />
+                  <a href="#" class="dropdow-link">Tiếng Việt</a>
+                </li>
+                <li class="header-language-item dropdow-item">
+                  <img
+                    src="./images/usa-logo.webp"
+                    alt=""
+                    class="header-nation"
+                  />
+                  <a href="#" class="dropdow-link">English</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="header-auth">
+              <a href="#" class="header-auth-text sign-up-offer">
+                ĐĂNG KÝ VÀ NHẬN 100.000 VNĐ
+              </a>
+
+              <div class="dropdow">
+                <a href="#" class="header-auth-text account"
+                  >Tài khoản
+                  <i class="header-auth-text fa-solid fa-chevron-down"></i
+                ></a>
+                <ul class="dropdow-list">
+                  <li class="dropdow-item">
+                    <a href="#" class="dropdow-link signup">Đăng ký</a>
+                  </li>
+                  <li class="dropdow-item">
+                    <a href="#" class="dropdow-link signin">Đăng nhập</a>
+                  </li>
+                </ul>
+              </div>
+
+              <a href="#" class="header-auth-text store-system"
+                >Hệ Thống 19 Cửa Hàng Toàn Quốc
+                <i class="fa-solid fa-location-dot"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="header-content">
+            <a href="./index.html" class="header-logo-link">
+              <img srcset="./images/logo.png 2x" alt="" class="header-logo" />
+            </a>
+            <div class="header-feature">
+              <div class="header-search">
+                <form action="#" class="header-search-form">
+                  <input
+                    type="text"
+                    class="header-search-input"
+                    placeholder="Bạn đang tìm gì ..."
+                  />
+                  <button class="header-search-submit button button-green">
+                    <i
+                      class="fa-sharp fa-solid fa-magnifying-glass header-search-icon"
+                    ></i>
+                    Tìm kiếm
+                  </button>
+                </form>
+              </div>
+
+              <div class="header-cart">
+                <a href="#" class="header-cart-submit button button-white">
+                  <i class="fa-solid fa-cart-shopping header-cart-icon"></i>
+                  Giỏ hàng (0)
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="header-menu">
+            <ul class="menu">
+              <li class="menu-item">
+                <a href="./index.html" class="menu-link">Trang chủ</a>
+              </li>
+              <li class="menu-item">
+                <div class="dropdow-menu">
+                  <a href="./product.html" class="menu-link"
+                    >Giày <i class="fa-solid fa-chevron-down"></i
+                  ></a>
+                  <div class="dropdow-menu-list">
+                    <div class="dropdow-menu-category">
+                      <div class="dropdow-menu-info">
+                        <h2 class="dropdow-menu-title">Giày Dép</h2>
+                        <a href="./product.html" class="dropdow-menu-link"
+                          >Xem tất cả</a
+                        >
+                      </div>
+                      <div class="dropdow-menu-item">
+                        <a href="#">Sản phẩm mới</a>
+                      </div>
+                      <div class="dropdow-menu-item">
+                        <a href="#">Giày thời trang</a>
+                      </div>
+                      <div class="dropdow-menu-item">
+                        <a href="#">Giày chạy bộ</a>
+                      </div>
+                      <div class="dropdow-menu-item">
+                        <a href="#">Giày luyện tập</a>
+                      </div>
+                      <div class="dropdow-menu-item">
+                        <a href="#">Giày bóng rổ</a>
+                      </div>
+                      <div class="dropdow-menu-item">
+                        <a href="#">Giày bóng đá</a>
+                      </div>
+                    </div>
+                    <div class="dropdow-menu-images">
+                      <a href="#" class="dropdow-menu-image">
+                        <img
+                          src="./images/dropdow-menu-img.avif"
+                          alt=""
+                          class="dropdow-menu-img"
+                        />
+                      </a>
+                      <a href="#" class="dropdow-menu-image">
+                        <img
+                          src="./images/dropdow-menu-img-02.avif"
+                          alt=""
+                          class="dropdow-menu-img"
+                        />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="menu-item">
+                <div class="dropdow-menu">
+                  <a href="#" class="menu-link"
+                    >Nam <i class="fa-solid fa-chevron-down"></i
+                  ></a>
+                  <div class="dropdow-menu-list">
+                    <div class="dropdow-menu-category">
+                      <div class="dropdow-menu-info">
+                        <h2 class="dropdow-menu-title">Giày Dép</h2>
+                        <a href="#" class="dropdow-menu-link">Xem tất cả</a>
+                      </div>
+                      <div class="dropdow-menu-item">
+                        <a href="#">Sản phẩm mới</a>
+                      </div>
+                      <div class="dropdow-menu-item">
+                        <a href="#">Giày thời trang</a>
+                      </div>
+                      <div class="dropdow-menu-item">
+                        <a href="#">Giày chạy bộ</a>
+                      </div>
+                      <div class="dropdow-menu-item">
+                        <a href="#">Giày luyện tập</a>
+                      </div>
+                      <div class="dropdow-menu-item">
+                        <a href="#">Giày bóng rổ</a>
+                      </div>
+                      <div class="dropdow-menu-item">
+                        <a href="#">Giày bóng đá</a>
+                      </div>
+                    </div>
+                    <div class="dropdow-menu-images">
+                      <a href="#" class="dropdow-menu-image">
+                        <img
+                          src="./images/dropdow-menu-img.avif"
+                          alt=""
+                          class="dropdow-menu-img"
+                        />
+                      </a>
+                      <a href="#" class="dropdow-menu-image">
+                        <img
+                          src="./images/dropdow-menu-img-02.avif"
+                          alt=""
+                          class="dropdow-menu-img"
+                        />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="menu-item">
+                <div class="dropdow-menu">
+                  <a href="#" class="menu-link"
+                    >Nữ <i class="fa-solid fa-chevron-down"></i
+                  ></a>
+                  <div class="dropdow-menu-list">
+                    <div class="dropdow-menu-category">
+                      <div class="dropdow-menu-info">
+                        <h2 class="dropdow-menu-title">Giày Dép</h2>
+                        <a href="#" class="dropdow-menu-link">Xem tất cả</a>
+                      </div>
+                      <div class="dropdow-menu-item">
+                        <a href="#">Sản phẩm mới</a>
+                      </div>
+                      <div class="dropdow-menu-item">
+                        <a href="#">Giày thời trang</a>
+                      </div>
+                      <div class="dropdow-menu-item">
+                        <a href="#">Giày chạy bộ</a>
+                      </div>
+                      <div class="dropdow-menu-item">
+                        <a href="#">Giày luyện tập</a>
+                      </div>
+                    </div>
+                    <div class="dropdow-menu-images">
+                      <a href="#" class="dropdow-menu-image">
+                        <img
+                          src="./images/dropdow-menu-img-03.avif"
+                          alt=""
+                          class="dropdow-menu-img"
+                        />
+                      </a>
+                      <a href="#" class="dropdow-menu-image">
+                        <img
+                          src="./images/dropdow-menu-img-04.avif"
+                          alt=""
+                          class="dropdow-menu-img"
+                        />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="menu-item">
+                <a href="#" class="menu-link">Trẻ em</a>
+              </li>
+              <li class="menu-item">
+                <div class="dropdow-menu">
+                  <a href="#" class="menu-link"
+                    >Thương hiệu <i class="fa-solid fa-chevron-down"></i
+                  ></a>
+                  <div class="dropdow-menu-list">
+                    <div class="dropdow-menu-category">
+                      <div class="dropdow-menu-info">
+                        <h2 class="dropdow-menu-title">A - Z</h2>
+                        <a href="#" class="dropdow-menu-link">Xem tất cả</a>
+                      </div>
+                      <div class="dropdow-menu-item">
+                        <a href="#">ADIDAS</a>
+                      </div>
+                      <div class="dropdow-menu-item">
+                        <a href="#">COLUMBIA</a>
+                      </div>
+                      <div class="dropdow-menu-item">
+                        <a href="#">CONVERSE</a>
+                      </div>
+                      <div class="dropdow-menu-item">
+                        <a href="#">FILA</a>
+                      </div>
+                      <div class="dropdow-menu-item">
+                        <a href="#">JORDAN</a>
+                      </div>
+                      <div class="dropdow-menu-item">
+                        <a href="#">HOKA</a>
+                      </div>
+                      <div class="dropdow-menu-item">
+                        <a href="#">NIKE</a>
+                      </div>
+                      <div class="dropdow-menu-item">
+                        <a href="#">NEW BALANCE</a>
+                      </div>
+                      <div class="dropdow-menu-item">
+                        <a href="#">PUMA</a>
+                      </div>
+                      <div class="dropdow-menu-item">
+                        <a href="#">UNDER ARMOR</a>
+                      </div>
+                    </div>
+                    <div class="dropdow-menu-images">
+                      <a href="#" class="dropdow-menu-image">
+                        <img
+                          src="./images/dropdow-menu-img-05.avif"
+                          alt=""
+                          class="dropdow-menu-img"
+                        />
+                      </a>
+                      <a href="#" class="dropdow-menu-image">
+                        <img
+                          src="./images/dropdow-menu-img.avif"
+                          alt=""
+                          class="dropdow-menu-img"
+                        />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="menu-item">
+                <a href="#" class="menu-link">Giới thiệu</a>
+              </li>
+              <li class="menu-item">
+                <a href="#" class="menu-link">Tin tức</a>
+              </li>
+              <li class="menu-item">
+                <a href="#" class="menu-link">Liên hệ</a>
+              </li>
+            </ul>
+
+            <a href="#" class="promo button button-red">Ưu đãi</a>
+          </div>
+        </div>
+        <div class="header-bottom">
+          <div class="container">
+            <div class="policy">
+              <div class="policy-item">
+                <a href="#" class="policy-image">
+                  <img
+                    src="./images/truck-icon.webp"
+                    alt=""
+                    class="policy-img"
+                  />
+                </a>
+                <a href="#" class="policy-link"
+                  >MIỄN PHÍ GIAO HÀNG ĐƠN TỪ 699K</a
+                >
+              </div>
+              <div class="policy-item">
+                <a href="#" class="policy-image">
+                  <img
+                    src="./images/trade-icon.webp"
+                    alt=""
+                    class="policy-img"
+                  />
+                </a>
+                <a href="#" class="policy-link">15 NGÀY ĐỔI TRẢ DỄ DÀNG</a>
+              </div>
+              <div class="policy-item">
+                <a href="#" class="policy-image">
+                  <img
+                    src="./images/installment-icon.webp"
+                    alt=""
+                    class="policy-img"
+                  />
+                </a>
+                <a href="#" class="policy-link">MUA HÀNG HIỆU TRẢ GÓP 0%</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main>
+        <section class="slider">
+          <!-- <i class="fa fa-angle-left slider-prev"></i>
+          <ul class="slider-dots">
+            <li class="slider-dot-item active" data-index="0"></li>
+            <li class="slider-dot-item" data-index="1"></li>
+            <li class="slider-dot-item" data-index="2"></li>
+          </ul> -->
+          <!-- <div class="slider-wrapper"> -->
+          <!-- <div class="slider-main"> -->
+          <div class="slider-item">
+            <a href="#" class="slider-image">
+              <img src="./images/slider-01.webp" alt="" />
+            </a>
+          </div>
+          <div class="slider-item">
+            <a href="#" class="slider-image">
+              <img src="./images/slider-02.webp" alt="" />
+            </a>
+          </div>
+          <div class="slider-item">
+            <a href="#" class="slider-image">
+              <img src="./images/slider-03.webp" alt="" />
+            </a>
+          </div>
+          <!-- </div> -->
+          <!-- </div> -->
+          <!-- <i class="fa fa-angle-right slider-next"></i> -->
+        </section>
+
+        <section class="brand">
+          <div class="container">
+            <div class="brand-header">
+              <h2 class="heading">THƯƠNG HIỆU NỔI BẬT</h2>
+            </div>
+            <div class="brand-list">
+              <div class="brand-item">
+                <a href="#" class="brand-logo">
+                  <img src="./images/nike-brand.png" alt="" />
+                </a>
+              </div>
+              <div class="brand-item">
+                <a href="#" class="brand-logo">
+                  <img src="./images/columbia-brand.webp" alt="" />
+                </a>
+              </div>
+              <div class="brand-item">
+                <a href="#" class="brand-logo">
+                  <img src="./images/converse-brand.avif" alt="" />
+                </a>
+              </div>
+              <div class="brand-item">
+                <a href="#" class="brand-logo">
+                  <img src="./images/adidas-brand.png" alt="" />
+                </a>
+              </div>
+              <div class="brand-item">
+                <a href="#" class="brand-logo">
+                  <img src="./images/file-brand.avif" alt="" />
+                </a>
+              </div>
+              <div class="brand-item">
+                <a href="#" class="brand-logo">
+                  <img src="./images/new-balance-brand.png" alt="" />
+                </a>
+              </div>
+              <div class="brand-item">
+                <a href="#" class="brand-logo">
+                  <img src="./images/puma-brand.avif" alt="" />
+                </a>
+              </div>
+              <div class="brand-item">
+                <a href="#" class="brand-logo">
+                  <img src="./images/under-armor-brand.avif" alt="" />
+                </a>
+              </div>
+              <div class="brand-item">
+                <a href="#" class="brand-logo">
+                  <img src="./images/hoka-brand.png" alt="" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="product-new">
+          <div class="container">
+            <div class="product-new-header product-header">
+              <h2 class="heading">Hàng mới về</h2>
+            </div>
+            <div class="product-new-list">
+              <div class="product-new-item product-item">
+                <div class="product-new-image product-image">
+                  <a href="#" class="product-new-img">
+                    <img src="./images/product-1.webp" alt="" />
+                  </a>
+                  <div class="product-new-tag product-tag">Mới</div>
+                </div>
+                <div class="product-new-content product-content">
+                  <span class="product-new-brand product-brand">Fila</span>
+                  <h3 class="product-new-title product-title">
+                    <a href="#">Giày Thời Trang Unisex Fila Rockblunt</a>
+                  </h3>
+                  <span class="product-new-price product-price"
+                    >2.395.000₫</span
+                  >
+                </div>
+              </div>
+              <div class="product-new-item product-item">
+                <div class="product-new-image product-image">
+                  <a href="#" class="product-new-img">
+                    <img src="./images/product-2.webp" alt="" />
+                  </a>
+                  <div class="product-new-tag product-tag">Mới</div>
+                </div>
+                <div class="product-new-content product-content">
+                  <span class="product-new-brand product-brand">Fila</span>
+                  <h3 class="product-new-title product-title">
+                    <a href="#">Giày Chạy Bộ Nữ Nike Air Zoom Pegasus 39</a>
+                  </h3>
+                  <span class="product-new-price product-price"
+                    >3.719.000₫</span
+                  >
+                </div>
+              </div>
+              <div class="product-new-item product-item">
+                <div class="product-new-image product-image">
+                  <a href="#" class="product-new-img">
+                    <img src="./images/product-3.webp" alt="" />
+                  </a>
+                  <div class="product-new-tag product-tag">Mới</div>
+                </div>
+                <div class="product-new-content product-content">
+                  <span class="product-new-brand product-brand">Fila</span>
+                  <h3 class="product-new-title product-title">
+                    <a href="#">Giày Thời Trang Nữ Nike Air Max Dawn</a>
+                  </h3>
+                  <span class="product-new-price product-price"
+                    >3.519.000₫</span
+                  >
+                </div>
+              </div>
+              <div class="product-new-item product-item">
+                <div class="product-new-image product-image">
+                  <a href="#" class="product-new-img">
+                    <img src="./images/product-4.webp" alt="" />
+                  </a>
+                  <div class="product-new-tag product-tag">Mới</div>
+                </div>
+                <div class="product-new-content product-content">
+                  <span class="product-new-brand product-brand">Fila</span>
+                  <h3 class="product-new-title product-title">
+                    <a href="#">Giày Thời Trang Nam Nike Air Max 90 Se</a>
+                  </h3>
+                  <span class="product-new-price product-price"
+                    >3.829.000₫</span
+                  >
+                </div>
+              </div>
+              <div class="product-new-item product-item">
+                <div class="product-new-image product-image">
+                  <a href="#" class="product-new-img">
+                    <img src="./images/product-4.webp" alt="" />
+                  </a>
+                  <div class="product-new-tag product-tag">Mới</div>
+                </div>
+                <div class="product-new-content product-content">
+                  <span class="product-new-brand product-brand">Fila</span>
+                  <h3 class="product-new-title product-title">
+                    <a href="#">Giày Thời Trang Unisex Fila Rockblunt</a>
+                  </h3>
+                  <span class="product-new-price product-price"
+                    >2.395.000₫</span
+                  >
+                </div>
+              </div>
+              <div class="product-new-item product-item">
+                <div class="product-new-image product-image">
+                  <a href="#" class="product-new-img">
+                    <img src="./images/product-1.webp" alt="" />
+                  </a>
+                  <div class="product-new-tag product-tag">Mới</div>
+                </div>
+                <div class="product-new-content product-content">
+                  <span class="product-new-brand product-brand">Fila</span>
+                  <h3 class="product-new-title product-title">
+                    <a href="#">Giày Thời Trang Unisex Fila Rockblunt</a>
+                  </h3>
+                  <span class="product-new-price product-price"
+                    >2.395.000₫</span
+                  >
+                </div>
+              </div>
+              <div class="product-new-item product-item">
+                <div class="product-new-image product-image">
+                  <a href="#" class="product-new-img">
+                    <img src="./images/product-1.webp" alt="" />
+                  </a>
+                  <div class="product-new-tag product-tag">Mới</div>
+                </div>
+                <div class="product-new-content product-content">
+                  <span class="product-new-brand product-brand">Fila</span>
+                  <h3 class="product-new-title product-title">
+                    <a href="#">Giày Thời Trang Unisex Fila Rockblunt</a>
+                  </h3>
+                  <span class="product-new-price product-price"
+                    >2.395.000₫</span
+                  >
+                </div>
+              </div>
+              <div class="product-new-item product-item">
+                <div class="product-new-image product-image">
+                  <a href="#" class="product-new-img">
+                    <img src="./images/product-1.webp" alt="" />
+                  </a>
+                  <div class="product-new-tag product-tag">Mới</div>
+                </div>
+                <div class="product-new-content product-content">
+                  <span class="product-new-brand product-brand">Fila</span>
+                  <h3 class="product-new-title product-title">
+                    <a href="#">Giày Thời Trang Unisex Fila Rockblunt</a>
+                  </h3>
+                  <span class="product-new-price product-price"
+                    >2.395.000₫</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="banner">
+          <img src="./images/banner.webp" alt="" />
+        </section>
+
+        <section class="gender">
+          <div class="container">
+            <div class="gender-header gender-links">
+              <h2
+                class="heading gender-link"
+                onclick="openTab(event, 'Male')"
+                id="defaultOpen"
+              >
+                Nam
+              </h2>
+              <h2
+                class="heading gender-link"
+                onclick="openTab(event, 'Female')"
+              >
+                Nữ
+              </h2>
+            </div>
+
+            <div class="gender-list" id="Male">
+              <div class="gender-item" id="itemMale">
+                <div class="gender-image">
+                  <a href="#" class="gender-img">
+                    <img src="./images/gender-male-1.webp" alt="" />
+                  </a>
+                </div>
+                <div class="gender-content">
+                  <a href="#" class="gender-name">Nam</a>
+                  <a href="#" class="gender-type">Giày chạy bộ</a>
+                </div>
+              </div>
+              <div class="gender-item" id="itemMale">
+                <div class="gender-image">
+                  <a href="#" class="gender-img">
+                    <img src="./images/gender-male-2.webp" alt="" />
+                  </a>
+                </div>
+                <div class="gender-content">
+                  <a href="#" class="gender-name">Nam</a>
+                  <a href="#" class="gender-type">Giày thời trang</a>
+                </div>
+              </div>
+              <div class="gender-item" id="itemMale">
+                <div class="gender-image">
+                  <a href="#" class="gender-img">
+                    <img src="./images/gender-male-3.webp" alt="" />
+                  </a>
+                </div>
+                <div class="gender-content">
+                  <a href="#" class="gender-name">Nam</a>
+                  <a href="#" class="gender-type">Giày luyện tập</a>
+                </div>
+              </div>
+              <div class="gender-item" id="itemMale">
+                <div class="gender-image">
+                  <a href="#" class="gender-img">
+                    <img src="./images/gender-male-4.webp" alt="" />
+                  </a>
+                </div>
+                <div class="gender-content">
+                  <a href="#" class="gender-name">Nam</a>
+                  <a href="#" class="gender-type">Giày bóng rổ</a>
+                </div>
+              </div>
+              <div class="gender-item" id="itemMale">
+                <div class="gender-image">
+                  <a href="#" class="gender-img">
+                    <img src="./images/gender-male-5.webp" alt="" />
+                  </a>
+                </div>
+                <div class="gender-content">
+                  <a href="#" class="gender-name">Nam</a>
+                  <a href="#" class="gender-type">Giày bóng đá</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="gender-list" id="Female">
+              <div class="gender-item" id="itemFemale">
+                <div class="gender-image">
+                  <a href="#" class="gender-img">
+                    <img src="./images/gender-female-1.webp" alt="" />
+                  </a>
+                </div>
+                <div class="gender-content">
+                  <a href="#" class="gender-name">Nữ</a>
+                  <a href="#" class="gender-type">Giày chạy bộ</a>
+                </div>
+              </div>
+              <div class="gender-item" id="itemFemale">
+                <div class="gender-image">
+                  <a href="#" class="gender-img">
+                    <img src="./images/gender-female-2.webp" alt="" />
+                  </a>
+                </div>
+                <div class="gender-content">
+                  <a href="#" class="gender-name">Nữ</a>
+                  <a href="#" class="gender-type">Giày thời trang</a>
+                </div>
+              </div>
+              <div class="gender-item" id="itemFemale">
+                <div class="gender-image">
+                  <a href="#" class="gender-img">
+                    <img src="./images/gender-female-3.webp" alt="" />
+                  </a>
+                </div>
+                <div class="gender-content">
+                  <a href="#" class="gender-name">Nữ</a>
+                  <a href="#" class="gender-type">Giày luyện tập</a>
+                </div>
+              </div>
+              <div class="gender-item" id="itemFemale">
+                <div class="gender-image">
+                  <a href="#" class="gender-img">
+                    <img src="./images/gender-female-4.webp" alt="" />
+                  </a>
+                </div>
+                <div class="gender-content">
+                  <a href="#" class="gender-name">Nữ</a>
+                  <a href="#" class="gender-type">Giày bóng rổ</a>
+                </div>
+              </div>
+              <div class="gender-item" id="itemFemale">
+                <div class="gender-image">
+                  <a href="#" class="gender-img">
+                    <img src="./images/gender-female-5.webp" alt="" />
+                  </a>
+                </div>
+                <div class="gender-content">
+                  <a href="#" class="gender-name">Nữ</a>
+                  <a href="#" class="gender-type">Giày bóng đá</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="product-bestsell">
+          <div class="container">
+            <div class="product-bestsell-header product-header">
+              <h2 class="heading">Bán chạy nhất</h2>
+            </div>
+            <div class="product-bestsell-list">
+              <div class="product-bestsell-item product-item">
+                <div class="product-bestsell-image product-image">
+                  <a href="#" class="product-bestsell-img">
+                    <img src="./images/product-5.webp" alt="" />
+                  </a>
+                  <div class="product-bestsell-tag product-tag">-10%</div>
+                </div>
+                <div class="product-bestsell-content product-content">
+                  <span class="product-bestsell-brand product-brand">Hoka</span>
+                  <h3 class="product-bestsell-title product-title">
+                    <a href="#">Giày Chạy Bộ Nam Hoka Mach Supersonic</a>
+                  </h3>
+                  <div class="product-cost">
+                    <span class="product-bestsell-price product-price"
+                      >3.599.000₫</span
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="product-bestsell-item product-item">
+                <div class="product-bestsell-image product-image">
+                  <a href="#" class="product-bestsell-img">
+                    <img src="./images/product-6.webp" alt="" />
+                  </a>
+                  <div class="product-bestsell-tag product-tag">-10%</div>
+                </div>
+                <div class="product-bestsell-content product-content">
+                  <span class="product-bestsell-brand product-brand"
+                    >Converse</span
+                  >
+                  <h3 class="product-bestsell-title product-title">
+                    <a href="#"
+                      >Giày Thời Trang Unisex Converse Chuck 70 Canvas</a
+                    >
+                  </h3>
+                  <div class="product-cost">
+                    <span
+                      class="product-bestsell-price product-price product-price-sale"
+                      >1.710.000₫</span
+                    >
+                    <span class="product-price-old"> 1.900.000₫ </span>
+                  </div>
+                </div>
+              </div>
+              <div class="product-bestsell-item product-item">
+                <div class="product-bestsell-image product-image">
+                  <a href="#" class="product-bestsell-img">
+                    <img src="./images/product-7.webp" alt="" />
+                  </a>
+                  <div class="product-bestsell-tag product-tag">-20%</div>
+                </div>
+                <div class="product-bestsell-content product-content">
+                  <span class="product-bestsell-brand product-brand">Fila</span>
+                  <h3 class="product-bestsell-title product-title">
+                    <a href="#">Giày Thời Trang Unisex Fila Disruptor 2</a>
+                  </h3>
+                  <div class="product-cost">
+                    <span class="product-bestsell-price product-price"
+                      >1.995.000₫</span
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="product-bestsell-item product-item">
+                <div class="product-bestsell-image product-image">
+                  <a href="#" class="product-bestsell-img">
+                    <img src="./images/product-8.webp" alt="" />
+                  </a>
+                  <div class="product-bestsell-tag product-tag">-30%</div>
+                </div>
+                <div class="product-bestsell-content product-content">
+                  <span class="product-bestsell-brand product-brand"
+                    >New Balance</span
+                  >
+                  <h3 class="product-bestsell-title product-title">
+                    <a href="#">Giày Thể Thao Nam New Balance 574 Classic</a>
+                  </h3>
+                  <div class="product-cost">
+                    <span class="product-bestsell-price product-price"
+                      >2.795.000₫</span
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="product-bestsell-item product-item">
+                <div class="product-bestsell-image product-image">
+                  <a href="#" class="product-bestsell-img">
+                    <img src="./images/product-9.webp" alt="" />
+                  </a>
+                  <div class="product-bestsell-tag product-tag">-20%</div>
+                </div>
+                <div class="product-bestsell-content product-content">
+                  <span class="product-bestsell-brand product-brand">Hoka</span>
+                  <h3 class="product-bestsell-title product-title">
+                    <a href="#">Giày Chạy Bộ Nam Hoka Clifton 8</a>
+                  </h3>
+                  <div class="product-cost">
+                    <span
+                      class="product-bestsell-price product-price product-price-sale"
+                      >2.559.000₫</span
+                    >
+                    <span class="product-price-old"> 3.199.000₫ </span>
+                  </div>
+                </div>
+              </div>
+              <div class="product-bestsell-item product-item">
+                <div class="product-bestsell-image product-image">
+                  <a href="#" class="product-bestsell-img">
+                    <img src="./images/product-1.webp" alt="" />
+                  </a>
+                  <div class="product-bestsell-tag product-tag">Mới</div>
+                </div>
+                <div class="product-bestsell-content product-content">
+                  <span class="product-bestsell-brand product-brand">Fila</span>
+                  <h3 class="product-bestsell-title product-title">
+                    <a href="#">Giày Thời Trang Unisex Fila Rockblunt</a>
+                  </h3>
+                  <div class="product-cost">
+                    <span class="product-bestsell-price product-price"
+                      >2.395.000₫</span
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="product-bestsell-item product-item">
+                <div class="product-bestsell-image product-image">
+                  <a href="#" class="product-bestsell-img">
+                    <img src="./images/product-1.webp" alt="" />
+                  </a>
+                  <div class="product-bestsell-tag product-tag">Mới</div>
+                </div>
+                <div class="product-bestsell-content product-content">
+                  <span class="product-bestsell-brand product-brand">Fila</span>
+                  <h3 class="product-bestsell-title product-title">
+                    <a href="#">Giày Thời Trang Unisex Fila Rockblunt</a>
+                  </h3>
+                  <div class="product-cost">
+                    <span class="product-bestsell-price product-price"
+                      >2.395.000₫</span
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="product-bestsell-item product-item">
+                <div class="product-bestsell-image product-image">
+                  <a href="#" class="product-bestsell-img">
+                    <img src="./images/product-1.webp" alt="" />
+                  </a>
+                  <div class="product-bestsell-tag product-tag">Mới</div>
+                </div>
+                <div class="product-bestsell-content product-content">
+                  <span class="product-bestsell-brand product-brand">Fila</span>
+                  <h3 class="product-bestsell-title product-title">
+                    <a href="#">Giày Thời Trang Unisex Fila Rockblunt</a>
+                  </h3>
+                  <div class="product-cost">
+                    <span class="product-bestsell-price product-price"
+                      >2.395.000₫</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="product-promo">
+          <div class="container">
+            <div class="product-promo-header product-header">
+              <h2 class="heading">Khuyến mãi có hạn</h2>
+            </div>
+            <div class="product-promo-list">
+              <div class="product-promo-item product-item">
+                <div class="product-promo-image product-image">
+                  <a href="#" class="product-promo-img">
+                    <img src="./images/product-10.webp" alt="" />
+                  </a>
+                  <div class="product-promo-tag product-tag">-50%</div>
+                </div>
+                <div class="product-promo-content product-content">
+                  <span class="product-promo-brand product-brand"
+                    >New Balance</span
+                  >
+                  <h3 class="product-promo-title product-title">
+                    <a href="#">Giày Chạy Bộ Nam New Balance Fuelcell Racer</a>
+                  </h3>
+                  <div class="product-cost">
+                    <span
+                      class="product-bestsell-price product-price product-price-sale"
+                      >2.248.000₫</span
+                    >
+                    <span class="product-price-old"> 4.495.000₫ </span>
+                  </div>
+                </div>
+              </div>
+              <div class="product-promo-item product-item">
+                <div class="product-promo-image product-image">
+                  <a href="#" class="product-promo-img">
+                    <img src="./images/product-11.webp" alt="" />
+                  </a>
+                  <div class="product-promo-tag product-tag">-50%</div>
+                </div>
+                <div class="product-promo-content product-content">
+                  <span class="product-promo-brand product-brand"
+                    >New Balanace</span
+                  >
+                  <h3 class="product-promo-title product-title">
+                    <a href="#"
+                      >Giày Chạy Bộ Nam New Balance Fuelcell Rebel V2</a
+                    >
+                  </h3>
+                  <div class="product-cost">
+                    <span
+                      class="product-bestsell-price product-price product-price-sale"
+                      >1.598.000₫</span
+                    >
+                    <span class="product-price-old"> 3.195.000₫ </span>
+                  </div>
+                </div>
+              </div>
+              <div class="product-promo-item product-item">
+                <div class="product-promo-image product-image">
+                  <a href="#" class="product-promo-img">
+                    <img src="./images/product-12.webp" alt="" />
+                  </a>
+                  <div class="product-promo-tag product-tag">-35%</div>
+                </div>
+                <div class="product-promo-content product-content">
+                  <span class="product-promo-brand product-brand">
+                    NEW BALANCE
+                  </span>
+                  <h3 class="product-promo-title product-title">
+                    <a href="#"
+                      >Giày Chạy Bộ Nam New Balance Fuelcell Propel Rmx V2</a
+                    >
+                  </h3>
+                  <div class="product-cost">
+                    <span
+                      class="product-bestsell-price product-price product-price-sale"
+                      >1.752.000₫</span
+                    >
+                    <span class="product-price-old"> 2.695.000₫ </span>
+                  </div>
+                </div>
+              </div>
+              <div class="product-promo-item product-item">
+                <div class="product-promo-image product-image">
+                  <a href="#" class="product-promo-img">
+                    <img src="./images/product-13.webp" alt="" />
+                  </a>
+                  <div class="product-promo-tag product-tag">-40%</div>
+                </div>
+                <div class="product-promo-content product-content">
+                  <span class="product-promo-brand product-brand">Adidas</span>
+                  <h3 class="product-promo-title product-title">
+                    <a href="#">Giày Thể Thao Unisex Adidas Stan Smith</a>
+                  </h3>
+                  <div class="product-cost">
+                    <span
+                      class="product-bestsell-price product-price product-price-sale"
+                      >1.500.000₫</span
+                    >
+                    <span class="product-price-old"> 2.500.000₫ </span>
+                  </div>
+                </div>
+              </div>
+              <div class="product-promo-item product-item">
+                <div class="product-promo-image product-image">
+                  <a href="#" class="product-promo-img">
+                    <img src="./images/product-1.webp" alt="" />
+                  </a>
+                  <div class="product-promo-tag product-tag">-10%</div>
+                </div>
+                <div class="product-promo-content product-content">
+                  <span class="product-promo-brand product-brand">Fila</span>
+                  <h3 class="product-promo-title product-title">
+                    <a href="#">Giày Thời Trang Unisex Fila Rockblunt</a>
+                  </h3>
+                  <div class="product-cost">
+                    <span
+                      class="product-bestsell-price product-price product-price-sale"
+                      >1.710.000₫</span
+                    >
+                    <span class="product-price-old"> 1.900.000₫ </span>
+                  </div>
+                </div>
+              </div>
+              <div class="product-promo-item product-item">
+                <div class="product-promo-image product-image">
+                  <a href="#" class="product-promo-img">
+                    <img src="./images/product-1.webp" alt="" />
+                  </a>
+                  <div class="product-promo-tag product-tag">-10%</div>
+                </div>
+                <div class="product-promo-content product-content">
+                  <span class="product-promo-brand product-brand">Fila</span>
+                  <h3 class="product-promo-title product-title">
+                    <a href="#">Giày Thời Trang Unisex Fila Rockblunt</a>
+                  </h3>
+                  <div class="product-cost">
+                    <span
+                      class="product-bestsell-price product-price product-price-sale"
+                      >1.710.000₫</span
+                    >
+                    <span class="product-price-old"> 1.900.000₫ </span>
+                  </div>
+                </div>
+              </div>
+              <div class="product-promo-item product-item">
+                <div class="product-promo-image product-image">
+                  <a href="#" class="product-promo-img">
+                    <img src="./images/product-1.webp" alt="" />
+                  </a>
+                  <div class="product-promo-tag product-tag">-10%</div>
+                </div>
+                <div class="product-promo-content product-content">
+                  <span class="product-promo-brand product-brand">Fila</span>
+                  <h3 class="product-promo-title product-title">
+                    <a href="#">Giày Thời Trang Unisex Fila Rockblunt</a>
+                  </h3>
+                  <div class="product-cost">
+                    <span
+                      class="product-bestsell-price product-price product-price-sale"
+                      >1.710.000₫</span
+                    >
+                    <span class="product-price-old"> 1.900.000₫ </span>
+                  </div>
+                </div>
+              </div>
+              <div class="product-promo-item product-item">
+                <div class="product-promo-image product-image">
+                  <a href="#" class="product-promo-img">
+                    <img src="./images/product-1.webp" alt="" />
+                  </a>
+                  <div class="product-promo-tag product-tag">-10%</div>
+                </div>
+                <div class="product-promo-content product-content">
+                  <span class="product-promo-brand product-brand">Fila</span>
+                  <h3 class="product-promo-title product-title">
+                    <a href="#">Giày Thời Trang Unisex Fila Rockblunt</a>
+                  </h3>
+                  <div class="product-cost">
+                    <span
+                      class="product-bestsell-price product-price product-price-sale"
+                      >1.710.000₫</span
+                    >
+                    <span class="product-price-old"> 1.900.000₫ </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="product-promo-link">
+              <a href="#" class="button button-black">Xem tất cả</a>
+            </div>
+          </div>
+        </section>
+
+        <section class="banner-slide">
+          <div class="container">
+            <div class="banner-slide-header">
+              <h2 class="heading">KHUYẾN MÃI</h2>
+            </div>
+
+            <div class="banner-slide-list">
+              <div class="banner-slide-item">
+                <a href="#" class="banners-slide-image">
+                  <img src="./images/banner-slide-1.webp" alt="" />
+                </a>
+              </div>
+              <div class="banner-slide-item">
+                <a href="#" class="banners-slide-image">
+                  <img src="./images/banner-slide-1.webp" alt="" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="sport">
+          <div class="container">
+            <div class="sport-header">
+              <h2 class="heading">BẠN ĐANG TẬP LUYỆN MÔN THỂ THAO GÌ?</h2>
+            </div>
+            <div class="sport-list">
+              <div class="sport-item">
+                <div class="sport-image">
+                  <a href="#" class="sport-img">
+                    <img src="./images/sport-1.avif" alt="" />
+                  </a>
+                </div>
+                <div class="sport-name">
+                  <a href="#">Bơi lội</a>
+                </div>
+              </div>
+              <div class="sport-item">
+                <div class="sport-image">
+                  <a href="#" class="sport-img">
+                    <img src="./images/sport-2.avif" alt="" />
+                  </a>
+                </div>
+                <div class="sport-name">
+                  <a href="#">Chạy bộ</a>
+                </div>
+              </div>
+              <div class="sport-item">
+                <div class="sport-image">
+                  <a href="#" class="sport-img">
+                    <img src="./images/sport-3.avif" alt="" />
+                  </a>
+                </div>
+                <div class="sport-name">
+                  <a href="#">Bóng rổ</a>
+                </div>
+              </div>
+              <div class="sport-item">
+                <div class="sport-image">
+                  <a href="#" class="sport-img">
+                    <img src="./images/sport-4.avif" alt="" />
+                  </a>
+                </div>
+                <div class="sport-name">
+                  <a href="#">Thể dục & thể hình</a>
+                </div>
+              </div>
+              <div class="sport-item">
+                <div class="sport-image">
+                  <a href="#" class="sport-img">
+                    <img src="./images/sport-5.avif" alt="" />
+                  </a>
+                </div>
+                <div class="sport-name">
+                  <a href="#">Thời trang</a>
+                </div>
+              </div>
+              <div class="sport-item">
+                <div class="sport-image">
+                  <a href="#" class="sport-img">
+                    <img src="./images/sport-6.avif" alt="" />
+                  </a>
+                </div>
+                <div class="sport-name">
+                  <a href="#">Bóng đá</a>
+                </div>
+              </div>
+              <div class="sport-item">
+                <div class="sport-image">
+                  <a href="#" class="sport-img">
+                    <img src="./images/sport-7.avif" alt="" />
+                  </a>
+                </div>
+                <div class="sport-name">
+                  <a href="#">Thể thao ngoài trời</a>
+                </div>
+              </div>
+              <div class="sport-item">
+                <div class="sport-image">
+                  <a href="#" class="sport-img">
+                    <img src="./images/sport-8.avif" alt="" />
+                  </a>
+                </div>
+                <div class="sport-name">
+                  <a href="#">Phụ kiện</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="news">
+          <div class="container">
+            <div class="news-header">
+              <h2 class="heading">Tin tức thể thao</h2>
+              <div class="news-read-all">
+                <a href="#">Xem tất cả</a>
+                <i class="fa fa-angle-right"></i>
+              </div>
+            </div>
+          </div>
+          <div class="news-list">
+            <div class="news-item">
+              <div class="news-image">
+                <a href="#" class="news-link">
+                  <img src="./images/news-1.avif" alt="" />
+                </a>
+              </div>
+              <div class="news-detail">
+                <h3 class="news-title">
+                  <a href="#">
+                    Top 20 đôi giày tập gym chất lượng được yêu thích nhất
+                  </a>
+                </h3>
+              </div>
+            </div>
+            <div class="news-item">
+              <div class="news-image">
+                <a href="#" class="news-link">
+                  <img src="./images/news-2.avif" alt="" />
+                </a>
+              </div>
+              <div class="news-detail">
+                <h3 class="news-title">
+                  <a href="#">
+                    Nên mua giày chạy bộ nào? Top 11 giày chạy bộ tốt và bền
+                    nhất 2022
+                  </a>
+                </h3>
+              </div>
+            </div>
+            <div class="news-item">
+              <div class="news-image">
+                <a href="#" class="news-link">
+                  <img src="./images/news-3.avif" alt="" />
+                </a>
+              </div>
+              <div class="news-detail">
+                <h3 class="news-title">
+                  <a href="#">
+                    Top 6 thương hiệu giày chính hãng giá tốt mà bạn nên sở hữu
+                    năm 2022
+                  </a>
+                </h3>
+              </div>
+            </div>
+            <div class="news-item">
+              <div class="news-image">
+                <a href="#" class="news-link">
+                  <img src="./images/news-4.avif" alt="" />
+                </a>
+              </div>
+              <div class="news-detail">
+                <h3 class="news-title">
+                  <a href="#">
+                    10+ Giày tập gym nữ siêu nhẹ, êm chân chị em không thể bỏ
+                    qua
+                  </a>
+                </h3>
+              </div>
+            </div>
+            <div class="news-item">
+              <div class="news-image">
+                <a href="#" class="news-link">
+                  <img src="./images/news-5.avif" alt="" />
+                </a>
+              </div>
+              <div class="news-detail">
+                <h3 class="news-title">
+                  <a href="#">
+                    Top 6 mẫu giày chạy bộ trời mưa chống trơn hiệu quả nhất
+                    2022
+                  </a>
+                </h3>
+              </div>
+            </div>
+            <div class="news-item">
+              <div class="news-image">
+                <a href="#" class="news-link">
+                  <img src="./images/news-1.avif" alt="" />
+                </a>
+              </div>
+              <div class="news-detail">
+                <h3 class="news-title">
+                  <a href="#">
+                    Top 20 đôi giày tập gym chất lượng được yêu thích nhất
+                  </a>
+                </h3>
+              </div>
+            </div>
+            <div class="news-item">
+              <div class="news-image">
+                <a href="#" class="news-link">
+                  <img src="./images/news-1.avif" alt="" />
+                </a>
+              </div>
+              <div class="news-detail">
+                <h3 class="news-title">
+                  <a href="#">
+                    Top 20 đôi giày tập gym chất lượng được yêu thích nhất
+                  </a>
+                </h3>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <div class="footer-top">
+          <div class="container">
+            <div class="footer-top-content">
+              <div class="social">
+                <h3 class="social-join">JOIN THE CONVERSATION</h3>
+                <div class="social-list">
+                  <a class="social-item">
+                    <img srcset="./images/facebook-icon.webp 2x" alt="" />
+                  </a>
+                  <a class="social-item">
+                    <img srcset="./images/youtube-icon.webp 2x" alt="" />
+                  </a>
+                  <a class="social-item">
+                    <img srcset="./images/instagram-icon.webp 2x" alt="" />
+                  </a>
+                </div>
+              </div>
+
+              <div class="signup">
+                <form action="" class="signup-form">
+                  <input
+                    type="text"
+                    class="signup-input"
+                    placeholder="Nhập email của bạn để nhận khuyến mãi mới nhất"
+                  />
+                  <button class="button button-green signup-button">
+                    Đăng ký
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-content">
+          <div class="container">
+            <div class="footer-content-container">
+              <div class="footer-column">
+                <h3 class="footer-heading heading-small">VỀ ShoeLike</h3>
+                <ul class="footer-links">
+                  <li class="footer-item">
+                    <a href="#" class="footer-link">Giới thiệu</a>
+                  </li>
+                  <li class="footer-item">
+                    <a href="#" class="footer-link">Hệ thống cửa hàng</a>
+                  </li>
+                  <li class="footer-item">
+                    <a href="#" class="footer-link">Sơ đồ Web</a>
+                  </li>
+                  <li class="footer-item">
+                    <a href="#" class="footer-link">Thông tin liên hệ</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="footer-column">
+                <h3 class="footer-heading heading-small">HỖ TRỢ KHÁCH HÀNG</h3>
+                <ul class="footer-links">
+                  <li class="footer-item">
+                    <a href="#" class="footer-link">Chính sách giao hàng</a>
+                  </li>
+                  <li class="footer-item">
+                    <a href="#" class="footer-link">Hướng dẫn chọn Size</a>
+                  </li>
+                  <li class="footer-item">
+                    <a href="#" class="footer-link">Chính sách đổi trả hàng</a>
+                  </li>
+                  <li class="footer-item">
+                    <a href="#" class="footer-link"
+                      >Hỗ trợ và Giải đáp thắc mắc</a
+                    >
+                  </li>
+                  <li class="footer-item">
+                    <a href="#" class="footer-link">Chính sách trả góp</a>
+                  </li>
+                  <li class="footer-item">
+                    <a href="#" class="footer-link"
+                      >Các điều khoản và điều kiện</a
+                    >
+                  </li>
+                  <li class="footer-item">
+                    <a href="#" class="footer-link">Chính sách bảo mật</a>
+                  </li>
+                  <li class="footer-item">
+                    <a href="#" class="footer-link">Hướng dẫn mua hàng</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="footer-column">
+                <h3 class="footer-heading heading-small">GROUP BUSINESS</h3>
+                <ul class="footer-links">
+                  <li class="footer-item">
+                    <a href="#" class="footer-link">Nguyễn Kim</a>
+                  </li>
+                  <li class="footer-item">
+                    <a href="#" class="footer-link">Big C</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="footer-column">
+                <h3 class="footer-heading heading-small">
+                  PHƯƠNG THỨC THANH TOÁN
+                </h3>
+                <div class="footer-cash">CASH ON DELIVERY</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <div class="container">
+            <div class="copyright">
+              <div class="copyright-info">
+                <h3 class="footer-bottom-heading heading-small">
+                  CÔNG TY TNHH MTV THƯƠNG MẠI THỜI TRANG TỔNG HỢP (GTF)
+                </h3>
+                <p class="copyright-text">
+                  Văn phòng: Tòa nhà FPT Polytechnic, P. Trịnh Văn Bô, Xuân
+                  Phương, Nam Từ Liêm, Hà Nội
+                </p>
+                <p class="copyright-text">Tổng đài: 1900 63 64 01</p>
+              </div>
+
+              <img
+                src="./images/copyright.avif"
+                alt=""
+                class="copyright-image"
+              />
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+  <script
+    type="text/javascript"
+    src="https://code.jquery.com/jquery-1.11.0.min.js"
+  ></script>
+  <script
+    type="text/javascript"
+    src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"
+  ></script>
+  <script
+    type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+  ></script>
+  <script src="./scripts/slider.js"></script>
+  <script src="./scripts/tab.js"></script>
+</html>

@@ -1,0 +1,129 @@
+.news {
+  padding-bottom: 50px;
+  &-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 35px;
+  }
+  &-read-all {
+    &:hover a,
+    &:hover i {
+      color: $secondary-color;
+    }
+    a {
+      color: $text-color;
+      font-size: 15px;
+      font-weight: 700;
+      text-transform: uppercase;
+      line-height: calc(25 / 14);
+      letter-spacing: 1.4px;
+    }
+    i {
+      color: $text-color;
+      font-size: 12px;
+    }
+  }
+  &-list {
+    padding: 0 16px;
+    margin: 0 -22px;
+  }
+  &-item {
+    display: flex !important;
+    flex-direction: column;
+    margin: 0 22px;
+  }
+  &-image {
+    margin-bottom: 5px;
+  }
+  &-title {
+    a {
+      color: $text-color;
+      font-size: 16px;
+      line-height: calc(22 / 16);
+      font-weight: 700;
+      &:hover {
+        color: $green-dark-color;
+      }
+    }
+  }
+  &-page {
+    margin-bottom: 90px;
+    &-header {
+      text-align: center;
+      margin-bottom: 35px;
+      h1 {
+        font-size: 32px;
+        font-weight: 700;
+        text-transform: uppercase;
+      }
+    }
+    &-item {
+      display: flex;
+      gap: 0 120px;
+      margin-bottom: 30px;
+      width: 100%;
+    }
+    &-img {
+      flex-shrink: 0;
+      margin-right: auto;
+    }
+    &-middle {
+      border-bottom: solid 1px $border-color;
+      padding-bottom: 30px;
+      margin-bottom: 18px;
+    }
+    &-content {
+      flex: 1;
+    }
+    &-title {
+      margin-bottom: 12px;
+      a {
+        color: $text-color;
+        font-weight: 700;
+        font-size: 16px;
+        &:hover {
+          color: $secondary-color;
+        }
+      }
+    }
+    &-desc {
+      font-size: 14px;
+      color: $text-color;
+      line-height: calc(25.2 / 14);
+      margin-bottom: 12px;
+    }
+    &-link {
+      display: inline-block;
+      padding: 12px 25px;
+      font-size: 14px;
+      color: #254d7a;
+      border: solid 2px #254d7a;
+    }
+  }
+  &-pages {
+    &-list {
+      display: flex;
+      gap: 0 12px;
+    }
+    &-item {
+      a {
+        display: inline-block;
+        font-size: 16px;
+        padding: 12px 14px;
+        border: solid 1px $border-color;
+        background-color: $white-color;
+        color: $text-color;
+        text-transform: uppercase;
+        cursor: pointer;
+        &:hover {
+          background-color: $primary-color;
+          color: $white-color;
+        }
+        i {
+          font-weight: 600;
+        }
+      }
+    }
+  }
+}

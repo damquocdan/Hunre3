@@ -1,0 +1,33 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $heading-color-primary;
+  font-weight: bold;
+}
+
+.heading {
+  font-weight: 700;
+  text-align: center;
+  font-size: 32px;
+  text-transform: uppercase;
+  line-height: calc(45 / 32);
+}
+
+.heading-small {
+  font-weight: 700;
+  font-size: 12px;
+  letter-spacing: 1px;
+  line-height: calc(20 / 12);
+  text-transform: uppercase;
+}
+
+.heading-medium {
+  font-size: 14px;
+  line-height: calc(25 / 14);
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+}

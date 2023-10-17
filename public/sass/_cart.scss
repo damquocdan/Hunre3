@@ -1,0 +1,177 @@
+.cart {
+  margin-bottom: 58px;
+  &-title {
+    font-size: 24px;
+    text-align: left;
+    margin-bottom: 45px;
+  }
+  &-container {
+    display: flex;
+    // justify-content: space-between;
+    gap: 0 20px;
+    align-items: flex-start;
+  }
+  &-table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 30px;
+    th,
+    td {
+      border: solid 1px $border-color;
+      padding: 12px;
+    }
+    th {
+      background-color: $green-light-color;
+      padding: 10px 12px;
+      color: $text-color;
+      font-weight: 700;
+      font-size: 17px;
+      line-height: 1.4;
+      border: none;
+    }
+    &-form {
+      width: 75%;
+    }
+  }
+  &-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0 20px;
+    &-text {
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+    }
+    img {
+      width: 70px;
+      height: 70px;
+      object-fit: cover;
+      flex-shrink: 0;
+    }
+    span {
+      line-height: 1.4;
+      color: $heading-color-secondary;
+      font-size: 14.5px;
+    }
+  }
+  &-price {
+    color: $heading-color-secondary;
+    text-align: center;
+  }
+  &-quantity {
+    text-align: center;
+    &-submit {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0 10px;
+      button {
+        background-color: $white-color;
+        color: $secondary-color;
+        &:hover {
+          color: $text-sale-color;
+        }
+        i {
+          font-weight: 600;
+          font-size: 18px;
+        }
+      }
+    }
+  }
+  &-input {
+    border: solid 1px #ccc;
+    width: 65px;
+    height: 35px;
+    text-align: center;
+    background-color: $white-color;
+    color: $heading-color-secondary;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+  }
+  &-total {
+    text-align: center;
+    color: $heading-color-secondary;
+  }
+  &-remove {
+    text-align: center;
+    a {
+      padding: 4px 8px;
+      color: $heading-color-secondary;
+      background-color: $green-light-color;
+      border: solid 4px transparent;
+      font-size: 16px;
+      &:active {
+        border: solid 4px $green-dark-color;
+      }
+      i {
+        font-weight: 700;
+      }
+    }
+  }
+
+  &-checkout {
+    border: solid 1px $border-color;
+    width: 25%;
+    &-container {
+      padding: 18px 20px;
+    }
+    &-button {
+      display: flex;
+      align-items: center;
+      gap: 0 14px;
+      margin-bottom: 48px;
+    }
+    &-submit {
+      display: inline-block;
+      padding: 12px 10px;
+      background-color: $secondary-color;
+      text-transform: capitalize;
+      font-size: 16px;
+      text-align: center;
+      color: $text-color;
+      a {
+        font-size: 16px;
+        text-align: center;
+        text-transform: capitalize;
+        color: $text-color;
+      }
+      &:hover,
+      &:hover a {
+        background-color: $green-light-color;
+        color: $border-color;
+      }
+    }
+    .full {
+      width: 100%;
+    }
+    &-header {
+      background-color: $secondary-color;
+      font-weight: 700;
+      h4 {
+        font-size: 20px;
+      }
+    }
+    &-content {
+      margin-bottom: 25px;
+      border-bottom: solid 1px $border-color;
+      &-item {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 20px;
+        span {
+          font-weight: 600;
+          font-size: 16px;
+        }
+      }
+    }
+    &-total {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 25px;
+    }
+  }
+}

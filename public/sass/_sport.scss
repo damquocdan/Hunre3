@@ -1,0 +1,52 @@
+.sport {
+  padding-bottom: 50px;
+  &-header {
+    margin-bottom: 40px;
+  }
+  &-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -8px;
+    margin-bottom: -40px;
+  }
+  &-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: calc(calc(100% / 4) - 8px);
+    height: calc(100% - 40px);
+    margin-left: 8px;
+    margin-bottom: 40px;
+    transition: all 0.2s linear;
+    cursor: pointer;
+    &:hover .sport-image {
+      opacity: 0.75;
+      transition: all 0.2s linear;
+    }
+    &:hover .sport-name {
+      background-color: $green-light-color;
+    }
+  }
+  &-image {
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      flex-shrink: 0;
+    }
+  }
+  &-name {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 23px 0;
+    background-color: $primary-color;
+    a {
+      text-transform: uppercase;
+      color: $white-color;
+      font-size: 15px;
+      font-weight: 700;
+    }
+  }
+}

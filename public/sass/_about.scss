@@ -1,0 +1,114 @@
+.about {
+  &-container {
+    display: flex;
+    gap: 0 30px;
+    margin-bottom: 90px;
+  }
+  &-aside {
+    flex-shrink: 0;
+    width: 20%;
+  }
+  &-article {
+    flex: 1;
+    width: 80%;
+  }
+  &-column {
+    &-item {
+      margin-bottom: 12px;
+      padding-bottom: 12px;
+      border-bottom: solid 1px $border-color;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      transition: all 0.2s ease;
+      cursor: pointer;
+      &:hover {
+        transition: all 0.25s ease;
+        color: $secondary-color;
+      }
+      i {
+        font-size: 13px;
+      }
+    }
+    &-link {
+      color: $text-color;
+      font-size: 15px;
+      text-transform: uppercase;
+      font-weight: 500;
+      transition: all 0.25s ease;
+      &.active {
+        font-weight: 700;
+      }
+      &:hover {
+        color: $secondary-color;
+        font-weight: 700;
+      }
+    }
+  }
+  &-title {
+    color: $text-color;
+    text-transform: uppercase;
+    font-weight: 550;
+    font-size: 16px;
+    margin-bottom: 15px;
+    border-bottom: solid 1px $border-color;
+    padding-bottom: 10px;
+  }
+  &-header {
+    margin-bottom: 25px;
+    h1 {
+      text-align: center;
+      font-size: 40px;
+      font-weight: 700;
+      line-height: 56px;
+    }
+  }
+  &-layout {
+    padding: 30px;
+    background-color: #f9f9f9;
+  }
+
+  &-content {
+    &-title {
+      color: $text-color;
+      font-size: 23px;
+      font-weight: 700;
+      margin-bottom: 26px;
+      margin-top: 30px;
+    }
+    &-desc {
+      color: $text-color;
+      font-size: 14px;
+      line-height: calc(25.2 / 14);
+      .bold {
+        color: $text-color;
+        font-size: 14px;
+        font-style: italic;
+        font-weight: 700;
+      }
+    }
+    &-item {
+      color: $text-color;
+      font-size: 14px;
+      line-height: calc(25.2 / 14);
+    }
+    &-heading {
+      font-size: 30px;
+      font-weight: 400;
+      margin-bottom: 25px;
+      margin-top: 25px;
+    }
+  }
+  &-img {
+    margin-bottom: 5px;
+    text-align: center;
+    span {
+      font-size: 14px;
+      color: $text-color;
+      font-style: italic;
+    }
+  }
+  &-image {
+    margin-bottom: 10px;
+  }
+}

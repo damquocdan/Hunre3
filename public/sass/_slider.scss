@@ -1,0 +1,111 @@
+.slider {
+  margin-bottom: 40px;
+  // position: relative;
+  // &-prev,
+  // &-next {
+  //   position: absolute;
+  //   top: 50%;
+  //   transform: translateY(-50%);
+  //   width: 40px;
+  //   height: 40px;
+  //   border-radius: 100rem;
+  //   display: flex;
+  //   align-items: center;
+  //   justify-content: center;
+  //   color: #999;
+  //   background-color: $white-color;
+  //   box-shadow: rgb(100 100 111 / 20%) 0px 7px 29px 0px;
+  //   cursor: pointer;
+  //   font-size: 20px;
+  //   z-index: 10;
+  // }
+  // &-prev {
+  //   left: 25px;
+  // }
+  // &-next {
+  //   right: 25px;
+  // }
+  // &-dots {
+  //   position: absolute;
+  //   left: 50%;
+  //   transform: translateX(-50%);
+  //   bottom: 25px;
+  //   display: flex;
+  //   align-items: center;
+  //   justify-content: center;
+  //   list-style: none;
+  //   z-index: 10;
+  //   li {
+  //     margin: 0 10px;
+  //     width: 15px;
+  //     height: 15px;
+  //     border-radius: 100rem;
+  //     cursor: pointer;
+  //     background-color: #999;
+  //     transition: background-color 0.25s linear;
+  //   }
+  //   .active {
+  //     background-color: $white-color;
+  //   }
+  // }
+  // &-wrapper {
+  //   width: 100%;
+  //   overflow: hidden;
+  //   position: relative;
+  // }
+  // &-main {
+  //   display: flex;
+  //   position: relative;
+  //   transition: transform 0.25s linear;
+  //   height: 100%;
+  // }
+  &-item {
+    height: 100%;
+    width: 100%;
+    flex: 1 0 100%;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}
+
+.slick {
+  &-dots {
+    list-style: none;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -15px);
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    gap: 0 20px;
+    button {
+      font-size: 0;
+      width: 15px;
+      height: 15px;
+      border-radius: 100rem;
+      background-color: #eee;
+      border: none;
+      outline: none;
+      transition: all 0.2s linear;
+    }
+  }
+  &-active {
+    button {
+      background-color: $secondary-color;
+    }
+  }
+  &-track {
+    margin: 0;
+  }
+}
+
+.banner-slide {
+  padding-bottom: 42px;
+  &-header {
+    margin-bottom: 40px;
+  }
+}

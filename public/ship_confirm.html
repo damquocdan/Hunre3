@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thanh toán</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="container">
+          <div class="header-top">
+            <div class="header-language dropdow">
+              <div class="header-language-select">
+                <img src="./images/vn-logo.webp" alt="" class="header-nation" />
+                <span>Tiếng Việt <i class="fa-solid fa-chevron-down"></i></span>
+              </div>
+              <ul class="header-language-list dropdow-list">
+                <li class="header-language-item dropdow-item">
+                  <img
+                    src="./images/vn-logo.webp"
+                    alt=""
+                    class="header-nation"
+                  />
+                  <a href="#" class="dropdow-link">Tiếng Việt</a>
+                </li>
+                <li class="header-language-item dropdow-item">
+                  <img
+                    src="./images/usa-logo.webp"
+                    alt=""
+                    class="header-nation"
+                  />
+                  <a href="#" class="dropdow-link">English</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="header-auth">
+              <a href="#" class="header-auth-text sign-up-offer">
+                ĐĂNG KÝ VÀ NHẬN 100.000 VNĐ
+              </a>
+
+              <div class="dropdow">
+                <a href="#" class="header-auth-text account"
+                  >Tài khoản
+                  <i class="header-auth-text fa-solid fa-chevron-down"></i
+                ></a>
+                <ul class="dropdow-list">
+                  <li class="dropdow-item">
+                    <a href="./signup.html" class="dropdow-link signup"
+                      >Đăng ký</a
+                    >
+                  </li>
+                  <li class="dropdow-item">
+                    <a href="./signin.html" class="dropdow-link signin"
+                      >Đăng nhập</a
+                    >
+                  </li>
+                </ul>
+              </div>
+
+              <a href="#" class="header-auth-text store-system"
+                >Hệ Thống 19 Cửa Hàng Toàn Quốc
+                <i class="fa-solid fa-location-dot"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="header-content">
+            <a href="./index.html" class="header-logo-link">
+              <img srcset="./images/logo.png 2x" alt="" class="header-logo" />
+            </a>
+            <div class="header-feature">
+              <div class="header-search">
+                <form action="#" class="header-search-form">
+                  <input
+                    type="text"
+                    class="header-search-input"
+                    placeholder="Bạn đang tìm gì ..."
+                  />
+                  <button class="header-search-submit button button-green">
+                    <i
+                      class="fa-sharp fa-solid fa-magnifying-glass header-search-icon"
+                    ></i>
+                    Tìm kiếm
+                  </button>
+                </form>
+              </div>
+
+              <div class="header-cart">
+                <a href="#" class="header-cart-submit button button-white">
+                  <i class="fa-solid fa-cart-shopping header-cart-icon"></i>
+                  Giỏ hàng (0)
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="header-menu">
+            <ul class="menu">
+              <li class="menu-item">
+                <a href="./index.html" class="menu-link">Trang chủ</a>
+              </li>
+              <li class="menu-item">
+                <div class="dropdow-menu">
+                  <a href="./product.html" class="menu-link"
+                    >Giày <i class="fa-solid fa-chevron-down"></i
+                  ></a>
+                  <div class="dropdow-menu-list">
+                    <div class="dropdow-menu-category">
+                      <div class="dropdow-menu-info">
+                        <h2 class="dropdow-menu-title">Giày Dép</h2>
+                        <a href="./product.html" class="dropdow-menu-link"
+                          >Xem tất cả</a
+                        >
+                      </div>
+                      <div class="dropdow-menu-item">
+                        <a href="#">Sản phẩm mới</a>
+                      </div>
+                      <div class="dropdow-menu-item">
+                        <a href="#">Giày thời trang</a>
+                      </div>
+                      <div class="dropdow-menu-item">
+                        <a href="#">Giày chạy bộ</a>
+                      </div>
+                      <div class="dropdow-menu-item">
+                        <a href="#">Giày luyện tập</a>
+                      </div>
+                      <div class="dropdow-menu-item">
+                        <a href="#">Giày bóng rổ</a>
+                      </div>
+                      <div class="dropdow-menu-item">
+                        <a href="#">Giày bóng đá</a>
+                      </div>
+                    </div>
+                    <div class="dropdow-menu-images">
+                      <a href="#" class="dropdow-menu-image">
+                        <img
+                          src="./images/dropdow-menu-img.avif"
+                          alt=""
+                          class="dropdow-menu-img"
+                        />
+                      </a>
+                      <a href="#" class="dropdow-menu-image">
+                        <img
+                          src="./images/dropdow-menu-img-02.avif"
+                          alt=""
+                          class="dropdow-menu-img"
+                        />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="menu-item">
+                <div class="dropdow-menu">
+                  <a href="#" class="menu-link"
+                    >Nam <i class="fa-solid fa-chevron-down"></i
+                  ></a>
+                  <div class="dropdow-menu-list">
+                    <div class="dropdow-menu-category">
+                      <div class="dropdow-menu-info">
+                        <h2 class="dropdow-menu-title">Giày Dép</h2>
+                        <a href="#" class="dropdow-menu-link">Xem tất cả</a>
+                      </div>
+                      <div class="dropdow-menu-item">
+                        <a href="#">Sản phẩm mới</a>
+                      </div>
+                      <div class="dropdow-menu-item">
+                        <a href="#">Giày thời trang</a>
+                      </div>
+                      <div class="dropdow-menu-item">
+                        <a href="#">Giày chạy bộ</a>
+                      </div>
+                      <div class="dropdow-menu-item">
+                        <a href="#">Giày luyện tập</a>
+                      </div>
+                      <div class="dropdow-menu-item">
+                        <a href="#">Giày bóng rổ</a>
+                      </div>
+                      <div class="dropdow-menu-item">
+                        <a href="#">Giày bóng đá</a>
+                      </div>
+                    </div>
+                    <div class="dropdow-menu-images">
+                      <a href="#" class="dropdow-menu-image">
+                        <img
+                          src="./images/dropdow-menu-img.avif"
+                          alt=""
+                          class="dropdow-menu-img"
+                        />
+                      </a>
+                      <a href="#" class="dropdow-menu-image">
+                        <img
+                          src="./images/dropdow-menu-img-02.avif"
+                          alt=""
+                          class="dropdow-menu-img"
+                        />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="menu-item">
+                <div class="dropdow-menu">
+                  <a href="#" class="menu-link"
+                    >Nữ <i class="fa-solid fa-chevron-down"></i
+                  ></a>
+                  <div class="dropdow-menu-list">
+                    <div class="dropdow-menu-category">
+                      <div class="dropdow-menu-info">
+                        <h2 class="dropdow-menu-title">Giày Dép</h2>
+                        <a href="#" class="dropdow-menu-link">Xem tất cả</a>
+                      </div>
+                      <div class="dropdow-menu-item">
+                        <a href="#">Sản phẩm mới</a>
+                      </div>
+                      <div class="dropdow-menu-item">
+                        <a href="#">Giày thời trang</a>
+                      </div>
+                      <div class="dropdow-menu-item">
+                        <a href="#">Giày chạy bộ</a>
+                      </div>
+                      <div class="dropdow-menu-item">
+                        <a href="#">Giày luyện tập</a>
+                      </div>
+                    </div>
+                    <div class="dropdow-menu-images">
+                      <a href="#" class="dropdow-menu-image">
+                        <img
+                          src="./images/dropdow-menu-img-03.avif"
+                          alt=""
+                          class="dropdow-menu-img"
+                        />
+                      </a>
+                      <a href="#" class="dropdow-menu-image">
+                        <img
+                          src="./images/dropdow-menu-img-04.avif"
+                          alt=""
+                          class="dropdow-menu-img"
+                        />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="menu-item">
+                <a href="#" class="menu-link">Trẻ em</a>
+              </li>
+              <li class="menu-item">
+                <div class="dropdow-menu">
+                  <a href="#" class="menu-link"
+                    >Thương hiệu <i class="fa-solid fa-chevron-down"></i
+                  ></a>
+                  <div class="dropdow-menu-list">
+                    <div class="dropdow-menu-category">
+                      <div class="dropdow-menu-info">
+                        <h2 class="dropdow-menu-title">A - Z</h2>
+                        <a href="#" class="dropdow-menu-link">Xem tất cả</a>
+                      </div>
+                      <div class="dropdow-menu-item">
+                        <a href="#">ADIDAS</a>
+                      </div>
+                      <div class="dropdow-menu-item">
+                        <a href="#">COLUMBIA</a>
+                      </div>
+                      <div class="dropdow-menu-item">
+                        <a href="#">CONVERSE</a>
+                      </div>
+                      <div class="dropdow-menu-item">
+                        <a href="#">FILA</a>
+                      </div>
+                      <div class="dropdow-menu-item">
+                        <a href="#">JORDAN</a>
+                      </div>
+                      <div class="dropdow-menu-item">
+                        <a href="#">HOKA</a>
+                      </div>
+                      <div class="dropdow-menu-item">
+                        <a href="#">NIKE</a>
+                      </div>
+                      <div class="dropdow-menu-item">
+                        <a href="#">NEW BALANCE</a>
+                      </div>
+                      <div class="dropdow-menu-item">
+                        <a href="#">PUMA</a>
+                      </div>
+                      <div class="dropdow-menu-item">
+                        <a href="#">UNDER ARMOR</a>
+                      </div>
+                    </div>
+                    <div class="dropdow-menu-images">
+                      <a href="#" class="dropdow-menu-image">
+                        <img
+                          src="./images/dropdow-menu-img-05.avif"
+                          alt=""
+                          class="dropdow-menu-img"
+                        />
+                      </a>
+                      <a href="#" class="dropdow-menu-image">
+                        <img
+                          src="./images/dropdow-menu-img.avif"
+                          alt=""
+                          class="dropdow-menu-img"
+                        />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="menu-item">
+                <a href="#" class="menu-link">Giới thiệu</a>
+              </li>
+              <li class="menu-item">
+                <a href="#" class="menu-link">Tin tức</a>
+              </li>
+              <li class="menu-item">
+                <a href="#" class="menu-link">Liên hệ</a>
+              </li>
+            </ul>
+
+            <a href="#" class="promo button button-red">Ưu đãi</a>
+          </div>
+        </div>
+        <div class="header-bottom">
+          <div class="container">
+            <div class="policy">
+              <div class="policy-item">
+                <a href="#" class="policy-image">
+                  <img
+                    src="./images/truck-icon.webp"
+                    alt=""
+                    class="policy-img"
+                  />
+                </a>
+                <a href="#" class="policy-link"
+                  >MIỄN PHÍ GIAO HÀNG ĐƠN TỪ 699K</a
+                >
+              </div>
+              <div class="policy-item">
+                <a href="#" class="policy-image">
+                  <img
+                    src="./images/trade-icon.webp"
+                    alt=""
+                    class="policy-img"
+                  />
+                </a>
+                <a href="#" class="policy-link">15 NGÀY ĐỔI TRẢ DỄ DÀNG</a>
+              </div>
+              <div class="policy-item">
+                <a href="#" class="policy-image">
+                  <img
+                    src="./images/installment-icon.webp"
+                    alt=""
+                    class="policy-img"
+                  />
+                </a>
+                <a href="#" class="policy-link">MUA HÀNG HIỆU TRẢ GÓP 0%</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main class="main">
+        <section class="page">
+          <div class="container">
+            <div class="page-list">
+              <a href="#" class="page-name active">Giỏ hàng</a>
+              <i class="fa fa-angle-right page-icon"></i>
+              <a href="#" class="page-name current">Xác nhận</a>
+            </div>
+          </div>
+        </section>
+
+        <section class="ship-info">
+          <div class="container">
+            <div class="ship-info-container">
+              <div class="ship-info-confirm">
+                <div class="ship-info-contact ship-info-confirm-list">
+                  <div class="ship-info-contact-list ship-info-confirm-item">
+                    <h3>Cảm ơn quý khách đã đặt hàng</h3>
+                  </div>
+                </div>
+                <div class="ship-info-method-shipping ship-info-confirm-list">
+                  <h3>Mã đơn hàng</h3>
+                  <div
+                    class="ship-info-method-shipping-list ship-info-confirm-item"
+                  >
+                    <div class="ship-info-method-shipping-item">
+                      <div class="ship-info-method-shipping-radio">
+                        <label for="ship_radio">MD223214</label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="ship-info-method-payment ship-info-confirm-list">
+                  <h3>Thông tin đặt hàng</h3>
+                  <div class="ship-info-contact-list ship-info-confirm-item">
+                    <div class="ship-info-contact-item">
+                      <span class="ship-info-contact-title"
+                        >Người đặt hàng</span
+                      >
+                      <span class="ship-info-contact-content">Công Lê</span>
+                    </div>
+                    <div class="ship-info-contact-item">
+                      <span class="ship-info-contact-title"
+                        >Vận chuyển tới</span
+                      >
+                      <span class="ship-info-contact-content">
+                        bhbhbhj vvvhbjk, Gia Lai - Huyện Kông Chro - Xã Chơ Long
+                        201302, Việt Nam</span
+                      >
+                    </div>
+                    <div class="ship-info-contact-item">
+                      <span class="ship-info-contact-title">Email</span>
+                      <span class="ship-info-contact-content">
+                        congltph27602@fpt.edu.vn</span
+                      >
+                    </div>
+                    <div class="ship-info-contact-item">
+                      <span class="ship-info-contact-title">Điện thoại</span>
+                      <span class="ship-info-contact-content"> 0965973667</span>
+                    </div>
+                    <div class="ship-info-contact-item">
+                      <span class="ship-info-contact-title"
+                        >Phương thức thanh toán</span
+                      >
+                      <span class="ship-info-contact-content">
+                        Chuyển khoản ngân hàng</span
+                      >
+                    </div>
+                  </div>
+                </div>
+
+                <button class="ship-info-confirm-submit">
+                  Quan lại trang chủ
+                </button>
+              </div>
+
+              <div class="ship-info-bill ship-info-confirm-bill">
+                <div class="bill-header">
+                  <img
+                    src="./images/pro-detail-1-01-small.avif"
+                    alt=""
+                    class="bill-image"
+                  />
+                  <div class="bill-product">
+                    <h3>Giày Thời Trang Unisex Fila Rockblunt</h3>
+                    <span>Size: 38</span>
+                  </div>
+                  <div class="bill-price">
+                    <span>2.395.000₫</span>
+                  </div>
+                </div>
+                <div class="bill-content">
+                  <div class="bill-content-item">
+                    <span> Giá Tạm tính</span>
+                    <span>2.395.000₫</span>
+                  </div>
+                  <div class="bill-content-item">
+                    <span>Shipping</span>
+                    <span> </span>
+                  </div>
+                </div>
+                <div class="bill-bottom">
+                  <div class="bill-total">
+                    <span class="bill-total-title">Tổng cộng</span>
+                    <span class="bill-total-unit"
+                      >VND
+                      <span class="bill-total-money"> 2.395.000₫</span></span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <div class="footer-top">
+          <div class="container">
+            <div class="footer-top-content">
+              <div class="social">
+                <h3 class="social-join">JOIN THE CONVERSATION</h3>
+                <div class="social-list">
+                  <a class="social-item">
+                    <img srcset="./images/facebook-icon.webp 2x" alt="" />
+                  </a>
+                  <a class="social-item">
+                    <img srcset="./images/youtube-icon.webp 2x" alt="" />
+                  </a>
+                  <a class="social-item">
+                    <img srcset="./images/instagram-icon.webp 2x" alt="" />
+                  </a>
+                </div>
+              </div>
+
+              <div class="signup">
+                <form action="" class="signup-form">
+                  <input
+                    type="text"
+                    class="signup-input"
+                    placeholder="Nhập email của bạn để nhận khuyến mãi mới nhất"
+                  />
+                  <button class="button button-green signup-button">
+                    Đăng ký
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-content">
+          <div class="container">
+            <div class="footer-content-container">
+              <div class="footer-column">
+                <h3 class="footer-heading heading-small">VỀ ShoeLike</h3>
+                <ul class="footer-links">
+                  <li class="footer-item">
+                    <a href="#" class="footer-link">Giới thiệu</a>
+                  </li>
+                  <li class="footer-item">
+                    <a href="#" class="footer-link">Hệ thống cửa hàng</a>
+                  </li>
+                  <li class="footer-item">
+                    <a href="#" class="footer-link">Sơ đồ Web</a>
+                  </li>
+                  <li class="footer-item">
+                    <a href="#" class="footer-link">Thông tin liên hệ</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="footer-column">
+                <h3 class="footer-heading heading-small">HỖ TRỢ KHÁCH HÀNG</h3>
+                <ul class="footer-links">
+                  <li class="footer-item">
+                    <a href="#" class="footer-link">Chính sách giao hàng</a>
+                  </li>
+                  <li class="footer-item">
+                    <a href="#" class="footer-link">Hướng dẫn chọn Size</a>
+                  </li>
+                  <li class="footer-item">
+                    <a href="#" class="footer-link">Chính sách đổi trả hàng</a>
+                  </li>
+                  <li class="footer-item">
+                    <a href="#" class="footer-link"
+                      >Hỗ trợ và Giải đáp thắc mắc</a
+                    >
+                  </li>
+                  <li class="footer-item">
+                    <a href="#" class="footer-link">Chính sách trả góp</a>
+                  </li>
+                  <li class="footer-item">
+                    <a href="#" class="footer-link"
+                      >Các điều khoản và điều kiện</a
+                    >
+                  </li>
+                  <li class="footer-item">
+                    <a href="#" class="footer-link">Chính sách bảo mật</a>
+                  </li>
+                  <li class="footer-item">
+                    <a href="#" class="footer-link">Hướng dẫn mua hàng</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="footer-column">
+                <h3 class="footer-heading heading-small">GROUP BUSINESS</h3>
+                <ul class="footer-links">
+                  <li class="footer-item">
+                    <a href="#" class="footer-link">Nguyễn Kim</a>
+                  </li>
+                  <li class="footer-item">
+                    <a href="#" class="footer-link">Big C</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="footer-column">
+                <h3 class="footer-heading heading-small">
+                  PHƯƠNG THỨC THANH TOÁN
+                </h3>
+                <div class="footer-cash">CASH ON DELIVERY</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <div class="container">
+            <div class="copyright">
+              <div class="copyright-info">
+                <h3 class="footer-bottom-heading heading-small">
+                  CÔNG TY TNHH MTV THƯƠNG MẠI THỜI TRANG TỔNG HỢP (GTF)
+                </h3>
+                <p class="copyright-text">
+                  Văn phòng: Tòa nhà FPT Polytechnic, P. Trịnh Văn Bô, Xuân
+                  Phương, Nam Từ Liêm, Hà Nội
+                </p>
+                <p class="copyright-text">Tổng đài: 1900 63 64 01</p>
+              </div>
+
+              <img
+                src="./images/copyright.avif"
+                alt=""
+                class="copyright-image"
+              />
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
