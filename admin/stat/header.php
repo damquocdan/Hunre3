@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>Quản trị web - ShoeLike</title>
+  <title>Quản trị web - TheHouse</title>
   <!-- Bootstrap -->
   <link rel="stylesheet" href="../../public/css/bootstrap.min.css" type="text/css" />
   <!-- Font awesome -->
@@ -29,7 +29,7 @@
     <nav id="sidebar">
       <div class="sidebar-header">
         <a href="index.php">
-          <img src="../public/images/logo.png" style="width: 100px; height: 30px;" alt="logo" class="img-fluid logo">
+          <h1>THE HOUSE</h1>
         </a>
       </div>
       <ul class="list-unstyled components text-secondary">

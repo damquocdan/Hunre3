@@ -37,7 +37,7 @@
   ?>
 
   <section class="banner">
-    <img src="././public/images/banner5.png" alt="" />
+    <img src="././public/images/banner6.png" alt="" />
   </section>
 
   <section class="gender">
@@ -186,12 +186,12 @@
       <div class="banner-slide-list">
         <div class="banner-slide-item">
           <a href="#" class="banners-slide-image">
-            <img src="././public/images/banner6.png" alt="" />
+            <img src="././public/images/banner7.png" alt="" width="100%" />
           </a>
         </div>
         <div class="banner-slide-item">
           <a href="#" class="banners-slide-image">
-            <img src="././public/images/banner6.png" alt="" />
+            <img src="././public/images/banner8.png" alt="" width="100%"/>
           </a>
         </div>
       </div>

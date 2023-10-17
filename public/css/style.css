@@ -57,7 +57,7 @@ img {
 body {
   line-height: 1;
   font-family: "Noto Sans", sans-serif;
-  color: #13283f;
+  color: #00B9F2;
   font-weight: 400;
   background-color: #fff;
 }
@@ -177,7 +177,7 @@ button {
   top: 100%;
   width: 100%;
   height: 2px;
-  background-color: #181938;
+  background-color: #00B9F2;
 }
 .dropdow-menu-category {
   display: flex;
@@ -458,7 +458,7 @@ h6 {
 
 .header {
   padding-top: 12px;
-  background-color: #181938;
+  background-color: #00B9F2 !important ;
 }
 .header-top {
   display: flex;
@@ -1144,7 +1144,7 @@ h6 {
   margin-bottom: 30px;
   font-size: 24px;
   font-weight: 600;
-  color: #181938;
+  color: #00B9F2;
 }
 .product-info-review-rate {
   display: flex;
@@ -1364,8 +1364,8 @@ h6 {
   left: 4px;
   top: 6px;
   transform: rotate(-45deg);
-  border-bottom: solid 2px #181938;
-  border-left: solid 2px #181938;
+  border-bottom: solid 2px #00B9F2;
+  border-left: solid 2px #00B9F2;
   transition: all 0.25s linear;
   opacity: 0;
   visibility: hidden;
@@ -1607,7 +1607,7 @@ h6 {
   justify-content: center;
   width: 100%;
   padding: 23px 0;
-  background-color: #181938;
+  background-color: #00B9F2;
 }
 .sport-name a {
   text-transform: uppercase;
@@ -1731,7 +1731,7 @@ h6 {
   cursor: pointer;
 }
 .news-pages-item a:hover {
-  background-color: #181938;
+  background-color: #00B9F2;
   color: #fff;
 }
 .news-pages-item a i {
@@ -2521,7 +2521,7 @@ h6 {
   text-transform: uppercase;
 }
 .user-form-update {
-  background-color: #181938;
+  background-color: #00B9F2;
   color: #fff;
   border: solid 1px transparent;
 }
@@ -2798,7 +2798,7 @@ h6 {
   content: "";
   width: 50px;
   height: 4px;
-  background-color: #181938;
+  background-color: #00B9F2;
   position: absolute;
   bottom: 0;
   left: 0;
@@ -2814,7 +2814,7 @@ h6 {
   line-height: 1.8;
 }
 .contact-info-text {
-  color: #181938;
+  color: #00B9F2;
   font-size: 14px;
   font-weight: 700;
 }
@@ -2831,7 +2831,7 @@ h6 {
   content: "";
   width: 35px;
   height: 3px;
-  background-color: #181938;
+  background-color: #00B9F2;
   position: absolute;
   bottom: 0;
   left: 0;
@@ -2863,7 +2863,7 @@ h6 {
 }
 
 .footer-top {
-  background-color: #181938;
+  background-color: #00B9F2;
   margin-bottom: 55px;
 }
 .footer-top-content {
@@ -2916,7 +2916,7 @@ h6 {
 }
 .footer-top-content .signup-button {
   padding: 18px;
-  color: #181938;
+  color: #00B9F2;
   font-size: 15px;
   font-weight: 700;
 }
@@ -2950,7 +2950,7 @@ h6 {
 }
 .footer-cash {
   padding: 12px 0;
-  background-color: #181938;
+  background-color: #00B9F2;
   color: #fff;
   font-size: 14px;
   text-transform: uppercase;

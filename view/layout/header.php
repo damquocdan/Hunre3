@@ -19,8 +19,8 @@
     <button onclick="topFunction()" id="myBtn" class="topBtn" title="Go to top">
       <i class="fa fa-angle-up"></i>
     </button>
-    <header class="header">
-      <div class="container">
+    <header class="header "style="background-color: #00B9F2;">
+      <div class="container" >
         <div class="header-top">
           <div class="header-language dropdow">
             <div class="header-language-select">
@@ -191,10 +191,10 @@
                   </div>
                   <div class="dropdow-menu-images">
                     <a href="#" class="dropdow-menu-image">
-                      <img src="././public/images/dropdow-menu-img.avif" alt="" class="dropdow-menu-img" />
+                      <img src="././public/images/banner.png" alt="" class="dropdow-menu-img"  width="540px"/>
                     </a>
                     <a href="#" class="dropdow-menu-image">
-                      <img src="././public/images/dropdow-menu-img-02.avif" alt="" class="dropdow-menu-img" />
+                      <img src="././public/images/banner1.png" alt="" class="dropdow-menu-img"  width="540px"/>
                     </a>
                   </div>
                 </div>
@@ -225,10 +225,10 @@
                   </div>
                   <div class="dropdow-menu-images">
                     <a href="#" class="dropdow-menu-image">
-                      <img src="././public/images/dropdow-menu-img.avif" alt="" class="dropdow-menu-img" />
+                      <img src="././public/images/banner3.png" alt="" class="dropdow-menu-img"  width="540px"/>
                     </a>
                     <a href="#" class="dropdow-menu-image">
-                      <img src="././public/images/dropdow-menu-img-02.avif" alt="" class="dropdow-menu-img" />
+                      <img src="././public/images/banner1.png" alt="" class="dropdow-menu-img"  width="540px"/>
                     </a>
                   </div>
                 </div>
@@ -258,10 +258,10 @@
                   </div>
                   <div class="dropdow-menu-images">
                     <a href="#" class="dropdow-menu-image">
-                      <img src="././public/images/dropdow-menu-img-03.avif" alt="" class="dropdow-menu-img" />
+                      <img src="././public/images/banner1.png" alt="" class="dropdow-menu-img" width="540px" />
                     </a>
                     <a href="#" class="dropdow-menu-image">
-                      <img src="././public/images/dropdow-menu-img-04.avif" alt="" class="dropdow-menu-img" />
+                      <img src="././public/images/banner.png" alt="" class="dropdow-menu-img"  width="540px"/>
                     </a>
                   </div>
                 </div>
@@ -319,10 +319,10 @@
                   </div>
                   <div class="dropdow-menu-images">
                     <a href="#" class="dropdow-menu-image">
-                      <img src="././public/images/dropdow-menu-img-05.avif" alt="" class="dropdow-menu-img" />
+                      <img src="././public/images/banner3.png" alt="" class="dropdow-menu-img" width="540px" />
                     </a>
                     <a href="#" class="dropdow-menu-image">
-                      <img src="././public/images/dropdow-menu-img.avif" alt="" class="dropdow-menu-img" />
+                      <img src="././public/images/banner1.png" alt="" class="dropdow-menu-img" width="540px"/>
                     </a>
                   </div>
                 </div>

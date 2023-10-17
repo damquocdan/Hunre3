@@ -30,7 +30,7 @@
     <nav id="sidebar">
       <div class="sidebar-header">
         <a href="index.php">
-          <img src="../public/images/logo-removebg-preview.png" style="width: 100px; height: 30px;" alt="logo" class="img-fluid logo">
+          <img src="../public/images/logo.png" style="width: 70%; height: 46px;" alt="logo" class="img-fluid logo">
         </a>
       </div>
       <ul class="list-unstyled components text-secondary">
