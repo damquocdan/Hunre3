@@ -55,7 +55,7 @@
         <div class="gender-item" id="itemMale">
           <div class="gender-image">
             <a href="index.php?act=products_field&field=gender&condition=Nam&field2=id_cate&condition2=3" class="gender-img">
-              <img src="././public/images/gender-male-1.webp" alt="" />
+              <img src="././public/images/pd115.png" alt="" />
             </a>
           </div>
           <div class="gender-content">
@@ -66,7 +66,7 @@
         <div class="gender-item" id="itemMale">
           <div class="gender-image">
             <a href="index.php?act=products_field&field=gender&condition=Nam&field2=id_cate&condition2=2" class="gender-img">
-              <img src="././public/images/gender-male-2.webp" alt="" />
+              <img src="././public/images/pd113.png" alt="" />
             </a>
           </div>
           <div class="gender-content">
@@ -77,7 +77,7 @@
         <div class="gender-item" id="itemMale">
           <div class="gender-image">
             <a href="index.php?act=products_field&field=gender&condition=Nam&field2=id_cate&condition2=4" class="gender-img">
-              <img src="././public/images/gender-male-3.webp" alt="" />
+              <img src="././public/images/pd114.png" alt="" />
             </a>
           </div>
           <div class="gender-content">
@@ -88,7 +88,7 @@
         <div class="gender-item" id="itemMale">
           <div class="gender-image">
             <a href="index.php?act=products_field&field=gender&condition=Nam&field2=id_cate&condition2=5" class="gender-img">
-              <img src="././public/images/gender-male-4.webp" alt="" />
+              <img src="././public/images/pd113.png" alt="" />
             </a>
           </div>
           <div class="gender-content">
@@ -99,7 +99,7 @@
         <div class="gender-item" id="itemMale">
           <div class="gender-image">
             <a href="index.php?act=products_field&field=gender&condition=Nam&field2=id_cate&condition2=6" class="gender-img">
-              <img src="././public/images/gender-male-5.webp" alt="" />
+              <img src="././public/images/pd110.png" alt="" />
             </a>
           </div>
           <div class="gender-content">
@@ -113,7 +113,7 @@
         <div class="gender-item" id="itemFemale">
           <div class="gender-image">
             <a href="index.php?act=products_field&field=gender&condition=Nữ&field2=id_cate&condition2=3" class="gender-img">
-              <img src="././public/images/gender-female-1.webp" alt="" />
+              <img src="././public/images/pd110.png" alt="" />
             </a>
           </div>
           <div class="gender-content">
@@ -124,7 +124,7 @@
         <div class="gender-item" id="itemFemale">
           <div class="gender-image">
             <a href="index.php?act=products_field&field=gender&condition=Nữ&field2=id_cate&condition2=2" class="gender-img">
-              <img src="././public/images/gender-female-2.webp" alt="" />
+              <img src="././public/images/pd114.png" alt="" />
             </a>
           </div>
           <div class="gender-content">
@@ -135,7 +135,7 @@
         <div class="gender-item" id="itemFemale">
           <div class="gender-image">
             <a href="index.php?act=products_field&field=gender&condition=Nữ&field2=id_cate&condition2=4" class="gender-img">
-              <img src="././public/images/gender-female-3.webp" alt="" />
+              <img src="././public/images/pd113.png" alt="" />
             </a>
           </div>
           <div class="gender-content">
@@ -146,7 +146,7 @@
         <div class="gender-item" id="itemFemale">
           <div class="gender-image">
             <a href="index.php?act=products_field&field=gender&condition=Nữ&field2=id_cate&condition2=5" class="gender-img">
-              <img src="././public/images/gender-female-4.webp" alt="" />
+              <img src="././public/images/pd114.png" alt="" />
             </a>
           </div>
           <div class="gender-content">
@@ -157,7 +157,7 @@
         <div class="gender-item" id="itemFemale">
           <div class="gender-image">
             <a href="index.php?act=products_field&field=gender&condition=Nữ&field2=id_cate&condition2=6" class="gender-img">
-              <img src="././public/images/gender-female-5.webp" alt="" />
+              <img src="././public/images/pd115.png" alt="" />
             </a>
           </div>
           <div class="gender-content">

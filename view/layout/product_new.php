@@ -1,7 +1,7 @@
 <section class="product-new">
   <div class="container">
     <div class="product-new-header product-header">
-      <h2 class="heading">Hàng mới về</h2>
+      <h2 class="heading">Phòng mới</h2>
     </div>
     <div class="product-new-list">
       <?php

@@ -7,7 +7,7 @@
       <div class="sport-item">
         <div class="sport-image">
           <a href="#" class="sport-img">
-            <img src="././public/images/sport-1.avif" alt="" />
+            <img src="././public/images/psv.png" alt="" />
           </a>
         </div>
         <div class="sport-name">
@@ -17,7 +17,7 @@
       <div class="sport-item">
         <div class="sport-image">
           <a href="#" class="sport-img">
-            <img src="././public/images/sport-2.avif" alt="" />
+            <img src="././public/images/pcn.png" alt="" />
           </a>
         </div>
         <div class="sport-name">
@@ -27,7 +27,7 @@
       <div class="sport-item">
         <div class="sport-image">
           <a href="#" class="sport-img">
-            <img src="././public/images/sport-3.avif" alt="" />
+            <img src="././public/images/pgd.png" alt="" />
           </a>
         </div>
         <div class="sport-name">
@@ -37,7 +37,7 @@
       <div class="sport-item">
         <div class="sport-image">
           <a href="#" class="sport-img">
-            <img src="././public/images/sport-4.avif" alt="" />
+            <img src="././public/images/pkd.png" alt="" />
           </a>
         </div>
         <div class="sport-name">
@@ -47,7 +47,7 @@
       <div class="sport-item">
         <div class="sport-image">
           <a href="#" class="sport-img">
-            <img src="././public/images/sport-5.avif" alt="" />
+            <img src="././public/images/pch.png" alt="" />
           </a>
         </div>
         <div class="sport-name">
@@ -57,7 +57,7 @@
       <div class="sport-item">
         <div class="sport-image">
           <a href="#" class="sport-img">
-            <img src="././public/images/sport-6.avif" alt="" />
+            <img src="././public/images/pd1.png" alt="" />
           </a>
         </div>
         <div class="sport-name">
@@ -67,7 +67,7 @@
       <div class="sport-item">
         <div class="sport-image">
           <a href="#" class="sport-img">
-            <img src="././public/images/sport-7.avif" alt="" />
+            <img src="././public/images/pd2.png" alt="" />
           </a>
         </div>
         <div class="sport-name">
@@ -77,7 +77,7 @@
       <div class="sport-item">
         <div class="sport-image">
           <a href="#" class="sport-img">
-            <img src="././public/images/sport-8.avif" alt="" />
+            <img src="././public/images/pd3.png" alt="" />
           </a>
         </div>
         <div class="sport-name">
