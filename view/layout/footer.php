@@ -107,8 +107,7 @@
             CÔNG TY TNHH MTV THƯƠNG MẠI BẤT ĐỘNG SẢN DEVMASTER (DEV)
           </h3>
           <p class="copyright-text">
-            Văn phòng: Tòa nhà FPT Polytechnic, P. Trịnh Văn Bô, Xuân
-            Phương, Nam Từ Liêm, Hà Nội
+          Trường Đại học Tài nguyên và Môi trường Hà Nội
           </p>
           <p class="copyright-text">Tổng đài: 1900 63 64 01</p>
         </div>

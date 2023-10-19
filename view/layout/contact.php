@@ -13,7 +13,7 @@
     <div class="container">
       <div class="contact-container">
         <div class="contact-map">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3723.863981044336!2d105.7445984148835!3d21.038127785993215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x313454b991d80fd5%3A0x53cefc99d6b0bf6f!2zVHLGsOG7nW5nIENhbyDEkeG6s25nIEZQVCBQb2x5dGVjaG5pYw!5e0!3m2!1svi!2s!4v1666311606401!5m2!1svi!2s" width="650" height="650" style="border: 0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1521.0320669228004!2d105.76057434234248!3d21.04671781157528!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x313454c3ce577141%3A0xb1a1ac92701777bc!2zVHLGsOG7nW5nIMSQ4bqhaSBo4buNYyBUw6BpIG5ndXnDqm4gdsOgIE3DtGkgdHLGsOG7nW5nIEjDoCBO4buZaQ!5e0!3m2!1svi!2s!4v1697695032096!5m2!1svi!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
         <div class="contact-content">
           <div class="contact-info">
@@ -23,8 +23,7 @@
               <div class="contact-info-item">
                 <span class="contact-info-title">Địa chỉ chúng tôi</span>
                 <span class="contact-info-text">
-                  Tòa nhà FPT Polytechnic, P. Trịnh Văn Bô, Xuân Phương,
-                  Nam Từ Liêm, Hà Nội
+                Trường Đại học Tài nguyên và Môi trường Hà Nội
                 </span>
               </div>
               <div class="contact-info-item">

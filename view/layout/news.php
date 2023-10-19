@@ -12,7 +12,7 @@
     <div class="news-item">
       <div class="news-image">
         <a href="#" class="news-link">
-          <img src="././public/images/news-1.avif" alt="" />
+          <img src="././public/images/new1.png" alt="" />
         </a>
       </div>
       <div class="news-detail">
@@ -26,7 +26,7 @@
     <div class="news-item">
       <div class="news-image">
         <a href="#" class="news-link">
-          <img src="././public/images/news-2.avif" alt="" />
+          <img src="././public/images/new7.png" alt="" />
         </a>
       </div>
       <div class="news-detail">
@@ -40,7 +40,7 @@
     <div class="news-item">
       <div class="news-image">
         <a href="#" class="news-link">
-          <img src="././public/images/news-3.avif" alt="" />
+          <img src="././public/images/new3.png" alt="" />
         </a>
       </div>
       <div class="news-detail">
@@ -54,7 +54,7 @@
     <div class="news-item">
       <div class="news-image">
         <a href="#" class="news-link">
-          <img src="././public/images/news-4.avif" alt="" />
+          <img src="././public/images/new5.png" alt="" />
         </a>
       </div>
       <div class="news-detail">
@@ -68,7 +68,7 @@
     <div class="news-item">
       <div class="news-image">
         <a href="#" class="news-link">
-          <img src="././public/images/news-5.avif" alt="" />
+          <img src="././public/images/new4.png" alt="" />
         </a>
       </div>
       <div class="news-detail">
@@ -82,7 +82,7 @@
     <div class="news-item">
       <div class="news-image">
         <a href="#" class="news-link">
-          <img src="././public/images/news-8.avif" alt="" />
+          <img src="././public/images/new8.png" alt="" />
         </a>
       </div>
       <div class="news-detail">
@@ -98,7 +98,7 @@
     <div class="news-item">
       <div class="news-image">
         <a href="#" class="news-link">
-          <img src="././public/images/news-9.avif" alt="" />
+          <img src="././public/images/new2.png" alt="" />
         </a>
       </div>
       <div class="news-detail">

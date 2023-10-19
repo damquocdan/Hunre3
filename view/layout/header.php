@@ -114,7 +114,7 @@
               ?>
             </div>
 
-            <a href="#" class="header-auth-text store-system">Hệ Thống 19 Cửa Hàng Toàn Quốc
+            <a href="#" class="header-auth-text store-system">Văn phòng trực tiếp
               <i class="fa-solid fa-location-dot"></i></a>
           </div>
         </div>
