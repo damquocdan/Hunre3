@@ -791,6 +791,7 @@ INSERT INTO `user` (`id_user`, `password`, `image`, `name`, `phone`, `email`, `a
 ('admin2', '123456', 'z3348074449352_3a574f6714a66f306b8f6ebf5f90bfc2.jpg', 'Lê Công', '', 'congldqn888@gmail.com', '', 0),
 ('conglt', '123456', 'yoru_smile.jpg', 'Công Lê', '0965973667', 'lethanhcong2003@gmail.com', 'Thành Phố Cẩm Phả, Tỉnh Quảng Ninh', 0),
 ('damquocdan', '123456', NULL, 'Đàm Quốc Dân', NULL, 'damquocdan@gmail.com', NULL, 0);
+('duyk04', '123456', NULL, 'Nguyễn Khương Duy', NULL, 'khuongduy5307@gmail.com', NULL, 0);
 
 -- --------------------------------------------------------
 
