@@ -11,7 +11,7 @@
 
   <section class="products-banner">
     <div class="products-container">
-      <img src="././public/images/product-banner.webp" alt="" class="products-banner-image" />
+      <img src="././public/images/banner2.png" alt="" class="products-banner-image" />
     </div>
   </section>
 
