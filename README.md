@@ -1,4 +1,4 @@
-<H1 align ="center" >The Houses</h1>
+<H1 align ="center" >The Houses.</h1>
 <h5  align ="center">SHOELIKE, an e-commerce website dedicated to offering a diverse range of shoes. Designed using the MVC pattern. Our website specializes in delivering a curated collection of shoes for various preferences and occasions, enhancing the shopping experience for shoe enthusiasts.
 </h5>
 <br/>
