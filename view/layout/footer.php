@@ -85,6 +85,9 @@
               <a href="#" class="footer-link">DAM QUOC DAN</a>
             </li>
             <li class="footer-item">
+              <a href="#" class="footer-link">NGUYEN KHUONG DUY</a>
+            </li>
+            <li class="footer-item">
               <a href="#" class="footer-link">DEVMASTER</a>
             </li>
           </ul>

@@ -1,50 +1,50 @@
 <section class="product-bestsell">
-  <div class="container">
-    <div class="product-bestsell-header product-header">
-      <h2 class="heading">Phòng nổi bật</h2>
-    </div>
-    <div class="product-bestsell-list">
-      <?php
-      foreach ($list_pro_feature as $lpf) {
-        extract($lpf);
-        $link_product = "index.php?act=product_detail&id_pro=" . $id_pro;
-        $product_feature_img = $img_path_view . $image;
-        $percent_discount = number_format(($price_sale - $price) / $price * 100);
-      ?>
-        <div class="product-bestsell-item product-item">
-          <div class="product-bestsell-image product-image">
-            <a href="<?= $link_product ?>" class="product-bestsell-img">
-              <img src="<?= $product_feature_img ?>" alt="" />
-            </a>
+    <div class="container">
+        <div class="product-bestsell-header product-header">
+            <h2 class="heading">Phòng nổi bật</h2>
+        </div>
+        <div class="product-bestsell-list">
             <?php
-            if ($price_sale != 0) {
-              echo "<div class='product-bestsell-tag product-tag'>" . $percent_discount . "%</div>";
-            } else if ($id_cate == 1) {
-              echo "<div class='product-new-tag product-tag'>Mới</div>";
+            foreach ($list_pro_feature as $lpf) {
+                extract($lpf);
+                $link_product = "index.php?act=product_detail&id_pro=" . $id_pro;
+                $product_feature_img = $img_path_view . $image;
+                $percent_discount = number_format(($price_sale - $price) / $price * 100);
+            ?>
+                <div class="product-bestsell-item product-item">
+                    <div class="product-bestsell-image product-image" style="width: 100%; height: 225px">
+                        <a href="<?= $link_product ?>" class="product-bestsell-img">
+                            <img src="<?= $product_feature_img ?>" alt=""  style="width: 100%; height:100%"/>
+                        </a>
+                        <?php
+                        if ($price_sale != 0) {
+                            echo "<div class='product-bestsell-tag product-tag'>" . $percent_discount . "%</div>";
+                        } else if ($id_cate == 1) {
+                            echo "<div class='product-new-tag product-tag'>Mới</div>";
+                        }
+                        ?>
+                    </div>
+                    <div class="product-bestsell-content product-content">
+                        <span class="product-bestsell-brand product-brand"><?= $brand_name ?></span>
+                        <h3 class="product-bestsell-title product-title">
+                            <a href="<?= $link_product ?>"><?= $pro_name ?></a>
+                        </h3>
+                        <div class="product-cost">
+                            <?php
+                            if ($price_sale != 0) {
+                                echo "<span class='product-bestsell-price product-price product-price-sale'>" . number_format($price_sale, 0, ",", ".") . "đ</span>";
+                                echo "<span class='product-price-old'> " . number_format($price, 0, ",", ".") . "đ</span>";
+                            } else {
+                                echo "<span class='product-bestsell-price product-price'>" . number_format($price, 0, ",", ".") . "đ</span>";
+                            }
+                            ?>
+                        </div>
+                    </div>
+                </div>
+            <?php
             }
             ?>
-          </div>
-          <div class="product-bestsell-content product-content">
-            <span class="product-bestsell-brand product-brand"><?= $brand_name ?></span>
-            <h3 class="product-bestsell-title product-title">
-              <a href="<?= $link_product ?>"><?= $pro_name ?></a>
-            </h3>
-            <div class="product-cost">
-              <?php
-              if ($price_sale != 0) {
-                echo "<span class='product-bestsell-price product-price product-price-sale'>" . number_format($price_sale, 0, ",", ".") . "đ</span>";
-                echo "<span class='product-price-old'> " . number_format($price, 0, ",", ".") . "đ</span>";
-              } else {
-                echo "<span class='product-bestsell-price product-price'>" . number_format($price, 0, ",", ".") . "đ</span>";
-              }
-              ?>
-            </div>
-          </div>
-        </div>
-      <?php
-      }
-      ?>
-      <!-- <div class="product-bestsell-item product-item">
+            <!-- <div class="product-bestsell-item product-item">
         <div class="product-bestsell-image product-image">
           <a href="#" class="product-bestsell-img">
             <img src="././public/images/product-6.webp" alt="" />
@@ -165,6 +165,6 @@
           </div>
         </div>
       </div> -->
+        </div>
     </div>
-  </div>
 </section>

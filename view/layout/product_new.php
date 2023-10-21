@@ -1,34 +1,37 @@
 <section class="product-new">
-  <div class="container">
-    <div class="product-new-header product-header">
-      <h2 class="heading">Phòng mới</h2>
-    </div>
-    <div class="product-new-list">
-      <?php
-      foreach ($list_pro_new as $lpn) {
-        extract($lpn);
-        $link_product = "index.php?act=product_detail&id_pro=" . $id_pro;
-        $product_new_img = $img_path_view . $image;
-      ?>
-        <div class="product-new-item product-item">
-          <div class="product-new-image product-image">
-            <a href="<?= $link_product ?>" class="product-new-img">
-              <img src="<?= $product_new_img ?>" alt="" />
-            </a>
-            <div class="product-new-tag product-tag">Mới</div>
-          </div>
-          <div class="product-new-content product-content">
-            <span class="product-new-brand product-brand"><?= $brand_name ?></span>
-            <h3 class="product-new-title product-title">
-              <a href="<?= $link_product ?>"><?= $pro_name ?></a>
-            </h3>
-            <span class="product-new-price product-price"><?= number_format($price, 0, ',', ".") ?>đ</span>
-          </div>
+    <div class="container">
+        <div class="product-new-header product-header">
+            <h2 class="heading">Phòng mới</h2>
         </div>
-      <?php
-      }
-      ?>
-      <!-- <div class="product-new-item product-item">
+        <div class="product-new-list">
+            <?php
+            foreach ($list_pro_new as $lpn) {
+                extract($lpn);
+                $link_product = "index.php?act=product_detail&id_pro=" . $id_pro;
+                $product_new_img = $img_path_view . $image;
+            ?>
+                <div class="product-new-item product-item ">
+                    <div class="product-new-image product-image products-images">
+                    <div class="product-image-box">
+                        <a href="<?= $link_product ?>" class="product-new-img">
+                            <img src="<?= $product_new_img ?>" alt="" />
+                        </a>
+                    </div>
+                        
+                        <div class="product-new-tag product-tag">Mới</div>
+                    </div>
+                    <div class="product-new-content product-content">
+                        <span class="product-new-brand product-brand"><?= $brand_name ?></span>
+                        <h3 class="product-new-title product-title">
+                            <a href="<?= $link_product ?>"><?= $pro_name ?></a>
+                        </h3>
+                        <span class="product-new-price product-price"><?= number_format($price, 0, ',', ".") ?>đ</span>
+                    </div>
+                </div>
+            <?php
+            }
+            ?>
+            <!-- <div class="product-new-item product-item">
         <div class="product-new-image product-image">
           <a href="#" class="product-new-img">
             <img src="././public/images/product-2.webp" alt="" />
@@ -133,6 +136,6 @@
           <span class="product-new-price product-price">2.395.000₫</span>
         </div>
       </div> -->
+        </div>
     </div>
-  </div>
 </section>

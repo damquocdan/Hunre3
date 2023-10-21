@@ -1385,9 +1385,13 @@ h6 {
   width: 100%;
   height: 100%;
 }
+.product-image-box{
+  width: 100%;
+  height: 225px;
+}
 .products-images img {
   width: 100%;
-  height: 290px;
+  height: 100%;
   object-fit: cover;
 }
 .products-content {
@@ -1595,6 +1599,10 @@ h6 {
 .sport-item:hover .sport-name {
   background-color: #78e723;
 }
+.sport-image{
+  width: 100%;
+  height: 250px;
+}
 .sport-image img {
   width: 100%;
   height: 100%;
@@ -1652,6 +1660,12 @@ h6 {
 }
 .news-image {
   margin-bottom: 5px;
+  width: 100%;
+  height: 180px;
+}
+.news-image img{
+    width: 100%;
+    height: 100%;
 }
 .news-title a {
   color: #13283f;
