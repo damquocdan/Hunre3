@@ -2,7 +2,7 @@
   <div class="product-info-review">
     <div class="product-info-review-column">
       <?php
-      foreach ($list_comment as $lc) {
+      foreach($list_comment as $lc) {
         extract($lc);
         $comment_img = $img_path_view . $image;
       ?>
@@ -86,7 +86,7 @@
                 </button>";
         } else {
           echo "<button class='product-info-review-submit'>
-                 <a href='index.php?act=signin'>Đăng nhập để đánh giá</a>
+                 <a href='././index.php?act=signin'>Đăng nhập để đánh giá</a>
                 </button>";
         }
         ?>
