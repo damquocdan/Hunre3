@@ -56,10 +56,13 @@
 					// $param = "product_keyword&keyword=" . $_SESSION['keyword'] . "&";
 				?>
 					<div class="products-item product-item">
-						<div class="products-image product-image">
-							<a href="<?= $link_product ?>" class="products-link">
-								<img src="<?= $product_img ?>" alt="" />
-							</a>
+						<div class="products-images product-image">
+							<div class="product-image-box">
+								<a href="<?= $link_product ?>" class="products-link">
+									<img src="<?= $product_img ?>" alt="" />
+								</a>
+							</div>
+
 							<?php
 							if ($price_sale != 0) {
 								echo "<div class='product-bestsell-tag product-tag'>" . $percent_discount . "%</div>";

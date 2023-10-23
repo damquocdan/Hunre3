@@ -51,10 +51,7 @@
 
               <p class="about-content-desc">
                 Công ty TNHH Một Thành Viên Thương Mại Thời Trang Tổng Hợp
-                (GTF Co., ltd) – Nhà bán lẻ & phân phối thương hiệu các
-                mặt hàng về thể thao hàng đầu tại Thái Lan và Vietnam.
-                Được thành lập tại Thái Lan vào năm 1997 với tên gọi ban
-                đầu ShoeLike.
+          
               </p>
 
               <div class="about-img">
@@ -78,13 +75,7 @@
                 </li>
                 <p class="about-content-desc">
                   Sở hữu hơn 1200 địa điểm phân phối chính hãng các sản
-                  phẩm thể thao từ hơn 30 thương hiệu thể thao khác nhau
-                  trên khắp thế giới như Crocs, New Balance, Fila, Adidas,
-                  Nike,... ShoeLike mang đến rất nhiều lựa chọn về giày
-                  dép và quần áo, máy tập thể dục và phụ kiện thể thao.
-                  Chúng tôi cam kết mang đến các sản phẩm chính hãng, chất
-                  lượng tốt nhất cho các tín đồ đam mê thể thao tại Việt
-                  Nam.
+                 
                 </p>
               </ul>
 
@@ -111,13 +102,7 @@
 
               <p class="about-content-desc">
                 ShoeLike Vietnam luôn nỗ lực để cung cấp các sản phẩm
-                thể thao chính hãng tốt nhất trên thế giới đến tay “tín đồ
-                thể thao” tại Vietnam, góp phần mang những sản phẩm chính
-                hãng, cao cấp đến gần bạn. Chúng tôi luôn lắng nghe khách
-                hàng của mình, nhằm cải tiến quy trình và chất lượng sản
-                phẩm. Vì thế, ShoeLike Vietnam luôn tự hào là thương
-                hiệu cung cấp sản phẩm và trải nghiệm dịch vụ hàng đầu
-                trong hơn 2 thập niên qua.
+                
               </p>
 
               <h2 class="about-content-title">
