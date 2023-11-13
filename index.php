@@ -207,7 +207,7 @@ if (isset($_GET['act'])) {
         $note = $_POST['note'];
         $date = date_format(date_create(), "d/m/Y");
         // $date = date("h:i:sa d/m/Y");
-        $id_bill = "THEHOUSE" . rand(0, 99999);
+        $id_bill = "THEHOUSE_" . rand(0, 99999);
 
         $_SESSION['total_order'] = $total_order;
         $_SESSION['order_name'] = $order_name;
@@ -310,8 +310,8 @@ if (isset($_GET['act'])) {
           $orderInfo = "Thanh toán qua MoMo ATM";
           $amount = $total_order;
           $orderId = $id_bill;
-          $redirectUrl = "http://localhost/PRO1014_WE17313/Assignment_congltph27602/index.php?act=bill_confirm_momo";
-          $ipnUrl = "http://localhost/PRO1014_WE17313/Assignment_congltph27602/index.php?act=bill_confirm_momo";
+          $redirectUrl = "http://localhost/PRO1014_WE17313/index.php?act=bill_confirm_momo";
+          $ipnUrl = "http://localhost/PRO1014_WE17313/index.php?act=bill_confirm_momo";
           $extraData = "";
 
           if (!empty($_POST)) {
