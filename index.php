@@ -207,7 +207,7 @@ if (isset($_GET['act'])) {
         $note = $_POST['note'];
         $date = date_format(date_create(), "d/m/Y");
         // $date = date("h:i:sa d/m/Y");
-        $id_bill = "SHOELIKE" . rand(0, 99999);
+        $id_bill = "THEHOUSE" . rand(0, 99999);
 
         $_SESSION['total_order'] = $total_order;
         $_SESSION['order_name'] = $order_name;
