@@ -53,19 +53,10 @@
           <h3 class="footer-heading heading-small">HỖ TRỢ KHÁCH HÀNG</h3>
           <ul class="footer-links">
             <li class="footer-item">
-              <a href="#" class="footer-link">Chính sách giao hàng</a>
-            </li>
-            <li class="footer-item">
-              <a href="#" class="footer-link">Hướng dẫn chọn kích thước phòng</a>
-            </li>
-            <li class="footer-item">
-              <a href="#" class="footer-link">Chính sách đổi trả phòng</a>
+              <a href="#" class="footer-link">Chính sách trả phòng</a>
             </li>
             <li class="footer-item">
               <a href="#" class="footer-link">Hỗ trợ và Giải đáp thắc mắc</a>
-            </li>
-            <li class="footer-item">
-              <a href="#" class="footer-link">Chính sách trả góp</a>
             </li>
             <li class="footer-item">
               <a href="#" class="footer-link">Các điều khoản và điều kiện</a>
@@ -74,7 +65,7 @@
               <a href="#" class="footer-link">Chính sách bảo mật</a>
             </li>
             <li class="footer-item">
-              <a href="#" class="footer-link">Hướng dẫn đặt phòng</a>
+              <a href="#" class="footer-link">Hướng dẫn thuê phòng</a>
             </li>
           </ul>
         </div>
@@ -88,7 +79,13 @@
               <a href="#" class="footer-link">NGUYEN KHUONG DUY</a>
             </li>
             <li class="footer-item">
-              <a href="#" class="footer-link">DEVMASTER</a>
+              <a href="#" class="footer-link">SAI MINH HIEU</a>
+            </li>
+            <li class="footer-item">
+              <a href="#" class="footer-link">BUI NGOC BACH</a>
+            </li>
+            <li class="footer-item">
+              <a href="#" class="footer-link">PHAM TU ANH</a>
             </li>
           </ul>
         </div>

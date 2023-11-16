@@ -2943,8 +2943,8 @@ h6 {
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-gap: 0 105px;
   border-bottom: solid 2px #e8e9eb;
-  padding-bottom: 70px;
-  margin-bottom: 14px;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
 }
 .footer-heading {
   margin-bottom: 28px;
