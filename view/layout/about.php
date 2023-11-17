@@ -47,11 +47,11 @@
               </h2>
 
               <p class="about-content-desc">
-                Traveloka được thành lập vào năm 2023 bởi các học viên công nghệ thông tin cuar DH11C12, bao gồm ĐÀM QUỐC DÂN, NGUYỄN KHƯƠNG DUY, SÁI MINH HIẾU và BÙI NGỌC BÁCH
+                The House được thành lập vào năm 2023 bởi các học viên công nghệ thông tin cuar DH11C12, bao gồm ĐÀM QUỐC DÂN, NGUYỄN KHƯƠNG DUY, SÁI MINH HIẾU và BÙI NGỌC BÁCH
 
               </p>
               <p class="about-content-desc">
-                Ban đầu, Traveloka đóng vai trò như một công cụ tìm kiếm để so sánh giá phòng từ nhiều trang khác nhau. Sau đó, vào giữa năm 2023, Traveloka đã biến thành một trang web đặt phòng, nơi người dùng có thể đặt chỗ trên trang web chính thức của hãng.
+                Ban đầu, The House đóng vai trò như một công cụ tìm kiếm để so sánh giá phòng từ nhiều trang khác nhau. Sau đó, vào giữa năm 2023, The House đã biến thành một trang web đặt phòng, nơi người dùng có thể đặt chỗ trên trang web chính thức của hãng.
               </p>
               <p class="about-content-desc"> Sở hữu hơn 200 phòng trên đia bàn Hà Nội</p>
 

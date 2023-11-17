@@ -2,10 +2,10 @@
 -- version 5.2.0
 -- https://www.phpmyadmin.net/
 --
--- Host: 127.0.0.1
--- Generation Time: Oct 22, 2023 at 12:21 PM
--- Server version: 10.4.27-MariaDB
--- PHP Version: 8.2.0
+-- Máy chủ: 127.0.0.1
+-- Thời gian đã tạo: Th10 17, 2023 lúc 07:02 AM
+-- Phiên bản máy phục vụ: 10.4.27-MariaDB
+-- Phiên bản PHP: 8.2.0
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -18,13 +18,13 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `data`
+-- Cơ sở dữ liệu: `data`
 --
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `category`
+-- Cấu trúc bảng cho bảng `category`
 --
 
 CREATE TABLE `category` (
@@ -33,7 +33,7 @@ CREATE TABLE `category` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `category`
+-- Đang đổ dữ liệu cho bảng `category`
 --
 
 INSERT INTO `category` (`id_cate`, `cate_name`) VALUES
@@ -47,7 +47,7 @@ INSERT INTO `category` (`id_cate`, `cate_name`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `comment`
+-- Cấu trúc bảng cho bảng `comment`
 --
 
 CREATE TABLE `comment` (
@@ -60,22 +60,21 @@ CREATE TABLE `comment` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `comment`
+-- Đang đổ dữ liệu cho bảng `comment`
 --
 
 INSERT INTO `comment` (`id_comment`, `content`, `date`, `rate`, `id_pro`, `id_user`) VALUES
 (13, 'Giày đẹp lắm ah :V', '2022-12-03', 5, 23, 'admin2'),
+(14, 'Giày đẹp 4 sao :))', '2022-12-03', 4, 7, 'admin'),
 (15, 'Hello :3', '2022-12-03', 3, 7, 'admin'),
 (16, ':D :)', '2022-12-04', 5, 10, 'admin'),
 (17, '....', '2022-12-06', 5, 7, 'admin'),
-(19, 'Nice :))', '2022-12-15', 5, 21, 'admin2'),
-(20, 'hay ', '2023-10-22', 5, 28, 'damquocdan'),
-(21, 'tét', '2023-10-22', 5, 21, 'damquocdan');
+(19, 'Nice :))', '2022-12-15', 5, 21, 'admin2');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `momo`
+-- Cấu trúc bảng cho bảng `momo`
 --
 
 CREATE TABLE `momo` (
@@ -91,16 +90,25 @@ CREATE TABLE `momo` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `momo`
+-- Đang đổ dữ liệu cho bảng `momo`
 --
 
 INSERT INTO `momo` (`id_momo`, `partner_code`, `order_id`, `amount`, `order_info`, `order_type`, `trans_id`, `pay_type`, `id_bill`) VALUES
-(10, 'MOMOBKUN20180529', 0, '2447500', 'Thanh toán qua MoMo ATM', 'momo_wallet', 2147483647, 'napas', 'SHOELIKE32597');
+(10, 'MOMOBKUN20180529', 0, '2447500', 'Thanh toán qua MoMo ATM', 'momo_wallet', 2147483647, 'napas', 'SHOELIKE32597'),
+(11, 'MOMO_ATM_DEV', 0, '2000000', 'Thanh toán qua MoMo ATM', 'momo_wallet', 2147483647, 'napas', 'THEHOUSE_81491'),
+(12, 'MOMO_ATM_DEV', 0, '2000000', 'Thanh toán qua MoMo ATM', 'momo_wallet', 2147483647, 'napas', 'THEHOUSE_64165'),
+(13, 'MOMO_ATM_DEV', 0, '4000000', 'Thanh toán qua MoMo ATM', 'momo_wallet', 2147483647, 'napas', 'THEHOUSE_41710'),
+(14, 'MOMO_ATM_DEV', 0, '2000000', 'Thanh toán qua MoMo ATM', 'momo_wallet', 2147483647, 'napas', 'THEHOUSE_93021'),
+(15, 'MOMO_ATM_DEV', 0, '4200000', 'Thanh toán qua MoMo ATM', 'momo_wallet', 2147483647, 'napas', 'THEHOUSE_33227'),
+(16, 'MOMO_ATM_DEV', 0, '4200000', 'Thanh toán qua MoMo ATM', 'momo_wallet', 2147483647, 'napas', 'THEHOUSE_33227'),
+(17, 'MOMO_ATM_DEV', 0, '4200000', 'Thanh toán qua MoMo ATM', 'momo_wallet', 2147483647, 'napas', 'THEHOUSE_33227'),
+(18, 'MOMO_ATM_DEV', 0, '2000000', 'Thanh toán qua MoMo ATM', 'momo_wallet', 2147483647, 'napas', 'THEHOUSE_83017'),
+(19, 'MOMO_ATM_DEV', 0, '1116500', 'Thanh toán qua MoMo ATM', 'momo_wallet', 2147483647, 'napas', 'THEHOUSE_16615');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `order`
+-- Cấu trúc bảng cho bảng `order`
 --
 
 CREATE TABLE `order` (
@@ -119,7 +127,7 @@ CREATE TABLE `order` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `order`
+-- Đang đổ dữ liệu cho bảng `order`
 --
 
 INSERT INTO `order` (`id_order`, `id_bill`, `total_order`, `payment`, `id_user`, `date`, `status`, `note`, `order_name`, `order_address`, `order_email`, `order_phone`) VALUES
@@ -127,13 +135,19 @@ INSERT INTO `order` (`id_order`, `id_bill`, `total_order`, `payment`, `id_user`,
 (207, 'SHOELIKE14858', 7757400, 3, 'admin', '15/12/2022', 0, 'Giao hàng vào thứ 2 nhé shop :v', 'Admin Công Lê', 'V3 Văn Phú, Hà Đông, Hà Nội', 'congltph27602@fpt.edu.vn', '0965973668'),
 (208, 'SHOELIKE45180', 4990000, 2, 'admin2', '15/12/2022', 0, 'Giao nhanh nhé shop ...', 'Lê Công', 'Tổ 8, Khu 1A, Phường Cẩm Trung, Thành Phố Cẩm Phả, Tỉnh Quảng Ninh', 'congldqn888@gmail.com', '0965973667'),
 (209, 'SHOELIKE32597', 2447500, 4, 'admin2', '15/12/2022', 0, 'Giao tận nới nhé shop :v :)))', 'Lê Công', 'V3 Victoria Văn Phú, Hà Đông, Hà Nội', 'congldqn888@gmail.com', '0965973664'),
-(210, 'SHOELIKE91630', 4659000, 1, 'damquocdan', '11/10/2023', 3, '', 'Đàm Quốc Dân', 'Tiến Bào, Phù Khê, Từ Sơn, Bắc Ninh', 'damquocdan@gmail.com', '0368966992'),
-(211, 'SHOELIKE88820', 4659000, 2, 'damquocdan', '11/10/2023', 3, '', 'Đàm Quốc Dân', 'Tiến Bào, Phù Khê, Từ Sơn, Bắc Ninh', 'damquocdan@gmail.com', '0368966992');
+(210, 'SHOELIKE91630', 4659000, 1, 'damquocdan', '11/10/2023', 2, '', 'Đàm Quốc Dân', 'Tiến Bào, Phù Khê, Từ Sơn, Bắc Ninh', 'damquocdan@gmail.com', '0368966992'),
+(211, 'SHOELIKE88820', 4659000, 2, 'damquocdan', '11/10/2023', 3, '', 'Đàm Quốc Dân', 'Tiến Bào, Phù Khê, Từ Sơn, Bắc Ninh', 'damquocdan@gmail.com', '0368966992'),
+(215, 'THEHOUSE_64165', 2000000, 4, 'duyk04', '15/11/2023', 0, 'hh', 'Nguyễn Khương Duy', 'Hà Nội', 'khuongduy5307@gmail.com', '0853885203'),
+(216, 'THEHOUSE_41710', 4000000, 4, 'duyk04', '15/11/2023', 0, 'hf', 'Nguyễn Khương Duy', 'Hà Nội', 'khuongduy5307@gmail.com', '0853885203'),
+(217, 'THEHOUSE_93021', 2000000, 4, 'duyk04', '16/11/2023', 0, 'hfk', 'Nguyễn Khương Duy', 'Hà Nội', 'khuongduy5307@gmail.com', '0853885203'),
+(218, 'THEHOUSE_33227', 4200000, 4, 'duyk04', '16/11/2023', 0, 'dsf', 'Nguyễn Khương Duy', 'Hà Nội', 'khuongduy5307@gmail.com', '0853885203'),
+(219, 'THEHOUSE_83017', 2000000, 4, 'duyk04', '16/11/2023', 0, 'dsf', 'Nguyễn Khương Duy', 'Hà Nội', 'khuongduy5307@gmail.com', '0853885203'),
+(220, 'THEHOUSE_16615', 1116500, 4, 'duyk04', '16/11/2023', 0, 'dsf', 'Nguyễn Khương Duy', 'Hà Nội', 'khuongduy5307@gmail.com', '0853885203');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `order_total`
+-- Cấu trúc bảng cho bảng `order_total`
 --
 
 CREATE TABLE `order_total` (
@@ -149,7 +163,7 @@ CREATE TABLE `order_total` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `order_total`
+-- Đang đổ dữ liệu cho bảng `order_total`
 --
 
 INSERT INTO `order_total` (`id_order_total`, `id_order`, `id_pro`, `quantity`, `price`, `name`, `image`, `size`, `color`) VALUES
@@ -163,12 +177,21 @@ INSERT INTO `order_total` (`id_order_total`, `id_order`, `id_pro`, `quantity`, `
 (436, '209', 27, 1, 847500, 'Giày Thể Thao Trẻ Em New Balance 327 Classics Life', 'pro-25-01-full.webp', 36, 'HH1'),
 (437, '209', 23, 1, 1600000, 'Giày Thời Trang Unisex Converse Chuck 70 Heritage', 'pro-11.webp', 37, 'MINERAL CL'),
 (438, '210', 7, 1, 4659000, 'Giày Chạy Bộ Nữ Nike Air Zoom Vomero 16', 'pro-7.webp', 35, 'BLACK'),
-(439, '211', 7, 1, 4659000, 'Giày Chạy Bộ Nữ Nike Air Zoom Vomero 16', 'pro-7.webp', 35, 'BLACK');
+(439, '211', 7, 1, 4659000, 'Giày Chạy Bộ Nữ Nike Air Zoom Vomero 16', 'pro-7.webp', 35, 'BLACK'),
+(440, '212', 42, 1, 4200000, '68 P. Hàng Đào, Hàng Đào, Hoàn Kiếm, Hà Nội, Việt ', 'pd1.png', 14, 'MONUMENT WILD'),
+(441, '213', 42, 1, 4200000, '68 P. Hàng Đào, Hàng Đào, Hoàn Kiếm, Hà Nội, Việt ', 'pd1.png', 14, 'MONUMENT WILD'),
+(442, '214', 41, 1, 2000000, 'Căn hộ số 21 Cầu Đất, Hoàn Kiếm, Hà Nội', 'pd2.png', 14, 'BLACK WHITE'),
+(443, '215', 41, 1, 2000000, 'Căn hộ số 21 Cầu Đất, Hoàn Kiếm, Hà Nội', 'pd2.png', 14, 'BLACK WHITE'),
+(444, '216', 41, 2, 2000000, 'Căn hộ số 21 Cầu Đất, Hoàn Kiếm, Hà Nội', 'pd2.png', 14, 'BLACK WHITE'),
+(445, '217', 41, 1, 2000000, 'Căn hộ số 21 Cầu Đất, Hoàn Kiếm, Hà Nội', 'pd2.png', 14, 'BLACK WHITE'),
+(446, '218', 42, 1, 4200000, '68 P. Hàng Đào, Hàng Đào, Hoàn Kiếm, Hà Nội, Việt ', 'pd1.png', 14, 'MONUMENT WILD'),
+(447, '219', 41, 1, 2000000, 'Căn hộ số 21 Cầu Đất, Hoàn Kiếm, Hà Nội', 'pd2.png', 14, 'BLACK WHITE'),
+(448, '220', 38, 1, 1116500, 'Số nhà 25 ngõ 116, Đường Miếu Đầm, Phường Mễ Trì, ', 'pd5.png', 14, 'GH');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `product`
+-- Cấu trúc bảng cho bảng `product`
 --
 
 CREATE TABLE `product` (
@@ -182,57 +205,58 @@ CREATE TABLE `product` (
   `gender` varchar(20) NOT NULL,
   `description` text DEFAULT NULL,
   `id_cate` int(11) NOT NULL,
-  `id_brand` int(11) NOT NULL
+  `id_brand` int(11) NOT NULL,
+  `status` int(5) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `product`
+-- Đang đổ dữ liệu cho bảng `product`
 --
 
-INSERT INTO `product` (`id_pro`, `pro_name`, `image`, `price`, `price_sale`, `special`, `views`, `gender`, `description`, `id_cate`, `id_brand`) VALUES
-(1, 'Ngõ 120, Đường Kim Giang, Phường Kim Giang, Thanh Xuân, Hà Nội', 'pd1.png', 3719000, 0, 1, 74, 'Nữ', '&lt;p&gt;+ Ph&ograve;ng si&ecirc;u tiện nghi với nội thất hiện đại:&lt;/p&gt;\r\n&lt;p&gt;+ Điều ho&agrave;, n&oacute;ng lạnh, tủ quần &aacute;o, tủ lạnh, h&uacute;t m&ugrave;i, bếp từ, b&agrave;n cafe, b&agrave;n ăn.&lt;/p&gt;\r\n&lt;p&gt;+ C&oacute; g&aacute;c x&eacute;p, nghỉ ngơi ri&ecirc;ng tư.&lt;/p&gt;\r\n&lt;p&gt;+ Kh&ocirc;ng gian bếp tiện &iacute;ch c&oacute; h&uacute;t m&ugrave;i, ban c&ocirc;ng tho&aacute;ng m&aacute;t.&lt;/p&gt;\r\n&lt;p&gt;+ Thang m&aacute;y, m&aacute;y giặt sấy đầy đủ.&lt;/p&gt;\r\n&lt;p&gt;+ Hỗ trợ khi gặp vấn đề 24/24, c&oacute; bộ phận chăm s&oacute;c kh&aacute;ch h&agrave;ng, bộ phận kỹ thuật chuy&ecirc;n nghiệp.&lt;/p&gt;', 1, 7),
-(2, 'Ngõ 120, Đường Kim Giang, Phường Kim Giang, Thanh Xuân, Hà Nội', 'pd2.png', 2019000, 0, 1, 49, 'Nam', '&lt;p&gt;+ Ph&ograve;ng si&ecirc;u tiện nghi với nội thất hiện đại:&lt;/p&gt;\r\n&lt;p&gt;+ Điều ho&agrave;, n&oacute;ng lạnh, tủ quần &aacute;o, tủ lạnh, h&uacute;t m&ugrave;i, bếp từ, b&agrave;n cafe, b&agrave;n ăn.&lt;/p&gt;\r\n&lt;p&gt;+ C&oacute; g&aacute;c x&eacute;p, nghỉ ngơi ri&ecirc;ng tư.&lt;/p&gt;\r\n&lt;p&gt;+ Kh&ocirc;ng gian bếp tiện &iacute;ch c&oacute; h&uacute;t m&ugrave;i, ban c&ocirc;ng tho&aacute;ng m&aacute;t.&lt;/p&gt;\r\n&lt;p&gt;+ Thang m&aacute;y, m&aacute;y giặt sấy đầy đủ.&lt;/p&gt;\r\n&lt;p&gt;+ Hỗ trợ khi gặp vấn đề 24/24, c&oacute; bộ phận chăm s&oacute;c kh&aacute;ch h&agrave;ng, bộ phận kỹ thuật chuy&ecirc;n nghiệp.&lt;/p&gt;', 1, 7),
-(4, 'Ngõ 196, Đường Hồ Tùng Mậu, Phường Mai Dịch, Cầu Giấy, Hà Nội', 'pd7.png', 2395000, 0, 1, 45, 'Nam', '&lt;p&gt;+ Ph&ograve;ng si&ecirc;u tiện nghi với nội thất hiện đại:&lt;/p&gt;\r\n&lt;p&gt;+ Điều ho&agrave;, n&oacute;ng lạnh, tủ quần &aacute;o, tủ lạnh, h&uacute;t m&ugrave;i, bếp từ, b&agrave;n cafe, b&agrave;n ăn.&lt;/p&gt;\r\n&lt;p&gt;+ C&oacute; g&aacute;c x&eacute;p, nghỉ ngơi ri&ecirc;ng tư.&lt;/p&gt;\r\n&lt;p&gt;+ Kh&ocirc;ng gian bếp tiện &iacute;ch c&oacute; h&uacute;t m&ugrave;i, ban c&ocirc;ng tho&aacute;ng m&aacute;t.&lt;/p&gt;\r\n&lt;p&gt;+ Thang m&aacute;y, m&aacute;y giặt sấy đầy đủ.&lt;/p&gt;\r\n&lt;p&gt;+ Hỗ trợ khi gặp vấn đề 24/24, c&oacute; bộ phận chăm s&oacute;c kh&aacute;ch h&agrave;ng, bộ phận kỹ thuật chuy&ecirc;n nghiệp&lt;/p&gt;', 1, 4),
-(5, '37, Đường Dịch Vọng, Phường Dịch Vọng, Cầu Giấy, Hà Nội', 'pd6.png', 2395000, 0, 1, 117, 'Nam', '+ Ph&ograve;ng si&ecirc;u tiện nghi với nội thất hiện đại:\r\n+ Điều ho&agrave;, n&oacute;ng lạnh, tủ quần &aacute;o, tủ lạnh, h&uacute;t m&ugrave;i, bếp từ, b&agrave;n cafe, b&agrave;n ăn.\r\n+ C&oacute; g&aacute;c x&eacute;p, nghỉ ngơi ri&ecirc;ng tư.\r\n+ Kh&ocirc;ng gian bếp tiện &iacute;ch c&oacute; h&uacute;t m&ugrave;i, ban c&ocirc;ng tho&aacute;ng m&aacute;t.\r\n+ Thang m&aacute;y, m&aacute;y giặt sấy đầy đủ.\r\n+ Hỗ trợ khi gặp vấn đề 24/24, c&oacute; bộ phận chăm s&oacute;c kh&aacute;ch h&agrave;ng, bộ phận kỹ thuật chuy&ecirc;n nghiệp.', 1, 4),
-(6, 'Ngõ 144, Phố Quan Nhân, Phường Nhân Chính, Thanh Xuân, Hà Nội', 'pd8.png', 3099000, 0, 1, 64, 'Nam', '&lt;h3 class=&quot;heading-medium product-info-title-left&quot;&gt;\r\n Cho thu&ecirc; chung cư 7 tầng ng&otilde; 144 Quan Nh&acirc;n gi&aacute; 1,6tr - 1,8tr - 2tr/th kh&eacute;p k&iacute;n cho thu&ecirc;\r\n          &lt;/h3&gt;\r\n    \r\n    \r\n          &lt;ul&gt;\r\n            &lt;li&gt; Gi&aacute;: 1,6tr - 1,8tr - 2tr/th&aacute;ng kh&eacute;p k&iacute;n.&lt;/li&gt;\r\n            &lt;li&gt;Nh&agrave; 4 tầng x&acirc;y cho thu&ecirc; sạch sẽ, tho&aacute;ng m&aacute;t..&lt;/li&gt;\r\n            &lt;li&gt;DT: 15m&sup2; - 18m&sup2; - 20m&sup2; - 23m&sup2;.&lt;/li&gt;\r\n            &lt;li&gt; C&oacute; kệ bếp nấu, bồn rửa b&aacute;t, sạch sẽ.&lt;/li&gt;\r\n          &lt;/ul&gt;\r\n          &lt;h3 class=&quot;heading-medium product-info-title-left&quot;&gt;TH&Ocirc;NG SỐ&lt;/h3&gt;\r\n          &lt;ul&gt;\r\n            &lt;li&gt;- Điện 3,5 ngh&igrave;n/số. Nước 20 ngh&igrave;n/khối.&lt;/li&gt;\r\n          &lt;/ul&gt;', 1, 7),
-(7, 'Ngõ 144, Phố Quan Nhân, Phường Nhân Chính, Thanh Xuân, Hà Nội', 'pd110.png', 4659000, 0, 1, 75, 'Nữ', '&lt;p&gt;- Nh&agrave; 4 tầng x&acirc;y cho thu&ecirc; sạch sẽ, tho&aacute;ng m&aacute;t.&lt;/p&gt;\r\n&lt;p&gt;- Gi&aacute;: 1,6tr - 1,8tr - 2tr/th&aacute;ng kh&eacute;p k&iacute;n.&lt;/p&gt;\r\n\r\n&lt;p&gt;- DT: 15m&sup2; - 18m&sup2; - 20m&sup2; - 23m&sup2;.&lt;/p&gt;\r\n\r\n&lt;p&gt;- C&oacute; kệ bếp nấu, bồn rửa b&aacute;t, sạch sẽ.&lt;/p&gt;\r\n\r\n&lt;p&gt;- Điện 3,5 ngh&igrave;n/số. Nước 20 ngh&igrave;n/khối.&lt;/p&gt;\r\n\r\n', 1, 7),
-(8, 'Đường Dốc Thọ Lão, Phường Đồng Nhân, Hai Bà Trưng, Hà Nội', 'pd5.png', 3599000, 0, 0, 81, 'Nam', '&lt;h3 class=&quot;heading-medium product-info-title-left&quot;&gt;\r\n  Cho thu&ecirc; giường tầng homestay full đồ full tiện &iacute;ch\r\n          &lt;/h3&gt;\r\n&lt;p&gt;- To&agrave; nh&agrave; c&oacute; thang m&aacute;y.&lt;/p&gt;\r\n&lt;p&gt;- Gi&aacute; bao gồm đầy đủ c&aacute;c dịch vụ điện nước, internet, dọn dẹp.&lt;/p&gt;\r\n&lt;p&gt;- M&ocirc;i trường sống văn minh, vui vẻ.&lt;/p&gt;\r\n&lt;p&gt;- Nh&agrave; gần nhiều trường đại học, l&ecirc;n Hồ Gươm chỉ 5 ph&uacute;t.&lt;/p&gt;\r\n          ', 3, 6),
-(9, 'Đường Yên Phụ, Phường Yên Phụ, Tây Hồ, Hà Nội', 'pd9.png', 1900000, 1710000, 0, 107, 'Nu', '&lt;h3 class=&quot;heading-medium product-info-title-left&quot;&gt;\r\n   Ch&iacute;nh chủ cho thu&ecirc; ph&ograve;ng trọ gần 30m2 full đồ phố Y&ecirc;n Phụ - T&acirc;y Hồ gi&aacute; 3.5tr/ph&ograve;ng\r\n          &lt;/h3&gt;\r\n    &lt;p&gt;Ch&iacute;nh chủ cho thu&ecirc; ph&ograve;ng trọ kh&eacute;p k&iacute;n tại Y&ecirc;n Phụ - T&acirc;y Hồ - H&agrave; Nội.&lt;/p&gt;\r\n&lt;p&gt;Ph&ograve;ng gần 30m&sup2; kh&eacute;p k&iacute;n đầy đủ tiện nghi điều ho&agrave;, n&oacute;ng lạnh, giường tủ quần &aacute;o, bếp nấu ăn...&lt;/p&gt;\r\n&lt;p&gt;- Nh&agrave; c&aacute;ch đường Y&ecirc;n Phụ 20m, ng&otilde; th&ocirc;ng sang phố Y&ecirc;n Hoa gi&aacute;p Hồ T&acirc;y tho&aacute;ng m&aacute;t lộng gi&oacute;.&lt;/p&gt;\r\n&lt;p&gt;- Gi&aacute; cho thu&ecirc; 3.5tr/ph&ograve;ng.&lt;/p&gt;\r\n&lt;p&gt;Thanh to&aacute;n th&aacute;ng 1.&lt;/p&gt;', 2, 3),
-(10, 'Ngõ 136, Đường Hồ Tùng Mậu, Phường Mai Dịch, Cầu Giấy, Hà Nội', 'pd115.png', 1995000, 0, 0, 96, 'Nu', '&lt;p&gt;Ch&iacute;nh chủ em c&oacute; nh&agrave; cc mini mới x&acirc;y mới tinh. Diện t&iacute;ch mỗi ph&ograve;ng: 35m&sup2; tại ng&otilde; 196 Hồ T&ugrave;ng Mậu, nếu đi từ đường hồ T&ugrave;ng Mậu đi v&agrave;o th&igrave; đi v&agrave;o khu chung cư Goldmark City đi khoảng 50m l&agrave; tới.&lt;/p&gt;\r\n&lt;p&gt;Nh&agrave; mới x&acirc;y n&ecirc;n c&oacute; đầy đủ nội thất mới, điều h&ograve;a, n&oacute;ng lạnh, giường, tủ quần &aacute;o, tủ lạnh, m&aacute;y giặt, m&aacute;y sấy, shopha, b&agrave;n bếp tr&ecirc;n dưới c&oacute; h&uacute;t m&ugrave;i đầy đủ, r&egrave;m cửa, mỗi căn hộ đều c&oacute; nhiều cửa sổ, &aacute;nh s&aacute;ng.&lt;/p&gt;\r\n&lt;p&gt;Nh&agrave; gần nhiều trường đại học như ĐH Thương Mại, đại học Quốc Gia, đại học Ngoại Ngữ, đại học Ho&agrave; B&igrave;nh, ra chợ chỉ mấy bước ch&acirc;n, c&aacute;ch trường quốc tế Newton tầm 20m, từ nh&agrave; ra đường quốc lộ cũng rất gần, nh&agrave; &ocirc; t&ocirc; đỗ cửa, thang m&aacute;y tốc độ cao, hệ thống cửa c&oacute; V&acirc;n tay, camera, bảo vệ trực 24/7.&lt;/p&gt;\r\n&lt;p&gt;Gi&aacute; thu&ecirc; mỗi căn hộ chỉ từ 6tr tới 6,5 tr/th&aacute;ng.&lt;/p&gt;', 2, 4),
-(11, 'Số 144 ngõ 68 Phú Diễn , Từ Liêm, Hà Nội', 'pd113.png', 2795000, 2236000, 0, 126, 'Nam', '&lt;p&gt;+ Ph&ograve;ng si&ecirc;u tiện nghi với nội thất hiện đại:&lt;/p&gt;\r\n&lt;p&gt;+ Điều ho&agrave;, n&oacute;ng lạnh, tủ quần &aacute;o, tủ lạnh, h&uacute;t m&ugrave;i, bếp từ, b&agrave;n cafe, b&agrave;n ăn.&lt;/p&gt;\r\n&lt;p&gt;+ C&oacute; g&aacute;c x&eacute;p, nghỉ ngơi ri&ecirc;ng tư.&lt;/p&gt;\r\n&lt;p&gt;+ Kh&ocirc;ng gian bếp tiện &iacute;ch c&oacute; h&uacute;t m&ugrave;i, ban c&ocirc;ng tho&aacute;ng m&aacute;t.&lt;/p&gt;\r\n&lt;p&gt;+ Thang m&aacute;y, m&aacute;y giặt sấy đầy đủ.&lt;/p&gt;\r\n&lt;p&gt;+ Hỗ trợ khi gặp vấn đề 24/24, c&oacute; bộ phận chăm s&oacute;c kh&aacute;ch h&agrave;ng, bộ phận kỹ thuật chuy&ecirc;n nghiệp.&lt;/p&gt;', 4, 8),
-(12, 'Đường Dốc Thọ Lão, Phường Đồng Nhân, Hai Bà Trưng, Hà Nội', 'pd92.png', 3199000, 2559000, 0, 140, 'Nam', '&lt;h1&gt;Cho thu&ecirc; homestay giường tầng gần Hồ Gươm:&lt;/h1&gt;\r\n&lt;p&gt;- To&agrave; nh&agrave; c&oacute; thang m&aacute;y.&lt;/p&gt;\r\n&lt;p&gt;- Gi&aacute; bao gồm đầy đủ c&aacute;c dịch vụ điện nước, internet, dọn dẹp.&lt;/p&gt;\r\n&lt;p&gt;- M&ocirc;i trường sống văn minh, vui vẻ.&lt;/p&gt;\r\n&lt;p&gt;- Nh&agrave; gần nhiều trường đại học, l&ecirc;n Hồ Gươm chỉ 5 ph&uacute;t.&lt;/p&gt;', 3, 6),
-(13, 'Ngõ 144, Phố Quan Nhân, Phường Nhân Chính, Thanh Xuân, Hà Nội', 'pd72.png', 2019000, 0, 0, 103, 'Nam', '&lt;p&gt;- Nh&agrave; 4 tầng x&acirc;y cho thu&ecirc; sạch sẽ, tho&aacute;ng m&aacute;t.&lt;/p&gt;\r\n&lt;p&gt;- Gi&aacute;: 1,6tr - 1,8tr - 2tr/th&aacute;ng kh&eacute;p k&iacute;n.&lt;/p&gt;\r\n&lt;p&gt;- DT: 15m&sup2; - 18m&sup2; - 20m&sup2; - 23m&sup2;.&lt;/p&gt;\r\n&lt;p&gt;- C&oacute; kệ bếp nấu, bồn rửa b&aacute;t, sạch sẽ.&lt;/p&gt;\r\n&lt;p&gt;- Điện 3,5 ngh&igrave;n/số. Nước 20 ngh&igrave;n/khối.&lt;/p&gt;', 2, 7),
-(14, 'Ngõ 32, Đường Đỗ Đức Dục, Phường Mễ Trì, Nam Từ Liêm, Hà Nội', 'pd114.png', 4495000, 2248000, 0, 56, 'Nam', ' &lt;h3 class=&quot;heading-medium product-info-title-left&quot;&gt;\r\n       Cho thu&ecirc; ph&ograve;ng mới x&acirc;y, full đồ ng&otilde; 32 Đỗ Đức Dục\r\n          &lt;/h3&gt;\r\n&lt;p&gt;Ch&iacute;nh chủ em c&oacute; ph&ograve;ng diện t&iacute;ch 35m&sup2; full đồ, nh&agrave; mới x&acirc;y, đồ mới tinh ng&otilde; 32 Đỗ Đức dục, Nam từ li&ecirc;m, đối diện kh&aacute;ch sạn Marriot, trung t&acirc;m hội nghị Quốc gia, đi ra Phạm H&ugrave;ng v&agrave; Keangnam rất gần, c&aacute;ch Trần Duy Hưng chỉ 1,5km.&lt;/p&gt;\r\n&lt;p&gt;Ph&ograve;ng gồm điều h&ograve;a, n&oacute;ng lạnh, giường v&agrave; tủ quần &aacute;o, tủ lạnh v&agrave; m&aacute;y giặt, m&aacute;y sấy, shopha, b&agrave;n l&agrave;m việc.&lt;/p&gt;\r\n&lt;p&gt;Gi&aacute; thu&ecirc; chỉ từ 5,2tr tới 5,5tr/th&aacute;ng.&lt;/p&gt;\r\n&lt;p&gt;Ngo&agrave;i ra c&oacute; th&ecirc;m căn hộ gồm 1 ph&ograve;ng ngủ, 1 ph&ograve;ng kh&aacute;ch. DT: 35m&sup2; - Gi&aacute; cho thu&ecirc; 5.6tr/ th&aacute;ng.&lt;/p&gt;', 3, 8),
-(15, 'Ngõ 32, Đường Đỗ Đức Dục, Phường Mễ Trì, Nam Từ Liêm, Hà Nội', 'pd81.png', 3195000, 1598000, 0, 73, 'Nam', '&lt;h3 class=&quot;heading-medium product-info-title-left&quot;&gt;\r\n        Cho thu&ecirc; ph&ograve;ng mới x&acirc;y, full đồ ng&otilde; 32 Đỗ Đức Dục\r\n&lt;/h3&gt;\r\n&lt;p&gt;+ Ph&ograve;ng si&ecirc;u tiện nghi với nội thất hiện đại:&lt;/p&gt;\r\n&lt;p&gt;+ Điều ho&agrave;, n&oacute;ng lạnh, tủ quần &aacute;o, tủ lạnh, h&uacute;t m&ugrave;i, bếp từ, b&agrave;n cafe, b&agrave;n ăn.&lt;/p&gt;\r\n&lt;p&gt;+ C&oacute; g&aacute;c x&eacute;p, nghỉ ngơi ri&ecirc;ng tư.&lt;/p&gt;\r\n&lt;p&gt;+ Kh&ocirc;ng gian bếp tiện &iacute;ch c&oacute; h&uacute;t m&ugrave;i, ban c&ocirc;ng tho&aacute;ng m&aacute;t.&lt;/p&gt;\r\n&lt;p&gt;+ Thang m&aacute;y, m&aacute;y giặt sấy đầy đủ.&lt;/p&gt;\r\n&lt;p&gt;+ Hỗ trợ khi gặp vấn đề 24/24, c&oacute; bộ phận chăm s&oacute;c kh&aacute;ch &lt;/p&gt;&lt;p&gt;h&agrave;ng, bộ phận kỹ thuật chuy&ecirc;n nghiệp.&lt;/p&gt;', 3, 8),
-(16, '30 Đức Diễn , Từ Liêm , Hà Nội', 'pd8.png', 3195000, 1597500, 0, 139, 'Nam', '&lt;p&gt;+ Ph&ograve;ng si&ecirc;u tiện nghi với nội thất hiện đại:&lt;/p&gt;\r\n&lt;p&gt;+ Điều ho&agrave;, n&oacute;ng lạnh, tủ quần &aacute;o, tủ lạnh, h&uacute;t m&ugrave;i, bếp từ, b&agrave;n cafe, b&agrave;n ăn.&lt;/p&gt;\r\n&lt;p&gt;+ C&oacute; g&aacute;c x&eacute;p, nghỉ ngơi ri&ecirc;ng tư.&lt;/p&gt;\r\n&lt;p&gt;+ Kh&ocirc;ng gian bếp tiện &iacute;ch c&oacute; h&uacute;t m&ugrave;i, ban c&ocirc;ng tho&aacute;ng m&aacute;t.&lt;/p&gt;\r\n&lt;p&gt;+ Thang m&aacute;y, m&aacute;y giặt sấy đầy đủ.&lt;/p&gt;\r\n&lt;p&gt;+ Hỗ trợ khi gặp vấn đề 24/24, c&oacute; bộ phận chăm s&oacute;c kh&aacute;ch h&agrave;ng, bộ phận kỹ thuật chuy&ecirc;n nghiệp.&lt;/p&gt;', 3, 8),
-(17, 'Số 17Phố Giảng Võ, Phường Giảng Võ, Ba Đình, Hà Nội', 'pd51.png', 2500000, 1500000, 0, 73, 'Nam', '&lt;p&gt;Nội thất: Giường tủ, Tivi, b&agrave;n l&agrave;m việc, Ga Gối, chăn, Đệm, B&agrave;n Ghế, N&oacute;ng Lạnh, Tủ Lạnh, Tủ Bếp, Bếp Từ, đồ d&ugrave;ng nấu bếp, M&aacute;y Giặt chung, l&ograve; vi s&oacute;ng, kho&aacute; cửa v&acirc;n tay... Kh&aacute;ch chỉ việc x&aacute;ch vali đến ở.&lt;/p&gt;\r\n&lt;p&gt;Vị tr&iacute; trung t&acirc;m đi lại thuận tiện, an ninh tốt.&lt;/p&gt;\r\n&lt;p&gt;Dịch vụ: Điện: 4k/số.&lt;/p&gt;\r\n&lt;p&gt;Nước: 100k/ người.&lt;/p&gt;\r\n&lt;p&gt;Mạng intenet: Miễn Ph&iacute;.&lt;/p&gt;', 4, 1),
-(18, 'Số 14 Phúc Diễn - Cầu Diễn - Từ Liêm - Hà Nội', 'pd35.png', 2495000, 1248000, 0, 43, 'Nam', '&lt;p&gt;Ch&iacute;nh chủ em c&oacute; nh&agrave; cc mini mới x&acirc;y mới tinh. Diện t&iacute;ch mỗi ph&ograve;ng: 35m&sup2; tại ng&otilde; 196 Hồ T&ugrave;ng Mậu, nếu đi từ đường hồ T&ugrave;ng Mậu đi v&agrave;o th&igrave; đi v&agrave;o khu chung cư Goldmark City đi khoảng 50m l&agrave; tới.&lt;/p&gt;\r\n&lt;p&gt;Nh&agrave; mới x&acirc;y n&ecirc;n c&oacute; đầy đủ nội thất mới, điều h&ograve;a, n&oacute;ng lạnh, giường, tủ quần &aacute;o, tủ lạnh, m&aacute;y giặt, m&aacute;y sấy, shopha, b&agrave;n bếp tr&ecirc;n dưới c&oacute; h&uacute;t m&ugrave;i đầy đủ, r&egrave;m cửa, mỗi căn hộ đều c&oacute; nhiều cửa sổ, &aacute;nh s&aacute;ng.&lt;/p&gt;\r\n&lt;p&gt;Nh&agrave; gần nhiều trường đại học như ĐH Thương Mại, đại học Quốc Gia, đại học Ngoại Ngữ, đại học Ho&agrave; B&igrave;nh, ra chợ chỉ mấy bước ch&acirc;n, c&aacute;ch trường quốc tế Newton tầm 20m, từ nh&agrave; ra đường quốc lộ cũng rất gần, nh&agrave; &ocirc; t&ocirc; đỗ cửa, thang m&aacute;y tốc độ cao, hệ thống cửa c&oacute; V&acirc;n tay, camera, bảo vệ trực 24/7.&lt;/p&gt;', 4, 8),
-(19, 'Số 69 ngõ 68 Phú Diễn - Từ Liêm - Hà Nội', 'pd2.png', 2595000, 0, 0, 35, 'Nam', '&lt;p&gt;Ch&iacute;nh chủ em c&oacute; nh&agrave; cc mini mới x&acirc;y mới tinh. Diện t&iacute;ch mỗi ph&ograve;ng: 35m&sup2; tại ng&otilde; 196 Hồ T&ugrave;ng Mậu, nếu đi từ đường hồ T&ugrave;ng Mậu đi v&agrave;o th&igrave; đi v&agrave;o khu chung cư Goldmark City đi khoảng 50m l&agrave; tới.&lt;/p&gt;\r\n&lt;p&gt;Nh&agrave; mới x&acirc;y n&ecirc;n c&oacute; đầy đủ nội thất mới, điều h&ograve;a, n&oacute;ng lạnh, giường, tủ quần &aacute;o, tủ lạnh, m&aacute;y giặt, m&aacute;y sấy, shopha, b&agrave;n bếp tr&ecirc;n dưới c&oacute; h&uacute;t m&ugrave;i đầy đủ, r&egrave;m cửa, mỗi căn hộ đều c&oacute; nhiều cửa sổ, &aacute;nh s&aacute;ng.&lt;/p&gt;\r\n&lt;p&gt;Nh&agrave; gần nhiều trường đại học như ĐH Thương Mại, đại học Quốc Gia, đại học Ngoại Ngữ, đại học Ho&agrave; B&igrave;nh, ra chợ chỉ mấy bước ch&acirc;n, c&aacute;ch trường quốc tế Newton tầm 20m, từ nh&agrave; ra đường quốc lộ cũng rất gần, nh&agrave; &ocirc; t&ocirc; đỗ cửa, thang m&aacute;y tốc độ cao, hệ thống cửa c&oacute; V&acirc;n tay, camera, bảo vệ trực 24/7.&lt;/p&gt;', 1, 8),
-(21, 'Ngách 173/24/7, Đường Hoàng Hoa Thám, Phường Ngọc Hà, Ba Đình, Hà Nội', 'pd81.png', 2800000, 0, 0, 77, 'Nữ', '&lt;p&gt;Địa chỉ: Ng&aacute;ch 173/24/7 Ho&agrave;ng Hoa Th&aacute;m, Ba Đ&igrave;nh, H&agrave; Nội -&lt;/p&gt; &lt;p&gt;Nh&agrave; mới x&acirc;y.&lt;/p&gt;\r\n&lt;p&gt;Ph&ograve;ng Studio.&lt;/p&gt;\r\n&lt;p&gt;Thang m&aacute;y.&lt;/p&gt;\r\n&lt;p&gt;Diện t&iacute;ch: 30m&sup2;.&lt;/p&gt;\r\n&lt;p&gt;Nội thất: Điều ho&agrave;, n&oacute;ng lạnh, giường tủ, m&aacute;y giặt, bếp, tủ lạnh.&lt;/p&gt;\r\n&lt;p&gt;Tiện &iacute;ch: Cổng kh&oacute;a v&acirc;n tay giờ giấc thoải m&aacute;i, c&oacute; nh&agrave; để xe, gần chợ, si&ecirc;u thị.&lt;/p&gt;\r\n&lt;p&gt;Gi&aacute; dịch vụ:&lt;/p&gt;\r\n&lt;p&gt;Điện: 3,8k/số.&lt;/p&gt;\r\n&lt;p&gt;Nước: 28k/khối.&lt;/p&gt;\r\n&lt;p&gt;Internet: 50k/người.&lt;/p&gt;\r\n&lt;p&gt;Thang m&aacute;y: 50k/người.&lt;/p&gt;\r\n&lt;p&gt;Vệ sinh: 50k/người.&lt;/p&gt;', 1, 1),
-(22, 'Phố Phùng Hưng, Phường Phúc La, Hà Đông, Hà Nội', 'pd34.png', 2799000, 1679400, 0, 92, 'Nữ', '&lt;p&gt;+ Ph&ograve;ng si&ecirc;u tiện nghi với nội thất hiện đại:&lt;/p&gt;\r\n&lt;p&gt;+ Điều ho&agrave;, n&oacute;ng lạnh, tủ quần &aacute;o, tủ lạnh, h&uacute;t m&ugrave;i, bếp từ, b&agrave;n cafe, b&agrave;n ăn.&lt;/p&gt;\r\n&lt;p&gt;+ C&oacute; g&aacute;c x&eacute;p, nghỉ ngơi ri&ecirc;ng tư.&lt;/p&gt;\r\n&lt;p&gt;+ Kh&ocirc;ng gian bếp tiện &iacute;ch c&oacute; h&uacute;t m&ugrave;i, ban c&ocirc;ng tho&aacute;ng m&aacute;t.&lt;/p&gt;\r\n&lt;p&gt;+ Thang m&aacute;y, m&aacute;y giặt sấy đầy đủ.&lt;/p&gt;\r\n&lt;p&gt;+ Hỗ trợ khi gặp vấn đề 24/24, c&oacute; bộ phận chăm s&oacute;c kh&aacute;ch h&agrave;ng, bộ phận kỹ thuật chuy&ecirc;n nghiệp.&lt;/p&gt;', 2, 9),
-(23, 'Số 14 Đường Yên Phụ, Phường Yên Phụ, Tây Hồ, Hà Nội', 'pd43.png', 2000000, 1600000, 0, 41, 'Unisex', '&lt;p&gt;Ch&iacute;nh chủ cho thu&ecirc; ph&ograve;ng trọ kh&eacute;p k&iacute;n tại Y&ecirc;n Phụ - T&acirc;y Hồ - H&agrave; Nội.&lt;/p&gt;\r\n&lt;p&gt;Ph&ograve;ng gần 30m&sup2; kh&eacute;p k&iacute;n đầy đủ tiện nghi điều ho&agrave;, n&oacute;ng lạnh, giường tủ quần &aacute;o, bếp nấu ăn...&lt;/p&gt;\r\n&lt;p&gt;- Nh&agrave; c&aacute;ch đường Y&ecirc;n Phụ 20m, ng&otilde; th&ocirc;ng sang phố Y&ecirc;n Hoa gi&aacute;p Hồ T&acirc;y tho&aacute;ng m&aacute;t lộng gi&oacute;.&lt;/p&gt;\r\n&lt;p&gt;- Gi&aacute; cho thu&ecirc; 3.5tr/ph&ograve;ng.&lt;/p&gt;\r\n&lt;p&gt;Thanh to&aacute;n th&aacute;ng 1.&lt;/p&gt;', 2, 3),
-(26, 'Ngõ 32, Đường Đỗ Đức Dục, Phường Mễ Trì, Nam Từ Liêm, Hà Nội', 'pd36.png', 1295000, 647500, 0, 6, 'Trẻ Em', '&lt;p&gt;Ch&iacute;nh chủ em c&oacute; ph&ograve;ng diện t&iacute;ch 35m&sup2; full đồ, nh&agrave; mới x&acirc;y, đồ mới tinh ng&otilde; 32 Đỗ Đức dục, Nam từ li&ecirc;m, đối diện kh&aacute;ch sạn Marriot, trung t&acirc;m hội nghị Quốc gia, đi ra Phạm H&ugrave;ng v&agrave; Keangnam rất gần, c&aacute;ch Trần Duy Hưng chỉ 1,5km.&lt;/p&gt;\r\n&lt;p&gt;Ph&ograve;ng gồm điều h&ograve;a, n&oacute;ng lạnh, giường v&agrave; tủ quần &aacute;o, tủ lạnh v&agrave; m&aacute;y giặt, m&aacute;y sấy, shopha, b&agrave;n l&agrave;m việc.&lt;/p&gt;\r\n&lt;p&gt;Gi&aacute; thu&ecirc; chỉ từ 5,2tr tới 5,5tr/th&aacute;ng.&lt;/p&gt;\r\n&lt;p&gt;Ngo&agrave;i ra c&oacute; th&ecirc;m căn hộ gồm 1 ph&ograve;ng ngủ, 1 ph&ograve;ng kh&aacute;ch. DT: 35m&sup2; - Gi&aacute; cho thu&ecirc; 5.6tr/ th&aacute;ng.&lt;/p&gt;', 4, 8),
-(27, 'Số 34 Kiều Mai - Từ Liêm - Hà Nội', 'pd4.png', 1695000, 847500, 0, 13, 'Trẻ Em', '&lt;h1&gt;Ph&ograve;ng Studio.&lt;/h1&gt;\r\n&lt;p&gt;Thang m&aacute;y.&lt;/p&gt;\r\n&lt;p&gt;Diện t&iacute;ch: 30m&sup2;.&lt;/p&gt;\r\n\r\n&lt;p&gt;Nội thất: Điều ho&agrave;, n&oacute;ng lạnh, giường tủ, m&aacute;y giặt, bếp, tủ lạnh.\r\nTiện &iacute;ch: Cổng kh&oacute;a v&acirc;n tay giờ giấc thoải m&aacute;i, c&oacute; nh&agrave; để xe, gần chợ, si&ecirc;u thị.&lt;/p&gt;\r\n\r\n&lt;p&gt;Gi&aacute; dịch vụ:&lt;/p&gt;\r\n\r\n&lt;p&gt;Điện: 3,8k/số.&lt;/p&gt;\r\n\r\n&lt;p&gt;Nước: 28k/khối.&lt;/p&gt;\r\n\r\n&lt;p&gt;Internet: 50k/người.&lt;/p&gt;\r\n\r\n&lt;p&gt;Thang m&aacute;y: 50k/người.&lt;/p&gt;\r\n\r\n&lt;p&gt;Vệ sinh: 50k/người.&lt;/p&gt;\r\n', 4, 8),
-(28, 'Ngõ 144, Phố Quan Nhân, Phường Nhân Chính, Thanh Xuân, Hà Nội', 'pd2.png', 1329000, 930300, 0, 10, 'Trẻ Em', '&lt;p&gt;- Nh&agrave; 4 tầng x&acirc;y cho thu&ecirc; sạch sẽ, tho&aacute;ng m&aacute;t.&lt;/p&gt;\r\n&lt;p&gt;- Gi&aacute;: 1,6tr - 1,8tr - 2tr/th&aacute;ng kh&eacute;p k&iacute;n.&lt;/p&gt;\r\n&lt;p&gt;- DT: 15m&sup2; - 18m&sup2; - 20m&sup2; - 23m&sup2;.&lt;/p&gt;\r\n&lt;p&gt;- C&oacute; kệ bếp nấu, bồn rửa b&aacute;t, sạch sẽ.&lt;/p&gt;\r\n&lt;p&gt;- Điện 3,5 ngh&igrave;n/số. Nước 20 ngh&igrave;n/khối.&lt;/p&gt;', 4, 7),
-(29, 'Ngõ 120 Ba Đình, Hà Nội', 'pd1.png', 2100000, 1260000, 0, 18, 'Trẻ Em', '&lt;h1&gt;- Th&ocirc;ng tin ph&ograve;ng:&lt;/h1&gt;\r\n\r\n&lt;p&gt;+ Ph&ograve;ng si&ecirc;u tiện nghi với nội thất hiện đại:&lt;/p&gt;\r\n&lt;p&gt;+ Điều ho&agrave;, n&oacute;ng lạnh, tủ quần &aacute;o, tủ lạnh, h&uacute;t m&ugrave;i, bếp từ, b&agrave;n cafe, b&agrave;n ăn.&lt;/p&gt;\r\n&lt;p&gt;+ C&oacute; g&aacute;c x&eacute;p, nghỉ ngơi ri&ecirc;ng tư.&lt;/p&gt;\r\n&lt;p&gt;+ Kh&ocirc;ng gian bếp tiện &iacute;ch c&oacute; h&uacute;t m&ugrave;i, ban c&ocirc;ng tho&aacute;ng m&aacute;t.&lt;/p&gt;\r\n&lt;p&gt;+ Thang m&aacute;y, m&aacute;y giặt sấy đầy đủ.&lt;/p&gt;\r\n&lt;p&gt;+ Hỗ trợ khi gặp vấn đề 24/24, c&oacute; bộ phận chăm s&oacute;c kh&aacute;ch &lt;/p&gt;&lt;p&gt;h&agrave;ng, bộ phận kỹ thuật chuy&ecirc;n nghiệp.&lt;/p&gt;\r\n', 4, 1),
-(30, 'Ngõ 193/32, Phố Hồng Tiến, Phường Bồ Đề, Long Biên, Hà Nội', 'pd113.png', 2695000, 1347500, 0, 8, 'Nam', '&lt;p&gt;+ Diện t&iacute;ch: 12 - 18m&sup2;/ph&ograve;ng.&lt;/p&gt;\r\n&lt;p&gt;+ Giường 1,4 x 2m.&lt;/p&gt;\r\n&lt;p&gt;+ Tủ quần &aacute;o.&lt;/p&gt;\r\n&lt;p&gt;+ B&agrave;n trang điểm.&lt;/p&gt;\r\n&lt;p&gt;+ Đệm Everon cao cấp, chăn gối đầy đủ.&lt;/p&gt;\r\n&lt;p&gt;+ Điều h&ograve;a 2 chiều mới tinh.&lt;/p&gt;\r\n&lt;p&gt;+ B&igrave;nh n&oacute;ng lạnh.&lt;/p&gt;\r\n&lt;p&gt;+ Trang thiết bị vệ sinh sang trọng.&lt;/p&gt;\r\n&lt;p&gt;+ Tủ lạnh 550L. (sử dụng chung).&lt;/p&gt;\r\n&lt;p&gt;+ M&aacute;y giặt chung.&lt;/p&gt;\r\n&lt;p&gt;+ Tủ bếp. (chung).&lt;/p&gt;\r\n&lt;h1&gt;- Dịch vụ đi k&egrave;m:&lt;/h1&gt;\r\n&lt;p&gt;+ R&aacute;c + internet + vệ sinh + nước: 200k.&lt;/p&gt;\r\n&lt;p&gt;+ Một ph&ograve;ng: 2 người (tối đa).&lt;/p&gt;\r\n&lt;p&gt;+ Hợp đồng tối thiếu 3 th&aacute;ng.&lt;/p&gt;\r\n&lt;p&gt;+ Đ&oacute;ng cọc: 1 th&aacute;ng.&lt;/p&gt;\r\n&lt;p&gt;+ C&oacute; chỗ để xe trong nh&agrave;&lt;/p&gt;', 5, 10),
-(31, 'Ngõ 193/32, Phố Hồng Tiến, Phường Bồ Đề, Long Biên, Hà Nội', 'pd110.png', 3595000, 1797500, 0, 25, 'Nam', '&lt;p&gt;- Nh&agrave; 4 tầng x&acirc;y cho thu&ecirc; sạch sẽ, tho&aacute;ng m&aacute;t.&lt;p&gt;\r\n&lt;p&gt;- Gi&aacute;: 1,6tr - 1,8tr - 2tr/th&aacute;ng kh&eacute;p k&iacute;n.&lt;p&gt;\r\n&lt;p&gt;- DT: 15m&sup2; - 18m&sup2; - 20m&sup2; - 23m&sup2;.&lt;p&gt;\r\n&lt;p&gt;- C&oacute; kệ bếp nấu, bồn rửa b&aacute;t, sạch sẽ.&lt;p&gt;\r\n&lt;p&gt;- Điện 3,5 ngh&igrave;n/số. Nước 20 ngh&igrave;n/khối.&lt;p&gt;', 5, 10),
-(32, 'Ngõ 120, Đường Kim Giang, Phường Kim Giang, Thanh Xuân, Hà Nội', 'pd110.png', 3569000, 2141400, 0, 9, 'Nam', '&lt;p&gt;+ Ph&ograve;ng si&ecirc;u tiện nghi với nội thất hiện đại:&lt;/p&gt;\r\n&lt;p&gt;+ Điều ho&agrave;, n&oacute;ng lạnh, tủ quần &aacute;o, tủ lạnh, h&uacute;t m&ugrave;i, bếp từ, b&agrave;n cafe, b&agrave;n ăn.&lt;/p&gt;\r\n&lt;p&gt;+ C&oacute; g&aacute;c x&eacute;p, nghỉ ngơi ri&ecirc;ng tư.&lt;/p&gt;\r\n&lt;p&gt;+ Kh&ocirc;ng gian bếp tiện &iacute;ch c&oacute; h&uacute;t m&ugrave;i, ban c&ocirc;ng tho&aacute;ng m&aacute;t.&lt;/p&gt;\r\n&lt;p&gt;+ Thang m&aacute;y, m&aacute;y giặt sấy đầy đủ.&lt;/p&gt;\r\n&lt;p&gt;+ Hỗ trợ khi gặp vấn đề 24/24, c&oacute; bộ phận chăm s&oacute;c kh&aacute;ch h&agrave;ng, bộ phận kỹ thuật chuy&ecirc;n nghiệp.&lt;/p&gt;', 5, 7),
-(33, '619, Phố Vũ Tông Phan, Phường Khương Đình, Thanh Xuân, Hà Nội', 'pd10.png', 3569000, 141400, 0, 22, 'Nam', '&lt;h3 class=&quot;heading-medium product-info-title-left&quot;&gt;\r\nTo&agrave; CCMN 21 ph&ograve;ng full ban c&ocirc;ng c&ograve;n duy nhất 1 ph&ograve;ng.\r\n          &lt;/h3&gt;\r\n           &lt;p&gt;\r\n        - Gần ngay c&aacute;c trường Đại Học: ĐH Thăng Long, ĐH Khoa Học Tự Nhi&ecirc;n, ĐH KTQD, ĐH Thuỷ Lợi.\r\n\r\n- Thuận tiện di chuyển: Nguyễn Xiển, XaLa, B&ugrave;i Xương Trạch, L&ecirc; Trọng Tấn, Kim Giang, Định C&ocirc;ng.\r\n\r\n- Tất cả c&aacute;c ph&ograve;ng đều c&oacute; full ban c&ocirc;ng cực tho&aacute;ng, đ&oacute;n &aacute;nh s&aacute;ng tự nhi&ecirc;n.\r\n\r\n- Kh&ocirc;ng chung chủ, giờ giấc thoải m&aacute;i.\r\n\r\n- Cổng v&acirc;n tay, thang m&aacute;y, m&aacute;y giặt, giờ giấc thoải m&aacute;i.\r\n\r\n- C&oacute; dịch vụ hotline hỗ trợ nhanh ch&oacute;ng.\r\n\r\n- Hệ thống chữa ch&aacute;y hiện đại, an ninh tuyệt đối.\r\n        &lt;/p&gt;\r\n          &lt;h3 class=&quot;heading-medium product-info-title-left&quot;&gt;Đầy đủ&lt;/h3&gt;\r\n          &lt;ul&gt;\r\n          &lt;/ul&gt;', 5, 7),
-(34, 'Số nhà 22 ngõ 190, Đường Nguyễn Trãi, Phường Thượng Đình, Thanh Xuân, Hà Nội', 'pd9.png', 3479000, 0, 0, 33, 'Nam', '&lt;h3 class=&quot;heading-medium product-info-title-left&quot;&gt;\r\nPh&ograve;ng si&ecirc;u hot ph&ugrave; hợp sinh vi&ecirc;n vip - người đi l&agrave;m đường Nguyễn Tr&atilde;i ngay ga t&agrave;u Thượng Đ&igrave;nh\r\n          &lt;/h3&gt;\r\n           &lt;p&gt;\r\n     Ngay ga Thượng Đ&igrave;nh - gần Royal City v&agrave; c&aacute;c trường Đại Học KHTN, XHNV, Đại Nam... Ph&ograve;ng si&ecirc;u hot ph&ugrave; hợp sinh vi&ecirc;n vip - người đi l&agrave;m số nh&agrave; 22 ng&otilde; 190 Nguyễn Tr&atilde;i.\r\n        &lt;/p&gt;\r\n          &lt;h3 class=&quot;heading-medium product-info-title-left&quot;&gt;ĐẦY ĐỦ&lt;/h3&gt;\r\n          &lt;ul&gt;\r\n             &lt;li&gt;C&oacute; thang m&aacute;y, camera AI an ninh 24/24 Khu vực phơi quần &aacute;o rất rộng, tho&aacute;ng m&aacute;t, c&oacute; m&aacute;y giặt.&lt;/li&gt;\r\n             &lt;li&gt;(Gi&aacute; dịch vụ: Điện 3,5k/ số nước 32k/m3/ Internet 50k/ ph&ograve;ng).&lt;/li&gt;\r\n             &lt;liTo&agrave; nh&agrave; dịch vụ tốt - cộng đồng văn minh.&lt;/li&gt;\r\n &lt;li&gt;C&oacute; m&aacute;y giặt tr&ecirc;n tầng thượng.&lt;/li&gt;\r\n &lt;li&gt; G&aacute;c x&eacute;p rộng r&atilde;i.&lt;/li&gt;\r\n &lt;li&gt; B&agrave;n bếp + chậu rửa + tủ bếp.\r\n&lt;/li&gt;\r\n          &lt;/ul&gt;', 6, 7),
-(35, 'Phố Giảng Võ, Phường Giảng Võ, Ba Đình, Hà Nội', 'pd8.png', 1500000, 0, 0, 27, 'Nam', '&lt;h3 class=&quot;heading-medium product-info-title-left&quot;&gt;\r\nCh&iacute;nh chủ cho thu&ecirc; căn hộ dịch vụ.\r\n          &lt;/h3&gt;\r\n        &lt;h3 class=&quot;heading-medium product-info-title-left&quot;&gt;\r\nTrống diện t&iacute;ch 70m&sup2;, thiết kế 2 ngủ, 1 vệ sinh gi&aacute; từ 13 triệu/th&aacute;ng..\r\n          &lt;/h3&gt;\r\n           &lt;p&gt;\r\n    Địa chỉ: Giảng V&otilde;, nh&agrave; c&oacute; thang m&aacute;y cao cấp, mỗi tầng thiết kế 1 căn hộ diện t&iacute;ch 70m&sup2;, c&oacute; 2 ngủ, 1 vệ sinh, set up đủ đồ chỉ việc v&agrave;o ở.\r\n        &lt;/p&gt;\r\n          &lt;h3 class=&quot;heading-medium product-info-title-left&quot;&gt;ĐẦY ĐỦ&lt;/h3&gt;\r\n          &lt;ul&gt;\r\n             &lt;li&gt;Trống diện t&iacute;ch 60m&sup2;, thiết kế 1 ngủ, kh&eacute;p k&iacute;n c&oacute; Ban c&ocirc;ng view tho&aacute;ng.&lt;/li&gt;\r\n             &lt;li&gt;Nước: 100k/ người.&lt;/li&gt;\r\n             &lt;li&gt;Dịch vụ: Điện: 4k/số.&lt;/li&gt;\r\n             &lt;li&gt;Mạng intenet: Miễn Ph&iacute;.&lt;/li&gt;\r\n          &lt;/ul&gt;', 6, 1),
-(36, ' Số 10 ngõ 162, Đường Khương Đình, Phường Hạ Đình, Thanh Xuân, Hà Nội', 'pd7.png', 4600000, 0, 0, 52, 'Nam', '&lt;h3 class=&quot;heading-medium product-info-title-left&quot;&gt;\r\nCh&iacute;nh chủ cho thu&ecirc; CCMN PKD tại số 10 ng&otilde; 162 đường Khương Đ&igrave;nh, Hạ Đ&igrave;nh, Thanh Xu&acirc;n, HN.\r\n          &lt;/h3&gt;\r\n           &lt;p&gt;\r\n    Diện t&iacute;ch 70m&sup2; gồm 02 ngủ, 01 kh&aacute;ch v&agrave; 01 WC. 01 Bếp, nội thất cơ bản.\r\n        &lt;/p&gt;\r\n          &lt;h3 class=&quot;heading-medium product-info-title-left&quot;&gt;Kiểm so&aacute;t tốt hơn&lt;/h3&gt;\r\n          &lt;p&gt;\r\n   Vị tr&iacute; thuận tiện, PCCC v&agrave; an ninh đảm bảo, cammera 24/24 cửa v&acirc;n tay, thang m&aacute;y. Khu vực để xe ri&ecirc;ng biệt. View đẹp.\r\n        &lt;/p&gt;\r\n        &lt;h3 class=&quot;heading-medium product-info-title-left&quot;&gt;ĐẦY DỦ&lt;/h3&gt;\r\n        \r\n         \r\n          ', 6, 7),
-(37, 'Đường Yên Phụ, Phường Yên Phụ, Tây Hồ, Hà Nội', 'pd6.png', 3600000, 550000, 0, 1, 'Nữ', '&lt;h3 class=&quot;heading-medium product-info-title-left&quot;&gt;\r\nCh&iacute;nh chủ cho thu&ecirc; ph&ograve;ng trọ gần 30m2 full đồ phố Y&ecirc;n Phụ - T&acirc;y Hồ gi&aacute; 3.5tr/ph&ograve;ng\r\n          &lt;/h3&gt;\r\n           &lt;p&gt;\r\nPh&ograve;ng gần 30m&sup2; kh&eacute;p k&iacute;n đầy đủ tiện nghi điều ho&agrave;, n&oacute;ng lạnh, giường tủ quần &aacute;o, bếp nấu ăn...\r\n        &lt;/p&gt;\r\n          &lt;h3 class=&quot;heading-medium product-info-title-left&quot;&gt;ĐẦY ĐỦ&lt;/h3&gt;\r\n          &lt;ul&gt;\r\n             &lt;li&gt;Nh&agrave; c&aacute;ch đường Y&ecirc;n Phụ 20m, ng&otilde; th&ocirc;ng sang phố Y&ecirc;n Hoa gi&aacute;p Hồ T&acirc;y tho&aacute;ng m&aacute;t lộng gi&oacute;.&lt;/li&gt;\r\n             &lt;li&gt;Gi&aacute; cho thu&ecirc; 3.5tr/ph&ograve;ng.&lt;/li&gt;\r\n          &lt;/ul&gt;', 2, 3),
-(38, 'Số nhà 25 ngõ 116, Đường Miếu Đầm, Phường Mễ Trì, Nam Từ Liêm, Hà Nội', 'pd5.png', 3595000, 1116500, 0, 2, 'NỮ', '&lt;h3 class=&quot;heading-medium product-info-title-left&quot;&gt;\r\nCho thu&ecirc; ph&ograve;ng tuyệt đẹp, đầy đủ tiện nghi, thuận tiện giao th&ocirc;ng, ng&otilde; 116 Miếu Đầm\r\n          &lt;/h3&gt;\r\n           &lt;p&gt;\r\nCh&iacute;nh chủ em c&oacute; ph&ograve;ng tại số nh&agrave; 25 ng&otilde; 116 Miếu Đầm, diện t&iacute;ch 35m&sup2; thiết kế theo ti&ecirc;u chuẩn kh&aacute;ch sạn, cửa gỗ lim, kh&oacute;a cửa ph&ograve;ng mở theo m&atilde; số, ph&ograve;ng c&oacute; cửa sổ, ban c&ocirc;ng c&oacute; nhiều &aacute;nh s&aacute;ng v&agrave; tho&aacute;ng.\r\nNh&agrave; đầy đủ tiện nghi điều h&ograve;a, b&igrave;nh n&oacute;ng lạnh, giường v&agrave; tủ quần &aacute;o, b&agrave;n ghế sofa, tủ lạnh, tủ bếp tr&ecirc;n dưới, bếp từ, m&aacute;y giặt v&agrave; m&aacute;y sấy, thang m&aacute;y tốc độ cao, kh&oacute;a V&acirc;n tay đi lại tự do.\r\n        &lt;/p&gt;\r\n          &lt;h3 class=&quot;heading-medium product-info-title-left&quot;&gt;ĐẦY ĐỦ&lt;/h3&gt;\r\n          &lt;ul&gt;\r\n             &lt;li&gt;Nh&agrave; gần chợ, gần đường lớn, chỉ mấy bước ch&acirc;n ra Phạm H&ugrave;ng, Keang Nam, gần nhiều trường mầm non, gần nhiều khi vui chơi giải tr&iacute; ăn uống..&lt;/li&gt;\r\n             &lt;li&gt;Ngo&agrave;i ra c&oacute; căn hộ 1 ngủ 1 kh&aacute;ch diện t&iacute;ch 40m&sup2;, full đồ gi&aacute; l&agrave;: 5,5tr /th&aacute;ng.&lt;/li&gt;\r\n             &lt;li&gt;Gi&aacute; thu&ecirc; chỉ từ 5,2tr tới 5,5tr/ th&aacute;ng t&ugrave;y căn&lt;/li&gt;\r\n\r\n          &lt;/ul&gt;', 2, 8),
-(39, 'Phòng mới, đẹp, rẻ - full đồ ngõ 199 Hồ Tùng Mậu', 'pd4.png', 3695000, 1186500, 1, 1, 'Nam', '&lt;h3 class=&quot;heading-medium product-info-title-left&quot;&gt;\r\nĐặc điểm bất động sản\r\n          &lt;/h3&gt;\r\n           &lt;p&gt;\r\nKhu vực phố Hồ T&ugrave;ng Mậu, Nguyễn Đổng Chi, P Cầu Diễn. Rất thuận lợi giao th&ocirc;ng, đường, trường, trạm, chợ d&acirc;n sinh\r\n        &lt;/p&gt;\r\n          &lt;h3 class=&quot;heading-medium product-info-title-left&quot;&gt;ĐẦY ĐỦ&lt;/h3&gt;\r\n          &lt;ul&gt;\r\n             &lt;li&gt;Diện t&iacute;ch ph&ograve;ng 25 - 35m&sup2;. Full đồ. Kh&eacute;p k&iacute;n.&lt;/li&gt;\r\n             &lt;li&gt;Nh&agrave; mới, đồ mới, thang m&aacute;y xịn s&ograve;, an ninh, văn minh, c&oacute; m&aacute;y giặt, m&aacute;y sấy. &lt;/li&gt;\r\n             &lt;li&gt;Gi&aacute; dao động từ 4, x/ ph&ograve;ng&lt;/li&gt;\r\n          &lt;/ul&gt;', 2, 8),
-(40, 'Căn hộ dịch vụ cao cấp, có ban công, full đồ, nhà mới xây xong tại 1081 Hồng Hà Hoàn Kiếm', 'pd3.png', 5700000, 945350, 1, 5, 'Nam', '&lt;h3 class=&quot;heading-medium product-info-title-left&quot;&gt;\r\nCho thu&ecirc; căn hộ dịch vụ cao cấp, c&oacute; ban c&ocirc;ng, full đồ, nh&agrave; mới x&acirc;y xong tại Sunny Apartment Hồng H&agrave; Apartment theo ng&agrave;y, th&aacute;ng:\r\n          &lt;/h3&gt;\r\n           &lt;p&gt;\r\nVị tr&iacute; trung t&acirc;m, 10 ph&uacute;t đi bộ ra hồ Ho&agrave;n Kiếm, xung quanh t&ograve;a nh&agrave; căn g&oacute;c c&oacute; nhiều tiện &iacute;ch xung quanh.\r\n1 nh&agrave; tắm kh&eacute;p k&iacute;n.\r\n        &lt;/p&gt;\r\n          &lt;h3 class=&quot;heading-medium product-info-title-left&quot;&gt;Đầy đủ&lt;/h3&gt;\r\n          &lt;ul&gt;\r\n             &lt;li&gt;Bếp, ph&ograve;ng ăn rộng + chăn, ga, gối, đệm. &lt;/li&gt;\r\n             &lt;li&gt;Giường, đệm, quạt th&ocirc;ng gi&oacute;.&lt;/li&gt;\r\n             &lt;li&gt;Tivi, tủ lạnh.\r\nTủ bếp, m&aacute;y h&uacute;t m&ugrave;i, bếp từ.\r\nVệ sinh kh&eacute;p k&iacute;n, c&oacute; n&oacute;ng lạnh, thiết bị cao cấp.\r\nBộ sofa. Bộ b&agrave;n ghế l&agrave;m việc, t&aacute;p đầu giường.\r\nBộ b&agrave;n ghế trang điểm..&lt;/li&gt;\r\n          &lt;/ul&gt;', 6, 2),
-(41, 'Căn hộ số 21 Cầu Đất, Hoàn Kiếm, Hà Nội', 'pd2.png', 2000000, 0, 0, 4, 'Nam', 'Cho thu&ecirc; căn hộ số 21 Cầu Đất, Ho&agrave;n Kiếm, H&agrave; Nội.\r\n- Tầng 2, 3, 4: DTMB 40m&sup2;, mặt tiền 5m, ph&ograve;ng vệ sinh kh&eacute;p k&iacute;n, điện nước hộ gia đ&igrave;nh, an ninh tốt, giao th&ocirc;ng thuận tiện, đầy đủ trang thiết bị: N&oacute;ng lạnh, wifi, điều h&ograve;a, giường, tủ,...\r\n- Nh&agrave; mặt đường đi lại thuận tiện, gần chợ, c&aacute;ch hồ gươm 1 km.\r\n- Tầng 2 gi&aacute; 5 triệu/th&aacute;ng, tầng 3 gi&aacute; 4.5 triệu/th&aacute;ng, tầng 4 gi&aacute; 3,5 triệu/th&aacute;ng.', 4, 2),
-(42, '68 P. Hàng Đào, Hàng Đào, Hoàn Kiếm, Hà Nội, Việt Nam', 'pd1.png', 4200000, 0, 0, 5, 'Nữ', 'Ch&iacute;nh chủ cho thu&ecirc; c&aacute;c căn hộ chung cư mini mới x&acirc;y đầy đủ tiện nghi v&agrave; full đồ tại Hồng H&agrave;, Ho&agrave;n Kiếm. To&agrave; nh&agrave; kh&ocirc;ng chung chủ, to&agrave; nh&agrave; c&oacute; camera v&agrave; đi lại tự do bằng kho&aacute; v&acirc;n tay, được thiết kế hiện đại v&agrave; trang bị đầy đủ, giường, tủ quần &aacute;o, n&oacute;ng lạnh, điều ho&agrave;, tủ lạnh, c&oacute; b&agrave;n bếp v&agrave; chậu rửa b&aacute;t, m&aacute;y giặt chung miễn ph&iacute;, ph&ograve;ng n&agrave;o cũng đầy đủ &aacute;nh s&aacute;ng v&agrave; tho&aacute;ng.\r\nDiện t&iacute;ch mỗi ph&ograve;ng 22m&sup2;.\r\nGi&aacute; thu&ecirc; từ 4,2tr tới 4,5tr/th&aacute;ng.\r\nVị tr&iacute; trung t&acirc;m bậc nhất H&agrave; Nội c&aacute;ch phố ho&agrave;n kiếm 800m, c&aacute;ch phố T&acirc;y B&ugrave;i viện chỉ 500m, gần c&aacute;c chợ lớn, trung t&acirc;m thương mại, si&ecirc;u thị, trường học, đường s&aacute; đi lại rất thuận tiện.', 3, 2);
+INSERT INTO `product` (`id_pro`, `pro_name`, `image`, `price`, `price_sale`, `special`, `views`, `gender`, `description`, `id_cate`, `id_brand`, `status`) VALUES
+(1, 'Ngõ 120, Đường Kim Giang, Phường Kim Giang, Thanh Xuân, Hà Nội', 'pd1.png', 3719000, 0, 1, 74, 'Nữ', '&lt;p&gt;+ Ph&ograve;ng si&ecirc;u tiện nghi với nội thất hiện đại:&lt;/p&gt;\r\n&lt;p&gt;+ Điều ho&agrave;, n&oacute;ng lạnh, tủ quần &aacute;o, tủ lạnh, h&uacute;t m&ugrave;i, bếp từ, b&agrave;n cafe, b&agrave;n ăn.&lt;/p&gt;\r\n&lt;p&gt;+ C&oacute; g&aacute;c x&eacute;p, nghỉ ngơi ri&ecirc;ng tư.&lt;/p&gt;\r\n&lt;p&gt;+ Kh&ocirc;ng gian bếp tiện &iacute;ch c&oacute; h&uacute;t m&ugrave;i, ban c&ocirc;ng tho&aacute;ng m&aacute;t.&lt;/p&gt;\r\n&lt;p&gt;+ Thang m&aacute;y, m&aacute;y giặt sấy đầy đủ.&lt;/p&gt;\r\n&lt;p&gt;+ Hỗ trợ khi gặp vấn đề 24/24, c&oacute; bộ phận chăm s&oacute;c kh&aacute;ch h&agrave;ng, bộ phận kỹ thuật chuy&ecirc;n nghiệp.&lt;/p&gt;', 1, 7, 1),
+(2, 'Ngõ 120, Đường Kim Giang, Phường Kim Giang, Thanh Xuân, Hà Nội', 'pd2.png', 2019000, 0, 1, 49, 'Nam', '&lt;p&gt;+ Ph&ograve;ng si&ecirc;u tiện nghi với nội thất hiện đại:&lt;/p&gt;\r\n&lt;p&gt;+ Điều ho&agrave;, n&oacute;ng lạnh, tủ quần &aacute;o, tủ lạnh, h&uacute;t m&ugrave;i, bếp từ, b&agrave;n cafe, b&agrave;n ăn.&lt;/p&gt;\r\n&lt;p&gt;+ C&oacute; g&aacute;c x&eacute;p, nghỉ ngơi ri&ecirc;ng tư.&lt;/p&gt;\r\n&lt;p&gt;+ Kh&ocirc;ng gian bếp tiện &iacute;ch c&oacute; h&uacute;t m&ugrave;i, ban c&ocirc;ng tho&aacute;ng m&aacute;t.&lt;/p&gt;\r\n&lt;p&gt;+ Thang m&aacute;y, m&aacute;y giặt sấy đầy đủ.&lt;/p&gt;\r\n&lt;p&gt;+ Hỗ trợ khi gặp vấn đề 24/24, c&oacute; bộ phận chăm s&oacute;c kh&aacute;ch h&agrave;ng, bộ phận kỹ thuật chuy&ecirc;n nghiệp.&lt;/p&gt;', 1, 7, 1),
+(4, 'Ngõ 196, Đường Hồ Tùng Mậu, Phường Mai Dịch, Cầu Giấy, Hà Nội', 'pd7.png', 2395000, 0, 1, 45, 'Nam', '&lt;p&gt;+ Ph&ograve;ng si&ecirc;u tiện nghi với nội thất hiện đại:&lt;/p&gt;\r\n&lt;p&gt;+ Điều ho&agrave;, n&oacute;ng lạnh, tủ quần &aacute;o, tủ lạnh, h&uacute;t m&ugrave;i, bếp từ, b&agrave;n cafe, b&agrave;n ăn.&lt;/p&gt;\r\n&lt;p&gt;+ C&oacute; g&aacute;c x&eacute;p, nghỉ ngơi ri&ecirc;ng tư.&lt;/p&gt;\r\n&lt;p&gt;+ Kh&ocirc;ng gian bếp tiện &iacute;ch c&oacute; h&uacute;t m&ugrave;i, ban c&ocirc;ng tho&aacute;ng m&aacute;t.&lt;/p&gt;\r\n&lt;p&gt;+ Thang m&aacute;y, m&aacute;y giặt sấy đầy đủ.&lt;/p&gt;\r\n&lt;p&gt;+ Hỗ trợ khi gặp vấn đề 24/24, c&oacute; bộ phận chăm s&oacute;c kh&aacute;ch h&agrave;ng, bộ phận kỹ thuật chuy&ecirc;n nghiệp&lt;/p&gt;', 1, 4, 1),
+(5, '37, Đường Dịch Vọng, Phường Dịch Vọng, Cầu Giấy, Hà Nội', 'pd6.png', 2395000, 0, 1, 117, 'Nam', '+ Ph&ograve;ng si&ecirc;u tiện nghi với nội thất hiện đại:\r\n+ Điều ho&agrave;, n&oacute;ng lạnh, tủ quần &aacute;o, tủ lạnh, h&uacute;t m&ugrave;i, bếp từ, b&agrave;n cafe, b&agrave;n ăn.\r\n+ C&oacute; g&aacute;c x&eacute;p, nghỉ ngơi ri&ecirc;ng tư.\r\n+ Kh&ocirc;ng gian bếp tiện &iacute;ch c&oacute; h&uacute;t m&ugrave;i, ban c&ocirc;ng tho&aacute;ng m&aacute;t.\r\n+ Thang m&aacute;y, m&aacute;y giặt sấy đầy đủ.\r\n+ Hỗ trợ khi gặp vấn đề 24/24, c&oacute; bộ phận chăm s&oacute;c kh&aacute;ch h&agrave;ng, bộ phận kỹ thuật chuy&ecirc;n nghiệp.', 1, 4, 0),
+(6, 'Ngõ 144, Phố Quan Nhân, Phường Nhân Chính, Thanh Xuân, Hà Nội', 'pd8.png', 3099000, 0, 1, 64, 'Nam', '&lt;h3 class=&quot;heading-medium product-info-title-left&quot;&gt;\r\n Cho thu&ecirc; chung cư 7 tầng ng&otilde; 144 Quan Nh&acirc;n gi&aacute; 1,6tr - 1,8tr - 2tr/th kh&eacute;p k&iacute;n cho thu&ecirc;\r\n          &lt;/h3&gt;\r\n    \r\n    \r\n          &lt;ul&gt;\r\n            &lt;li&gt; Gi&aacute;: 1,6tr - 1,8tr - 2tr/th&aacute;ng kh&eacute;p k&iacute;n.&lt;/li&gt;\r\n            &lt;li&gt;Nh&agrave; 4 tầng x&acirc;y cho thu&ecirc; sạch sẽ, tho&aacute;ng m&aacute;t..&lt;/li&gt;\r\n            &lt;li&gt;DT: 15m&sup2; - 18m&sup2; - 20m&sup2; - 23m&sup2;.&lt;/li&gt;\r\n            &lt;li&gt; C&oacute; kệ bếp nấu, bồn rửa b&aacute;t, sạch sẽ.&lt;/li&gt;\r\n          &lt;/ul&gt;\r\n          &lt;h3 class=&quot;heading-medium product-info-title-left&quot;&gt;TH&Ocirc;NG SỐ&lt;/h3&gt;\r\n          &lt;ul&gt;\r\n            &lt;li&gt;- Điện 3,5 ngh&igrave;n/số. Nước 20 ngh&igrave;n/khối.&lt;/li&gt;\r\n          &lt;/ul&gt;', 1, 7, 0),
+(7, 'Ngõ 144, Phố Quan Nhân, Phường Nhân Chính, Thanh Xuân, Hà Nội', 'pd110.png', 4659000, 0, 1, 77, 'Nữ', '&lt;p&gt;- Nh&agrave; 4 tầng x&acirc;y cho thu&ecirc; sạch sẽ, tho&aacute;ng m&aacute;t.&lt;/p&gt;\r\n&lt;p&gt;- Gi&aacute;: 1,6tr - 1,8tr - 2tr/th&aacute;ng kh&eacute;p k&iacute;n.&lt;/p&gt;\r\n\r\n&lt;p&gt;- DT: 15m&sup2; - 18m&sup2; - 20m&sup2; - 23m&sup2;.&lt;/p&gt;\r\n\r\n&lt;p&gt;- C&oacute; kệ bếp nấu, bồn rửa b&aacute;t, sạch sẽ.&lt;/p&gt;\r\n\r\n&lt;p&gt;- Điện 3,5 ngh&igrave;n/số. Nước 20 ngh&igrave;n/khối.&lt;/p&gt;\r\n\r\n', 1, 7, 0),
+(8, 'Đường Dốc Thọ Lão, Phường Đồng Nhân, Hai Bà Trưng, Hà Nội', 'pd5.png', 3599000, 0, 0, 82, 'Nam', '&lt;h3 class=&quot;heading-medium product-info-title-left&quot;&gt;\r\n  Cho thu&ecirc; giường tầng homestay full đồ full tiện &iacute;ch\r\n          &lt;/h3&gt;\r\n&lt;p&gt;- To&agrave; nh&agrave; c&oacute; thang m&aacute;y.&lt;/p&gt;\r\n&lt;p&gt;- Gi&aacute; bao gồm đầy đủ c&aacute;c dịch vụ điện nước, internet, dọn dẹp.&lt;/p&gt;\r\n&lt;p&gt;- M&ocirc;i trường sống văn minh, vui vẻ.&lt;/p&gt;\r\n&lt;p&gt;- Nh&agrave; gần nhiều trường đại học, l&ecirc;n Hồ Gươm chỉ 5 ph&uacute;t.&lt;/p&gt;\r\n          ', 3, 6, 0),
+(9, 'Đường Yên Phụ, Phường Yên Phụ, Tây Hồ, Hà Nội', 'pd9.png', 1900000, 1710000, 0, 107, 'Nu', '&lt;h3 class=&quot;heading-medium product-info-title-left&quot;&gt;\r\n   Ch&iacute;nh chủ cho thu&ecirc; ph&ograve;ng trọ gần 30m2 full đồ phố Y&ecirc;n Phụ - T&acirc;y Hồ gi&aacute; 3.5tr/ph&ograve;ng\r\n          &lt;/h3&gt;\r\n    &lt;p&gt;Ch&iacute;nh chủ cho thu&ecirc; ph&ograve;ng trọ kh&eacute;p k&iacute;n tại Y&ecirc;n Phụ - T&acirc;y Hồ - H&agrave; Nội.&lt;/p&gt;\r\n&lt;p&gt;Ph&ograve;ng gần 30m&sup2; kh&eacute;p k&iacute;n đầy đủ tiện nghi điều ho&agrave;, n&oacute;ng lạnh, giường tủ quần &aacute;o, bếp nấu ăn...&lt;/p&gt;\r\n&lt;p&gt;- Nh&agrave; c&aacute;ch đường Y&ecirc;n Phụ 20m, ng&otilde; th&ocirc;ng sang phố Y&ecirc;n Hoa gi&aacute;p Hồ T&acirc;y tho&aacute;ng m&aacute;t lộng gi&oacute;.&lt;/p&gt;\r\n&lt;p&gt;- Gi&aacute; cho thu&ecirc; 3.5tr/ph&ograve;ng.&lt;/p&gt;\r\n&lt;p&gt;Thanh to&aacute;n th&aacute;ng 1.&lt;/p&gt;', 2, 3, 0),
+(10, 'Ngõ 136, Đường Hồ Tùng Mậu, Phường Mai Dịch, Cầu Giấy, Hà Nội', 'pd115.png', 1995000, 0, 0, 97, 'Nu', '&lt;p&gt;Ch&iacute;nh chủ em c&oacute; nh&agrave; cc mini mới x&acirc;y mới tinh. Diện t&iacute;ch mỗi ph&ograve;ng: 35m&sup2; tại ng&otilde; 196 Hồ T&ugrave;ng Mậu, nếu đi từ đường hồ T&ugrave;ng Mậu đi v&agrave;o th&igrave; đi v&agrave;o khu chung cư Goldmark City đi khoảng 50m l&agrave; tới.&lt;/p&gt;\r\n&lt;p&gt;Nh&agrave; mới x&acirc;y n&ecirc;n c&oacute; đầy đủ nội thất mới, điều h&ograve;a, n&oacute;ng lạnh, giường, tủ quần &aacute;o, tủ lạnh, m&aacute;y giặt, m&aacute;y sấy, shopha, b&agrave;n bếp tr&ecirc;n dưới c&oacute; h&uacute;t m&ugrave;i đầy đủ, r&egrave;m cửa, mỗi căn hộ đều c&oacute; nhiều cửa sổ, &aacute;nh s&aacute;ng.&lt;/p&gt;\r\n&lt;p&gt;Nh&agrave; gần nhiều trường đại học như ĐH Thương Mại, đại học Quốc Gia, đại học Ngoại Ngữ, đại học Ho&agrave; B&igrave;nh, ra chợ chỉ mấy bước ch&acirc;n, c&aacute;ch trường quốc tế Newton tầm 20m, từ nh&agrave; ra đường quốc lộ cũng rất gần, nh&agrave; &ocirc; t&ocirc; đỗ cửa, thang m&aacute;y tốc độ cao, hệ thống cửa c&oacute; V&acirc;n tay, camera, bảo vệ trực 24/7.&lt;/p&gt;\r\n&lt;p&gt;Gi&aacute; thu&ecirc; mỗi căn hộ chỉ từ 6tr tới 6,5 tr/th&aacute;ng.&lt;/p&gt;', 2, 4, 0),
+(11, 'Số 144 ngõ 68 Phú Diễn , Từ Liêm, Hà Nội', 'pd113.png', 2795000, 2236000, 0, 126, 'Nam', '&lt;p&gt;+ Ph&ograve;ng si&ecirc;u tiện nghi với nội thất hiện đại:&lt;/p&gt;\r\n&lt;p&gt;+ Điều ho&agrave;, n&oacute;ng lạnh, tủ quần &aacute;o, tủ lạnh, h&uacute;t m&ugrave;i, bếp từ, b&agrave;n cafe, b&agrave;n ăn.&lt;/p&gt;\r\n&lt;p&gt;+ C&oacute; g&aacute;c x&eacute;p, nghỉ ngơi ri&ecirc;ng tư.&lt;/p&gt;\r\n&lt;p&gt;+ Kh&ocirc;ng gian bếp tiện &iacute;ch c&oacute; h&uacute;t m&ugrave;i, ban c&ocirc;ng tho&aacute;ng m&aacute;t.&lt;/p&gt;\r\n&lt;p&gt;+ Thang m&aacute;y, m&aacute;y giặt sấy đầy đủ.&lt;/p&gt;\r\n&lt;p&gt;+ Hỗ trợ khi gặp vấn đề 24/24, c&oacute; bộ phận chăm s&oacute;c kh&aacute;ch h&agrave;ng, bộ phận kỹ thuật chuy&ecirc;n nghiệp.&lt;/p&gt;', 4, 8, 0),
+(12, 'Đường Dốc Thọ Lão, Phường Đồng Nhân, Hai Bà Trưng, Hà Nội', 'pd92.png', 3199000, 2559000, 0, 143, 'Nam', '&lt;h1&gt;Cho thu&ecirc; homestay giường tầng gần Hồ Gươm:&lt;/h1&gt;\r\n&lt;p&gt;- To&agrave; nh&agrave; c&oacute; thang m&aacute;y.&lt;/p&gt;\r\n&lt;p&gt;- Gi&aacute; bao gồm đầy đủ c&aacute;c dịch vụ điện nước, internet, dọn dẹp.&lt;/p&gt;\r\n&lt;p&gt;- M&ocirc;i trường sống văn minh, vui vẻ.&lt;/p&gt;\r\n&lt;p&gt;- Nh&agrave; gần nhiều trường đại học, l&ecirc;n Hồ Gươm chỉ 5 ph&uacute;t.&lt;/p&gt;', 3, 6, 0),
+(13, 'Ngõ 144, Phố Quan Nhân, Phường Nhân Chính, Thanh Xuân, Hà Nội', 'pd72.png', 2019000, 0, 0, 103, 'Nam', '&lt;p&gt;- Nh&agrave; 4 tầng x&acirc;y cho thu&ecirc; sạch sẽ, tho&aacute;ng m&aacute;t.&lt;/p&gt;\r\n&lt;p&gt;- Gi&aacute;: 1,6tr - 1,8tr - 2tr/th&aacute;ng kh&eacute;p k&iacute;n.&lt;/p&gt;\r\n&lt;p&gt;- DT: 15m&sup2; - 18m&sup2; - 20m&sup2; - 23m&sup2;.&lt;/p&gt;\r\n&lt;p&gt;- C&oacute; kệ bếp nấu, bồn rửa b&aacute;t, sạch sẽ.&lt;/p&gt;\r\n&lt;p&gt;- Điện 3,5 ngh&igrave;n/số. Nước 20 ngh&igrave;n/khối.&lt;/p&gt;', 2, 7, 0),
+(14, 'Ngõ 32, Đường Đỗ Đức Dục, Phường Mễ Trì, Nam Từ Liêm, Hà Nội', 'pd114.png', 4495000, 2248000, 0, 57, 'Nam', ' &lt;h3 class=&quot;heading-medium product-info-title-left&quot;&gt;\r\n       Cho thu&ecirc; ph&ograve;ng mới x&acirc;y, full đồ ng&otilde; 32 Đỗ Đức Dục\r\n          &lt;/h3&gt;\r\n&lt;p&gt;Ch&iacute;nh chủ em c&oacute; ph&ograve;ng diện t&iacute;ch 35m&sup2; full đồ, nh&agrave; mới x&acirc;y, đồ mới tinh ng&otilde; 32 Đỗ Đức dục, Nam từ li&ecirc;m, đối diện kh&aacute;ch sạn Marriot, trung t&acirc;m hội nghị Quốc gia, đi ra Phạm H&ugrave;ng v&agrave; Keangnam rất gần, c&aacute;ch Trần Duy Hưng chỉ 1,5km.&lt;/p&gt;\r\n&lt;p&gt;Ph&ograve;ng gồm điều h&ograve;a, n&oacute;ng lạnh, giường v&agrave; tủ quần &aacute;o, tủ lạnh v&agrave; m&aacute;y giặt, m&aacute;y sấy, shopha, b&agrave;n l&agrave;m việc.&lt;/p&gt;\r\n&lt;p&gt;Gi&aacute; thu&ecirc; chỉ từ 5,2tr tới 5,5tr/th&aacute;ng.&lt;/p&gt;\r\n&lt;p&gt;Ngo&agrave;i ra c&oacute; th&ecirc;m căn hộ gồm 1 ph&ograve;ng ngủ, 1 ph&ograve;ng kh&aacute;ch. DT: 35m&sup2; - Gi&aacute; cho thu&ecirc; 5.6tr/ th&aacute;ng.&lt;/p&gt;', 3, 8, 0),
+(15, 'Ngõ 32, Đường Đỗ Đức Dục, Phường Mễ Trì, Nam Từ Liêm, Hà Nội', 'pd81.png', 3195000, 1598000, 0, 75, 'Nam', '&lt;h3 class=&quot;heading-medium product-info-title-left&quot;&gt;\r\n        Cho thu&ecirc; ph&ograve;ng mới x&acirc;y, full đồ ng&otilde; 32 Đỗ Đức Dục\r\n&lt;/h3&gt;\r\n&lt;p&gt;+ Ph&ograve;ng si&ecirc;u tiện nghi với nội thất hiện đại:&lt;/p&gt;\r\n&lt;p&gt;+ Điều ho&agrave;, n&oacute;ng lạnh, tủ quần &aacute;o, tủ lạnh, h&uacute;t m&ugrave;i, bếp từ, b&agrave;n cafe, b&agrave;n ăn.&lt;/p&gt;\r\n&lt;p&gt;+ C&oacute; g&aacute;c x&eacute;p, nghỉ ngơi ri&ecirc;ng tư.&lt;/p&gt;\r\n&lt;p&gt;+ Kh&ocirc;ng gian bếp tiện &iacute;ch c&oacute; h&uacute;t m&ugrave;i, ban c&ocirc;ng tho&aacute;ng m&aacute;t.&lt;/p&gt;\r\n&lt;p&gt;+ Thang m&aacute;y, m&aacute;y giặt sấy đầy đủ.&lt;/p&gt;\r\n&lt;p&gt;+ Hỗ trợ khi gặp vấn đề 24/24, c&oacute; bộ phận chăm s&oacute;c kh&aacute;ch &lt;/p&gt;&lt;p&gt;h&agrave;ng, bộ phận kỹ thuật chuy&ecirc;n nghiệp.&lt;/p&gt;', 3, 8, 0),
+(16, '30 Đức Diễn , Từ Liêm , Hà Nội', 'pd8.png', 3195000, 1597500, 0, 139, 'Nam', '&lt;p&gt;+ Ph&ograve;ng si&ecirc;u tiện nghi với nội thất hiện đại:&lt;/p&gt;\r\n&lt;p&gt;+ Điều ho&agrave;, n&oacute;ng lạnh, tủ quần &aacute;o, tủ lạnh, h&uacute;t m&ugrave;i, bếp từ, b&agrave;n cafe, b&agrave;n ăn.&lt;/p&gt;\r\n&lt;p&gt;+ C&oacute; g&aacute;c x&eacute;p, nghỉ ngơi ri&ecirc;ng tư.&lt;/p&gt;\r\n&lt;p&gt;+ Kh&ocirc;ng gian bếp tiện &iacute;ch c&oacute; h&uacute;t m&ugrave;i, ban c&ocirc;ng tho&aacute;ng m&aacute;t.&lt;/p&gt;\r\n&lt;p&gt;+ Thang m&aacute;y, m&aacute;y giặt sấy đầy đủ.&lt;/p&gt;\r\n&lt;p&gt;+ Hỗ trợ khi gặp vấn đề 24/24, c&oacute; bộ phận chăm s&oacute;c kh&aacute;ch h&agrave;ng, bộ phận kỹ thuật chuy&ecirc;n nghiệp.&lt;/p&gt;', 3, 8, 0),
+(17, 'Số 17Phố Giảng Võ, Phường Giảng Võ, Ba Đình, Hà Nội', 'pd51.png', 2500000, 1500000, 0, 73, 'Nam', '&lt;p&gt;Nội thất: Giường tủ, Tivi, b&agrave;n l&agrave;m việc, Ga Gối, chăn, Đệm, B&agrave;n Ghế, N&oacute;ng Lạnh, Tủ Lạnh, Tủ Bếp, Bếp Từ, đồ d&ugrave;ng nấu bếp, M&aacute;y Giặt chung, l&ograve; vi s&oacute;ng, kho&aacute; cửa v&acirc;n tay... Kh&aacute;ch chỉ việc x&aacute;ch vali đến ở.&lt;/p&gt;\r\n&lt;p&gt;Vị tr&iacute; trung t&acirc;m đi lại thuận tiện, an ninh tốt.&lt;/p&gt;\r\n&lt;p&gt;Dịch vụ: Điện: 4k/số.&lt;/p&gt;\r\n&lt;p&gt;Nước: 100k/ người.&lt;/p&gt;\r\n&lt;p&gt;Mạng intenet: Miễn Ph&iacute;.&lt;/p&gt;', 4, 1, 0),
+(18, 'Số 14 Phúc Diễn - Cầu Diễn - Từ Liêm - Hà Nội', 'pd35.png', 2495000, 1248000, 0, 43, 'Nam', '&lt;p&gt;Ch&iacute;nh chủ em c&oacute; nh&agrave; cc mini mới x&acirc;y mới tinh. Diện t&iacute;ch mỗi ph&ograve;ng: 35m&sup2; tại ng&otilde; 196 Hồ T&ugrave;ng Mậu, nếu đi từ đường hồ T&ugrave;ng Mậu đi v&agrave;o th&igrave; đi v&agrave;o khu chung cư Goldmark City đi khoảng 50m l&agrave; tới.&lt;/p&gt;\r\n&lt;p&gt;Nh&agrave; mới x&acirc;y n&ecirc;n c&oacute; đầy đủ nội thất mới, điều h&ograve;a, n&oacute;ng lạnh, giường, tủ quần &aacute;o, tủ lạnh, m&aacute;y giặt, m&aacute;y sấy, shopha, b&agrave;n bếp tr&ecirc;n dưới c&oacute; h&uacute;t m&ugrave;i đầy đủ, r&egrave;m cửa, mỗi căn hộ đều c&oacute; nhiều cửa sổ, &aacute;nh s&aacute;ng.&lt;/p&gt;\r\n&lt;p&gt;Nh&agrave; gần nhiều trường đại học như ĐH Thương Mại, đại học Quốc Gia, đại học Ngoại Ngữ, đại học Ho&agrave; B&igrave;nh, ra chợ chỉ mấy bước ch&acirc;n, c&aacute;ch trường quốc tế Newton tầm 20m, từ nh&agrave; ra đường quốc lộ cũng rất gần, nh&agrave; &ocirc; t&ocirc; đỗ cửa, thang m&aacute;y tốc độ cao, hệ thống cửa c&oacute; V&acirc;n tay, camera, bảo vệ trực 24/7.&lt;/p&gt;', 4, 8, 0),
+(19, 'Số 69 ngõ 68 Phú Diễn - Từ Liêm - Hà Nội', 'pd2.png', 2595000, 0, 0, 35, 'Nam', '&lt;p&gt;Ch&iacute;nh chủ em c&oacute; nh&agrave; cc mini mới x&acirc;y mới tinh. Diện t&iacute;ch mỗi ph&ograve;ng: 35m&sup2; tại ng&otilde; 196 Hồ T&ugrave;ng Mậu, nếu đi từ đường hồ T&ugrave;ng Mậu đi v&agrave;o th&igrave; đi v&agrave;o khu chung cư Goldmark City đi khoảng 50m l&agrave; tới.&lt;/p&gt;\r\n&lt;p&gt;Nh&agrave; mới x&acirc;y n&ecirc;n c&oacute; đầy đủ nội thất mới, điều h&ograve;a, n&oacute;ng lạnh, giường, tủ quần &aacute;o, tủ lạnh, m&aacute;y giặt, m&aacute;y sấy, shopha, b&agrave;n bếp tr&ecirc;n dưới c&oacute; h&uacute;t m&ugrave;i đầy đủ, r&egrave;m cửa, mỗi căn hộ đều c&oacute; nhiều cửa sổ, &aacute;nh s&aacute;ng.&lt;/p&gt;\r\n&lt;p&gt;Nh&agrave; gần nhiều trường đại học như ĐH Thương Mại, đại học Quốc Gia, đại học Ngoại Ngữ, đại học Ho&agrave; B&igrave;nh, ra chợ chỉ mấy bước ch&acirc;n, c&aacute;ch trường quốc tế Newton tầm 20m, từ nh&agrave; ra đường quốc lộ cũng rất gần, nh&agrave; &ocirc; t&ocirc; đỗ cửa, thang m&aacute;y tốc độ cao, hệ thống cửa c&oacute; V&acirc;n tay, camera, bảo vệ trực 24/7.&lt;/p&gt;', 1, 8, 0),
+(21, 'Ngách 173/24/7, Đường Hoàng Hoa Thám, Phường Ngọc Hà, Ba Đình, Hà Nội', 'pd81.png', 2800000, 0, 0, 73, 'Nữ', '&lt;p&gt;Địa chỉ: Ng&aacute;ch 173/24/7 Ho&agrave;ng Hoa Th&aacute;m, Ba Đ&igrave;nh, H&agrave; Nội -&lt;/p&gt; &lt;p&gt;Nh&agrave; mới x&acirc;y.&lt;/p&gt;\r\n&lt;p&gt;Ph&ograve;ng Studio.&lt;/p&gt;\r\n&lt;p&gt;Thang m&aacute;y.&lt;/p&gt;\r\n&lt;p&gt;Diện t&iacute;ch: 30m&sup2;.&lt;/p&gt;\r\n&lt;p&gt;Nội thất: Điều ho&agrave;, n&oacute;ng lạnh, giường tủ, m&aacute;y giặt, bếp, tủ lạnh.&lt;/p&gt;\r\n&lt;p&gt;Tiện &iacute;ch: Cổng kh&oacute;a v&acirc;n tay giờ giấc thoải m&aacute;i, c&oacute; nh&agrave; để xe, gần chợ, si&ecirc;u thị.&lt;/p&gt;\r\n&lt;p&gt;Gi&aacute; dịch vụ:&lt;/p&gt;\r\n&lt;p&gt;Điện: 3,8k/số.&lt;/p&gt;\r\n&lt;p&gt;Nước: 28k/khối.&lt;/p&gt;\r\n&lt;p&gt;Internet: 50k/người.&lt;/p&gt;\r\n&lt;p&gt;Thang m&aacute;y: 50k/người.&lt;/p&gt;\r\n&lt;p&gt;Vệ sinh: 50k/người.&lt;/p&gt;', 1, 1, 0),
+(22, 'Phố Phùng Hưng, Phường Phúc La, Hà Đông, Hà Nội', 'pd34.png', 2799000, 1679400, 0, 92, 'Nữ', '&lt;p&gt;+ Ph&ograve;ng si&ecirc;u tiện nghi với nội thất hiện đại:&lt;/p&gt;\r\n&lt;p&gt;+ Điều ho&agrave;, n&oacute;ng lạnh, tủ quần &aacute;o, tủ lạnh, h&uacute;t m&ugrave;i, bếp từ, b&agrave;n cafe, b&agrave;n ăn.&lt;/p&gt;\r\n&lt;p&gt;+ C&oacute; g&aacute;c x&eacute;p, nghỉ ngơi ri&ecirc;ng tư.&lt;/p&gt;\r\n&lt;p&gt;+ Kh&ocirc;ng gian bếp tiện &iacute;ch c&oacute; h&uacute;t m&ugrave;i, ban c&ocirc;ng tho&aacute;ng m&aacute;t.&lt;/p&gt;\r\n&lt;p&gt;+ Thang m&aacute;y, m&aacute;y giặt sấy đầy đủ.&lt;/p&gt;\r\n&lt;p&gt;+ Hỗ trợ khi gặp vấn đề 24/24, c&oacute; bộ phận chăm s&oacute;c kh&aacute;ch h&agrave;ng, bộ phận kỹ thuật chuy&ecirc;n nghiệp.&lt;/p&gt;', 2, 9, 0),
+(23, 'Số 14 Đường Yên Phụ, Phường Yên Phụ, Tây Hồ, Hà Nội', 'pd43.png', 2000000, 1600000, 0, 41, 'Unisex', '&lt;p&gt;Ch&iacute;nh chủ cho thu&ecirc; ph&ograve;ng trọ kh&eacute;p k&iacute;n tại Y&ecirc;n Phụ - T&acirc;y Hồ - H&agrave; Nội.&lt;/p&gt;\r\n&lt;p&gt;Ph&ograve;ng gần 30m&sup2; kh&eacute;p k&iacute;n đầy đủ tiện nghi điều ho&agrave;, n&oacute;ng lạnh, giường tủ quần &aacute;o, bếp nấu ăn...&lt;/p&gt;\r\n&lt;p&gt;- Nh&agrave; c&aacute;ch đường Y&ecirc;n Phụ 20m, ng&otilde; th&ocirc;ng sang phố Y&ecirc;n Hoa gi&aacute;p Hồ T&acirc;y tho&aacute;ng m&aacute;t lộng gi&oacute;.&lt;/p&gt;\r\n&lt;p&gt;- Gi&aacute; cho thu&ecirc; 3.5tr/ph&ograve;ng.&lt;/p&gt;\r\n&lt;p&gt;Thanh to&aacute;n th&aacute;ng 1.&lt;/p&gt;', 2, 3, 0),
+(26, 'Ngõ 32, Đường Đỗ Đức Dục, Phường Mễ Trì, Nam Từ Liêm, Hà Nội', 'pd36.png', 1295000, 647500, 0, 6, 'Trẻ Em', '&lt;p&gt;Ch&iacute;nh chủ em c&oacute; ph&ograve;ng diện t&iacute;ch 35m&sup2; full đồ, nh&agrave; mới x&acirc;y, đồ mới tinh ng&otilde; 32 Đỗ Đức dục, Nam từ li&ecirc;m, đối diện kh&aacute;ch sạn Marriot, trung t&acirc;m hội nghị Quốc gia, đi ra Phạm H&ugrave;ng v&agrave; Keangnam rất gần, c&aacute;ch Trần Duy Hưng chỉ 1,5km.&lt;/p&gt;\r\n&lt;p&gt;Ph&ograve;ng gồm điều h&ograve;a, n&oacute;ng lạnh, giường v&agrave; tủ quần &aacute;o, tủ lạnh v&agrave; m&aacute;y giặt, m&aacute;y sấy, shopha, b&agrave;n l&agrave;m việc.&lt;/p&gt;\r\n&lt;p&gt;Gi&aacute; thu&ecirc; chỉ từ 5,2tr tới 5,5tr/th&aacute;ng.&lt;/p&gt;\r\n&lt;p&gt;Ngo&agrave;i ra c&oacute; th&ecirc;m căn hộ gồm 1 ph&ograve;ng ngủ, 1 ph&ograve;ng kh&aacute;ch. DT: 35m&sup2; - Gi&aacute; cho thu&ecirc; 5.6tr/ th&aacute;ng.&lt;/p&gt;', 4, 8, 0),
+(27, 'Số 34 Kiều Mai - Từ Liêm - Hà Nội', 'pd4.png', 1695000, 847500, 0, 13, 'Trẻ Em', '&lt;h1&gt;Ph&ograve;ng Studio.&lt;/h1&gt;\r\n&lt;p&gt;Thang m&aacute;y.&lt;/p&gt;\r\n&lt;p&gt;Diện t&iacute;ch: 30m&sup2;.&lt;/p&gt;\r\n\r\n&lt;p&gt;Nội thất: Điều ho&agrave;, n&oacute;ng lạnh, giường tủ, m&aacute;y giặt, bếp, tủ lạnh.\r\nTiện &iacute;ch: Cổng kh&oacute;a v&acirc;n tay giờ giấc thoải m&aacute;i, c&oacute; nh&agrave; để xe, gần chợ, si&ecirc;u thị.&lt;/p&gt;\r\n\r\n&lt;p&gt;Gi&aacute; dịch vụ:&lt;/p&gt;\r\n\r\n&lt;p&gt;Điện: 3,8k/số.&lt;/p&gt;\r\n\r\n&lt;p&gt;Nước: 28k/khối.&lt;/p&gt;\r\n\r\n&lt;p&gt;Internet: 50k/người.&lt;/p&gt;\r\n\r\n&lt;p&gt;Thang m&aacute;y: 50k/người.&lt;/p&gt;\r\n\r\n&lt;p&gt;Vệ sinh: 50k/người.&lt;/p&gt;\r\n', 4, 8, 0),
+(28, 'Ngõ 144, Phố Quan Nhân, Phường Nhân Chính, Thanh Xuân, Hà Nội', 'pd2.png', 1329000, 930300, 0, 8, 'Trẻ Em', '&lt;p&gt;- Nh&agrave; 4 tầng x&acirc;y cho thu&ecirc; sạch sẽ, tho&aacute;ng m&aacute;t.&lt;/p&gt;\r\n&lt;p&gt;- Gi&aacute;: 1,6tr - 1,8tr - 2tr/th&aacute;ng kh&eacute;p k&iacute;n.&lt;/p&gt;\r\n&lt;p&gt;- DT: 15m&sup2; - 18m&sup2; - 20m&sup2; - 23m&sup2;.&lt;/p&gt;\r\n&lt;p&gt;- C&oacute; kệ bếp nấu, bồn rửa b&aacute;t, sạch sẽ.&lt;/p&gt;\r\n&lt;p&gt;- Điện 3,5 ngh&igrave;n/số. Nước 20 ngh&igrave;n/khối.&lt;/p&gt;', 4, 7, 0),
+(29, 'Ngõ 120 Ba Đình, Hà Nội', 'pd1.png', 2100000, 1260000, 0, 18, 'Trẻ Em', '&lt;h1&gt;- Th&ocirc;ng tin ph&ograve;ng:&lt;/h1&gt;\r\n\r\n&lt;p&gt;+ Ph&ograve;ng si&ecirc;u tiện nghi với nội thất hiện đại:&lt;/p&gt;\r\n&lt;p&gt;+ Điều ho&agrave;, n&oacute;ng lạnh, tủ quần &aacute;o, tủ lạnh, h&uacute;t m&ugrave;i, bếp từ, b&agrave;n cafe, b&agrave;n ăn.&lt;/p&gt;\r\n&lt;p&gt;+ C&oacute; g&aacute;c x&eacute;p, nghỉ ngơi ri&ecirc;ng tư.&lt;/p&gt;\r\n&lt;p&gt;+ Kh&ocirc;ng gian bếp tiện &iacute;ch c&oacute; h&uacute;t m&ugrave;i, ban c&ocirc;ng tho&aacute;ng m&aacute;t.&lt;/p&gt;\r\n&lt;p&gt;+ Thang m&aacute;y, m&aacute;y giặt sấy đầy đủ.&lt;/p&gt;\r\n&lt;p&gt;+ Hỗ trợ khi gặp vấn đề 24/24, c&oacute; bộ phận chăm s&oacute;c kh&aacute;ch &lt;/p&gt;&lt;p&gt;h&agrave;ng, bộ phận kỹ thuật chuy&ecirc;n nghiệp.&lt;/p&gt;\r\n', 4, 1, 0),
+(30, 'Ngõ 193/32, Phố Hồng Tiến, Phường Bồ Đề, Long Biên, Hà Nội', 'pd113.png', 2695000, 1347500, 0, 8, 'Nam', '&lt;p&gt;+ Diện t&iacute;ch: 12 - 18m&sup2;/ph&ograve;ng.&lt;/p&gt;\r\n&lt;p&gt;+ Giường 1,4 x 2m.&lt;/p&gt;\r\n&lt;p&gt;+ Tủ quần &aacute;o.&lt;/p&gt;\r\n&lt;p&gt;+ B&agrave;n trang điểm.&lt;/p&gt;\r\n&lt;p&gt;+ Đệm Everon cao cấp, chăn gối đầy đủ.&lt;/p&gt;\r\n&lt;p&gt;+ Điều h&ograve;a 2 chiều mới tinh.&lt;/p&gt;\r\n&lt;p&gt;+ B&igrave;nh n&oacute;ng lạnh.&lt;/p&gt;\r\n&lt;p&gt;+ Trang thiết bị vệ sinh sang trọng.&lt;/p&gt;\r\n&lt;p&gt;+ Tủ lạnh 550L. (sử dụng chung).&lt;/p&gt;\r\n&lt;p&gt;+ M&aacute;y giặt chung.&lt;/p&gt;\r\n&lt;p&gt;+ Tủ bếp. (chung).&lt;/p&gt;\r\n&lt;h1&gt;- Dịch vụ đi k&egrave;m:&lt;/h1&gt;\r\n&lt;p&gt;+ R&aacute;c + internet + vệ sinh + nước: 200k.&lt;/p&gt;\r\n&lt;p&gt;+ Một ph&ograve;ng: 2 người (tối đa).&lt;/p&gt;\r\n&lt;p&gt;+ Hợp đồng tối thiếu 3 th&aacute;ng.&lt;/p&gt;\r\n&lt;p&gt;+ Đ&oacute;ng cọc: 1 th&aacute;ng.&lt;/p&gt;\r\n&lt;p&gt;+ C&oacute; chỗ để xe trong nh&agrave;&lt;/p&gt;', 5, 10, 0),
+(31, 'Ngõ 193/32, Phố Hồng Tiến, Phường Bồ Đề, Long Biên, Hà Nội', 'pd110.png', 3595000, 1797500, 0, 25, 'Nam', '&lt;p&gt;- Nh&agrave; 4 tầng x&acirc;y cho thu&ecirc; sạch sẽ, tho&aacute;ng m&aacute;t.&lt;p&gt;\r\n&lt;p&gt;- Gi&aacute;: 1,6tr - 1,8tr - 2tr/th&aacute;ng kh&eacute;p k&iacute;n.&lt;p&gt;\r\n&lt;p&gt;- DT: 15m&sup2; - 18m&sup2; - 20m&sup2; - 23m&sup2;.&lt;p&gt;\r\n&lt;p&gt;- C&oacute; kệ bếp nấu, bồn rửa b&aacute;t, sạch sẽ.&lt;p&gt;\r\n&lt;p&gt;- Điện 3,5 ngh&igrave;n/số. Nước 20 ngh&igrave;n/khối.&lt;p&gt;', 5, 10, 0),
+(32, 'Ngõ 120, Đường Kim Giang, Phường Kim Giang, Thanh Xuân, Hà Nội', 'pd110.png', 3569000, 2141400, 0, 9, 'Nam', '&lt;p&gt;+ Ph&ograve;ng si&ecirc;u tiện nghi với nội thất hiện đại:&lt;/p&gt;\r\n&lt;p&gt;+ Điều ho&agrave;, n&oacute;ng lạnh, tủ quần &aacute;o, tủ lạnh, h&uacute;t m&ugrave;i, bếp từ, b&agrave;n cafe, b&agrave;n ăn.&lt;/p&gt;\r\n&lt;p&gt;+ C&oacute; g&aacute;c x&eacute;p, nghỉ ngơi ri&ecirc;ng tư.&lt;/p&gt;\r\n&lt;p&gt;+ Kh&ocirc;ng gian bếp tiện &iacute;ch c&oacute; h&uacute;t m&ugrave;i, ban c&ocirc;ng tho&aacute;ng m&aacute;t.&lt;/p&gt;\r\n&lt;p&gt;+ Thang m&aacute;y, m&aacute;y giặt sấy đầy đủ.&lt;/p&gt;\r\n&lt;p&gt;+ Hỗ trợ khi gặp vấn đề 24/24, c&oacute; bộ phận chăm s&oacute;c kh&aacute;ch h&agrave;ng, bộ phận kỹ thuật chuy&ecirc;n nghiệp.&lt;/p&gt;', 5, 7, 0),
+(33, '619, Phố Vũ Tông Phan, Phường Khương Đình, Thanh Xuân, Hà Nội', 'pd10.png', 3569000, 141400, 0, 22, 'Nam', '&lt;h3 class=&quot;heading-medium product-info-title-left&quot;&gt;\r\nTo&agrave; CCMN 21 ph&ograve;ng full ban c&ocirc;ng c&ograve;n duy nhất 1 ph&ograve;ng.\r\n          &lt;/h3&gt;\r\n           &lt;p&gt;\r\n        - Gần ngay c&aacute;c trường Đại Học: ĐH Thăng Long, ĐH Khoa Học Tự Nhi&ecirc;n, ĐH KTQD, ĐH Thuỷ Lợi.\r\n\r\n- Thuận tiện di chuyển: Nguyễn Xiển, XaLa, B&ugrave;i Xương Trạch, L&ecirc; Trọng Tấn, Kim Giang, Định C&ocirc;ng.\r\n\r\n- Tất cả c&aacute;c ph&ograve;ng đều c&oacute; full ban c&ocirc;ng cực tho&aacute;ng, đ&oacute;n &aacute;nh s&aacute;ng tự nhi&ecirc;n.\r\n\r\n- Kh&ocirc;ng chung chủ, giờ giấc thoải m&aacute;i.\r\n\r\n- Cổng v&acirc;n tay, thang m&aacute;y, m&aacute;y giặt, giờ giấc thoải m&aacute;i.\r\n\r\n- C&oacute; dịch vụ hotline hỗ trợ nhanh ch&oacute;ng.\r\n\r\n- Hệ thống chữa ch&aacute;y hiện đại, an ninh tuyệt đối.\r\n        &lt;/p&gt;\r\n          &lt;h3 class=&quot;heading-medium product-info-title-left&quot;&gt;Đầy đủ&lt;/h3&gt;\r\n          &lt;ul&gt;\r\n          &lt;/ul&gt;', 5, 7, 0),
+(34, 'Số nhà 22 ngõ 190, Đường Nguyễn Trãi, Phường Thượng Đình, Thanh Xuân, Hà Nội', 'pd9.png', 3479000, 0, 0, 33, 'Nam', '&lt;h3 class=&quot;heading-medium product-info-title-left&quot;&gt;\r\nPh&ograve;ng si&ecirc;u hot ph&ugrave; hợp sinh vi&ecirc;n vip - người đi l&agrave;m đường Nguyễn Tr&atilde;i ngay ga t&agrave;u Thượng Đ&igrave;nh\r\n          &lt;/h3&gt;\r\n           &lt;p&gt;\r\n     Ngay ga Thượng Đ&igrave;nh - gần Royal City v&agrave; c&aacute;c trường Đại Học KHTN, XHNV, Đại Nam... Ph&ograve;ng si&ecirc;u hot ph&ugrave; hợp sinh vi&ecirc;n vip - người đi l&agrave;m số nh&agrave; 22 ng&otilde; 190 Nguyễn Tr&atilde;i.\r\n        &lt;/p&gt;\r\n          &lt;h3 class=&quot;heading-medium product-info-title-left&quot;&gt;ĐẦY ĐỦ&lt;/h3&gt;\r\n          &lt;ul&gt;\r\n             &lt;li&gt;C&oacute; thang m&aacute;y, camera AI an ninh 24/24 Khu vực phơi quần &aacute;o rất rộng, tho&aacute;ng m&aacute;t, c&oacute; m&aacute;y giặt.&lt;/li&gt;\r\n             &lt;li&gt;(Gi&aacute; dịch vụ: Điện 3,5k/ số nước 32k/m3/ Internet 50k/ ph&ograve;ng).&lt;/li&gt;\r\n             &lt;liTo&agrave; nh&agrave; dịch vụ tốt - cộng đồng văn minh.&lt;/li&gt;\r\n &lt;li&gt;C&oacute; m&aacute;y giặt tr&ecirc;n tầng thượng.&lt;/li&gt;\r\n &lt;li&gt; G&aacute;c x&eacute;p rộng r&atilde;i.&lt;/li&gt;\r\n &lt;li&gt; B&agrave;n bếp + chậu rửa + tủ bếp.\r\n&lt;/li&gt;\r\n          &lt;/ul&gt;', 6, 7, 0),
+(35, 'Phố Giảng Võ, Phường Giảng Võ, Ba Đình, Hà Nội', 'pd8.png', 1500000, 0, 0, 27, 'Nam', '&lt;h3 class=&quot;heading-medium product-info-title-left&quot;&gt;\r\nCh&iacute;nh chủ cho thu&ecirc; căn hộ dịch vụ.\r\n          &lt;/h3&gt;\r\n        &lt;h3 class=&quot;heading-medium product-info-title-left&quot;&gt;\r\nTrống diện t&iacute;ch 70m&sup2;, thiết kế 2 ngủ, 1 vệ sinh gi&aacute; từ 13 triệu/th&aacute;ng..\r\n          &lt;/h3&gt;\r\n           &lt;p&gt;\r\n    Địa chỉ: Giảng V&otilde;, nh&agrave; c&oacute; thang m&aacute;y cao cấp, mỗi tầng thiết kế 1 căn hộ diện t&iacute;ch 70m&sup2;, c&oacute; 2 ngủ, 1 vệ sinh, set up đủ đồ chỉ việc v&agrave;o ở.\r\n        &lt;/p&gt;\r\n          &lt;h3 class=&quot;heading-medium product-info-title-left&quot;&gt;ĐẦY ĐỦ&lt;/h3&gt;\r\n          &lt;ul&gt;\r\n             &lt;li&gt;Trống diện t&iacute;ch 60m&sup2;, thiết kế 1 ngủ, kh&eacute;p k&iacute;n c&oacute; Ban c&ocirc;ng view tho&aacute;ng.&lt;/li&gt;\r\n             &lt;li&gt;Nước: 100k/ người.&lt;/li&gt;\r\n             &lt;li&gt;Dịch vụ: Điện: 4k/số.&lt;/li&gt;\r\n             &lt;li&gt;Mạng intenet: Miễn Ph&iacute;.&lt;/li&gt;\r\n          &lt;/ul&gt;', 6, 1, 0),
+(36, ' Số 10 ngõ 162, Đường Khương Đình, Phường Hạ Đình, Thanh Xuân, Hà Nội', 'pd7.png', 4600000, 0, 0, 52, 'Nam', '&lt;h3 class=&quot;heading-medium product-info-title-left&quot;&gt;\r\nCh&iacute;nh chủ cho thu&ecirc; CCMN PKD tại số 10 ng&otilde; 162 đường Khương Đ&igrave;nh, Hạ Đ&igrave;nh, Thanh Xu&acirc;n, HN.\r\n          &lt;/h3&gt;\r\n           &lt;p&gt;\r\n    Diện t&iacute;ch 70m&sup2; gồm 02 ngủ, 01 kh&aacute;ch v&agrave; 01 WC. 01 Bếp, nội thất cơ bản.\r\n        &lt;/p&gt;\r\n          &lt;h3 class=&quot;heading-medium product-info-title-left&quot;&gt;Kiểm so&aacute;t tốt hơn&lt;/h3&gt;\r\n          &lt;p&gt;\r\n   Vị tr&iacute; thuận tiện, PCCC v&agrave; an ninh đảm bảo, cammera 24/24 cửa v&acirc;n tay, thang m&aacute;y. Khu vực để xe ri&ecirc;ng biệt. View đẹp.\r\n        &lt;/p&gt;\r\n        &lt;h3 class=&quot;heading-medium product-info-title-left&quot;&gt;ĐẦY DỦ&lt;/h3&gt;\r\n        \r\n         \r\n          ', 6, 7, 0),
+(37, 'Đường Yên Phụ, Phường Yên Phụ, Tây Hồ, Hà Nội', 'pd6.png', 3600000, 550000, 0, 2, 'Nữ', '&lt;h3 class=&quot;heading-medium product-info-title-left&quot;&gt;\r\nCh&iacute;nh chủ cho thu&ecirc; ph&ograve;ng trọ gần 30m2 full đồ phố Y&ecirc;n Phụ - T&acirc;y Hồ gi&aacute; 3.5tr/ph&ograve;ng\r\n          &lt;/h3&gt;\r\n           &lt;p&gt;\r\nPh&ograve;ng gần 30m&sup2; kh&eacute;p k&iacute;n đầy đủ tiện nghi điều ho&agrave;, n&oacute;ng lạnh, giường tủ quần &aacute;o, bếp nấu ăn...\r\n        &lt;/p&gt;\r\n          &lt;h3 class=&quot;heading-medium product-info-title-left&quot;&gt;ĐẦY ĐỦ&lt;/h3&gt;\r\n          &lt;ul&gt;\r\n             &lt;li&gt;Nh&agrave; c&aacute;ch đường Y&ecirc;n Phụ 20m, ng&otilde; th&ocirc;ng sang phố Y&ecirc;n Hoa gi&aacute;p Hồ T&acirc;y tho&aacute;ng m&aacute;t lộng gi&oacute;.&lt;/li&gt;\r\n             &lt;li&gt;Gi&aacute; cho thu&ecirc; 3.5tr/ph&ograve;ng.&lt;/li&gt;\r\n          &lt;/ul&gt;', 2, 3, 0),
+(38, 'Số nhà 25 ngõ 116, Đường Miếu Đầm, Phường Mễ Trì, Nam Từ Liêm, Hà Nội', 'pd5.png', 3595000, 1116500, 0, 8, 'NỮ', '&lt;h3 class=&quot;heading-medium product-info-title-left&quot;&gt;\r\nCho thu&ecirc; ph&ograve;ng tuyệt đẹp, đầy đủ tiện nghi, thuận tiện giao th&ocirc;ng, ng&otilde; 116 Miếu Đầm\r\n          &lt;/h3&gt;\r\n           &lt;p&gt;\r\nCh&iacute;nh chủ em c&oacute; ph&ograve;ng tại số nh&agrave; 25 ng&otilde; 116 Miếu Đầm, diện t&iacute;ch 35m&sup2; thiết kế theo ti&ecirc;u chuẩn kh&aacute;ch sạn, cửa gỗ lim, kh&oacute;a cửa ph&ograve;ng mở theo m&atilde; số, ph&ograve;ng c&oacute; cửa sổ, ban c&ocirc;ng c&oacute; nhiều &aacute;nh s&aacute;ng v&agrave; tho&aacute;ng.\r\nNh&agrave; đầy đủ tiện nghi điều h&ograve;a, b&igrave;nh n&oacute;ng lạnh, giường v&agrave; tủ quần &aacute;o, b&agrave;n ghế sofa, tủ lạnh, tủ bếp tr&ecirc;n dưới, bếp từ, m&aacute;y giặt v&agrave; m&aacute;y sấy, thang m&aacute;y tốc độ cao, kh&oacute;a V&acirc;n tay đi lại tự do.\r\n        &lt;/p&gt;\r\n          &lt;h3 class=&quot;heading-medium product-info-title-left&quot;&gt;ĐẦY ĐỦ&lt;/h3&gt;\r\n          &lt;ul&gt;\r\n             &lt;li&gt;Nh&agrave; gần chợ, gần đường lớn, chỉ mấy bước ch&acirc;n ra Phạm H&ugrave;ng, Keang Nam, gần nhiều trường mầm non, gần nhiều khi vui chơi giải tr&iacute; ăn uống..&lt;/li&gt;\r\n             &lt;li&gt;Ngo&agrave;i ra c&oacute; căn hộ 1 ngủ 1 kh&aacute;ch diện t&iacute;ch 40m&sup2;, full đồ gi&aacute; l&agrave;: 5,5tr /th&aacute;ng.&lt;/li&gt;\r\n             &lt;li&gt;Gi&aacute; thu&ecirc; chỉ từ 5,2tr tới 5,5tr/ th&aacute;ng t&ugrave;y căn&lt;/li&gt;\r\n\r\n          &lt;/ul&gt;', 2, 8, 1),
+(39, 'Phòng mới, đẹp, rẻ - full đồ ngõ 199 Hồ Tùng Mậu', 'pd4.png', 3695000, 1186500, 1, 7, 'Nam', '&lt;h3 class=&quot;heading-medium product-info-title-left&quot;&gt;\r\nĐặc điểm bất động sản\r\n          &lt;/h3&gt;\r\n           &lt;p&gt;\r\nKhu vực phố Hồ T&ugrave;ng Mậu, Nguyễn Đổng Chi, P Cầu Diễn. Rất thuận lợi giao th&ocirc;ng, đường, trường, trạm, chợ d&acirc;n sinh\r\n        &lt;/p&gt;\r\n          &lt;h3 class=&quot;heading-medium product-info-title-left&quot;&gt;ĐẦY ĐỦ&lt;/h3&gt;\r\n          &lt;ul&gt;\r\n             &lt;li&gt;Diện t&iacute;ch ph&ograve;ng 25 - 35m&sup2;. Full đồ. Kh&eacute;p k&iacute;n.&lt;/li&gt;\r\n             &lt;li&gt;Nh&agrave; mới, đồ mới, thang m&aacute;y xịn s&ograve;, an ninh, văn minh, c&oacute; m&aacute;y giặt, m&aacute;y sấy. &lt;/li&gt;\r\n             &lt;li&gt;Gi&aacute; dao động từ 4, x/ ph&ograve;ng&lt;/li&gt;\r\n          &lt;/ul&gt;', 2, 8, 0),
+(40, 'Căn hộ dịch vụ cao cấp, có ban công, full đồ, nhà mới xây xong tại 1081 Hồng Hà Hoàn Kiếm', 'pd3.png', 5700000, 945350, 1, 21, 'Nam', '&lt;h3 class=&quot;heading-medium product-info-title-left&quot;&gt;\r\nCho thu&ecirc; căn hộ dịch vụ cao cấp, c&oacute; ban c&ocirc;ng, full đồ, nh&agrave; mới x&acirc;y xong tại Sunny Apartment Hồng H&agrave; Apartment theo ng&agrave;y, th&aacute;ng:\r\n          &lt;/h3&gt;\r\n           &lt;p&gt;\r\nVị tr&iacute; trung t&acirc;m, 10 ph&uacute;t đi bộ ra hồ Ho&agrave;n Kiếm, xung quanh t&ograve;a nh&agrave; căn g&oacute;c c&oacute; nhiều tiện &iacute;ch xung quanh.\r\n1 nh&agrave; tắm kh&eacute;p k&iacute;n.\r\n        &lt;/p&gt;\r\n          &lt;h3 class=&quot;heading-medium product-info-title-left&quot;&gt;Đầy đủ&lt;/h3&gt;\r\n          &lt;ul&gt;\r\n             &lt;li&gt;Bếp, ph&ograve;ng ăn rộng + chăn, ga, gối, đệm. &lt;/li&gt;\r\n             &lt;li&gt;Giường, đệm, quạt th&ocirc;ng gi&oacute;.&lt;/li&gt;\r\n             &lt;li&gt;Tivi, tủ lạnh.\r\nTủ bếp, m&aacute;y h&uacute;t m&ugrave;i, bếp từ.\r\nVệ sinh kh&eacute;p k&iacute;n, c&oacute; n&oacute;ng lạnh, thiết bị cao cấp.\r\nBộ sofa. Bộ b&agrave;n ghế l&agrave;m việc, t&aacute;p đầu giường.\r\nBộ b&agrave;n ghế trang điểm..&lt;/li&gt;\r\n          &lt;/ul&gt;', 6, 2, 0),
+(41, 'Căn hộ số 21 Cầu Đất, Hoàn Kiếm, Hà Nội', 'pd2.png', 2000000, 0, 0, 15, 'Nam', 'Cho thu&ecirc; căn hộ số 21 Cầu Đất, Ho&agrave;n Kiếm, H&agrave; Nội.\r\n- Tầng 2, 3, 4: DTMB 40m&sup2;, mặt tiền 5m, ph&ograve;ng vệ sinh kh&eacute;p k&iacute;n, điện nước hộ gia đ&igrave;nh, an ninh tốt, giao th&ocirc;ng thuận tiện, đầy đủ trang thiết bị: N&oacute;ng lạnh, wifi, điều h&ograve;a, giường, tủ,...\r\n- Nh&agrave; mặt đường đi lại thuận tiện, gần chợ, c&aacute;ch hồ gươm 1 km.\r\n- Tầng 2 gi&aacute; 5 triệu/th&aacute;ng, tầng 3 gi&aacute; 4.5 triệu/th&aacute;ng, tầng 4 gi&aacute; 3,5 triệu/th&aacute;ng.', 4, 2, 1),
+(42, '68 P. Hàng Đào, Hàng Đào, Hoàn Kiếm, Hà Nội, Việt Nam', 'pd1.png', 4200000, 0, 0, 21, 'Nữ', 'Ch&iacute;nh chủ cho thu&ecirc; c&aacute;c căn hộ chung cư mini mới x&acirc;y đầy đủ tiện nghi v&agrave; full đồ tại Hồng H&agrave;, Ho&agrave;n Kiếm. To&agrave; nh&agrave; kh&ocirc;ng chung chủ, to&agrave; nh&agrave; c&oacute; camera v&agrave; đi lại tự do bằng kho&aacute; v&acirc;n tay, được thiết kế hiện đại v&agrave; trang bị đầy đủ, giường, tủ quần &aacute;o, n&oacute;ng lạnh, điều ho&agrave;, tủ lạnh, c&oacute; b&agrave;n bếp v&agrave; chậu rửa b&aacute;t, m&aacute;y giặt chung miễn ph&iacute;, ph&ograve;ng n&agrave;o cũng đầy đủ &aacute;nh s&aacute;ng v&agrave; tho&aacute;ng.\r\nDiện t&iacute;ch mỗi ph&ograve;ng 22m&sup2;.\r\nGi&aacute; thu&ecirc; từ 4,2tr tới 4,5tr/th&aacute;ng.\r\nVị tr&iacute; trung t&acirc;m bậc nhất H&agrave; Nội c&aacute;ch phố ho&agrave;n kiếm 800m, c&aacute;ch phố T&acirc;y B&ugrave;i viện chỉ 500m, gần c&aacute;c chợ lớn, trung t&acirc;m thương mại, si&ecirc;u thị, trường học, đường s&aacute; đi lại rất thuận tiện.', 3, 2, 1);
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `product_brand`
+-- Cấu trúc bảng cho bảng `product_brand`
 --
 
 CREATE TABLE `product_brand` (
@@ -242,7 +266,7 @@ CREATE TABLE `product_brand` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `product_brand`
+-- Đang đổ dữ liệu cho bảng `product_brand`
 --
 
 INSERT INTO `product_brand` (`id_brand`, `brand_name`, `logo`) VALUES
@@ -260,7 +284,7 @@ INSERT INTO `product_brand` (`id_brand`, `brand_name`, `logo`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `product_color`
+-- Cấu trúc bảng cho bảng `product_color`
 --
 
 CREATE TABLE `product_color` (
@@ -270,7 +294,7 @@ CREATE TABLE `product_color` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `product_color`
+-- Đang đổ dữ liệu cho bảng `product_color`
 --
 
 INSERT INTO `product_color` (`id_pro_color`, `color`, `id_pro`) VALUES
@@ -319,7 +343,7 @@ INSERT INTO `product_color` (`id_pro_color`, `color`, `id_pro`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `product_detail_img`
+-- Cấu trúc bảng cho bảng `product_detail_img`
 --
 
 CREATE TABLE `product_detail_img` (
@@ -329,7 +353,7 @@ CREATE TABLE `product_detail_img` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `product_detail_img`
+-- Đang đổ dữ liệu cho bảng `product_detail_img`
 --
 
 INSERT INTO `product_detail_img` (`id_pro_detail_img`, `pro_detail_image`, `id_pro`) VALUES
@@ -532,7 +556,7 @@ INSERT INTO `product_detail_img` (`id_pro_detail_img`, `pro_detail_image`, `id_p
 -- --------------------------------------------------------
 
 --
--- Table structure for table `product_size`
+-- Cấu trúc bảng cho bảng `product_size`
 --
 
 CREATE TABLE `product_size` (
@@ -542,7 +566,7 @@ CREATE TABLE `product_size` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `product_size`
+-- Đang đổ dữ liệu cho bảng `product_size`
 --
 
 INSERT INTO `product_size` (`id_pro_size`, `size`, `id_pro`) VALUES
@@ -769,7 +793,7 @@ INSERT INTO `product_size` (`id_pro_size`, `size`, `id_pro`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `user`
+-- Cấu trúc bảng cho bảng `user`
 --
 
 CREATE TABLE `user` (
@@ -784,17 +808,20 @@ CREATE TABLE `user` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `user`
+-- Đang đổ dữ liệu cho bảng `user`
 --
 
 INSERT INTO `user` (`id_user`, `password`, `image`, `name`, `phone`, `email`, `address`, `role`) VALUES
-('admin', '123456', '1.jpg', 'Đàm Quốc Dân', '0368966992', 'admin@gmail.com', 'Tiến Bào, Phù Khê, Từ Sơn, Bắc Ninh', 1),
-('damquocdan', '123456', NULL, 'Đàm Quốc Dân', NULL, 'damquocdan@gmail.com', NULL, 0);
+('admin', '123456', 'z3348074479647_20ecdbdbce649b9bad78bbab45eff34e.jpg', 'Admin Công Lê', '0965973668', 'congltph27602@fpt.edu.vn', 'V3 Văn Phú, Hà Đông, Hà Nội', 1),
+('admin2', '123456', 'z3348074449352_3a574f6714a66f306b8f6ebf5f90bfc2.jpg', 'Lê Công', '', 'congldqn888@gmail.com', '', 0),
+('conglt', '123456', 'yoru_smile.jpg', 'Công Lê', '0965973667', 'lethanhcong2003@gmail.com', 'Thành Phố Cẩm Phả, Tỉnh Quảng Ninh', 0),
+('damquocdan', '123456', NULL, 'Đàm Quốc Dân', NULL, 'damquocdan@gmail.com', NULL, 0),
+('duyk04', '123456', NULL, 'Nguyễn Khương Duy', NULL, 'khuongduy5307@gmail.com', NULL, 1);
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `vnpay`
+-- Cấu trúc bảng cho bảng `vnpay`
 --
 
 CREATE TABLE `vnpay` (
@@ -810,154 +837,154 @@ CREATE TABLE `vnpay` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `vnpay`
+-- Đang đổ dữ liệu cho bảng `vnpay`
 --
 
 INSERT INTO `vnpay` (`id_vnpay`, `vnp_amount`, `vnp_bankcode`, `vnp_banktranno`, `vnp_cardtype`, `vnp_orderinfo`, `vnp_paydate`, `vnp_transactionno`, `id_bill`) VALUES
 (143, '775740000', 'NCB', 'VNP13904671', 'ATM', 'Thanh toán đơn hàng đặt tại website', '20221215052312', '13904671', 'SHOELIKE14858');
 
 --
--- Indexes for dumped tables
+-- Chỉ mục cho các bảng đã đổ
 --
 
 --
--- Indexes for table `category`
+-- Chỉ mục cho bảng `category`
 --
 ALTER TABLE `category`
   ADD PRIMARY KEY (`id_cate`);
 
 --
--- Indexes for table `comment`
+-- Chỉ mục cho bảng `comment`
 --
 ALTER TABLE `comment`
   ADD PRIMARY KEY (`id_comment`);
 
 --
--- Indexes for table `momo`
+-- Chỉ mục cho bảng `momo`
 --
 ALTER TABLE `momo`
   ADD PRIMARY KEY (`id_momo`);
 
 --
--- Indexes for table `order`
+-- Chỉ mục cho bảng `order`
 --
 ALTER TABLE `order`
   ADD PRIMARY KEY (`id_order`);
 
 --
--- Indexes for table `order_total`
+-- Chỉ mục cho bảng `order_total`
 --
 ALTER TABLE `order_total`
   ADD PRIMARY KEY (`id_order_total`);
 
 --
--- Indexes for table `product`
+-- Chỉ mục cho bảng `product`
 --
 ALTER TABLE `product`
   ADD PRIMARY KEY (`id_pro`);
 
 --
--- Indexes for table `product_brand`
+-- Chỉ mục cho bảng `product_brand`
 --
 ALTER TABLE `product_brand`
   ADD PRIMARY KEY (`id_brand`);
 
 --
--- Indexes for table `product_color`
+-- Chỉ mục cho bảng `product_color`
 --
 ALTER TABLE `product_color`
   ADD PRIMARY KEY (`id_pro_color`);
 
 --
--- Indexes for table `product_detail_img`
+-- Chỉ mục cho bảng `product_detail_img`
 --
 ALTER TABLE `product_detail_img`
   ADD PRIMARY KEY (`id_pro_detail_img`);
 
 --
--- Indexes for table `product_size`
+-- Chỉ mục cho bảng `product_size`
 --
 ALTER TABLE `product_size`
   ADD PRIMARY KEY (`id_pro_size`);
 
 --
--- Indexes for table `user`
+-- Chỉ mục cho bảng `user`
 --
 ALTER TABLE `user`
   ADD PRIMARY KEY (`id_user`);
 
 --
--- Indexes for table `vnpay`
+-- Chỉ mục cho bảng `vnpay`
 --
 ALTER TABLE `vnpay`
   ADD PRIMARY KEY (`id_vnpay`);
 
 --
--- AUTO_INCREMENT for dumped tables
+-- AUTO_INCREMENT cho các bảng đã đổ
 --
 
 --
--- AUTO_INCREMENT for table `category`
+-- AUTO_INCREMENT cho bảng `category`
 --
 ALTER TABLE `category`
   MODIFY `id_cate` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
--- AUTO_INCREMENT for table `comment`
+-- AUTO_INCREMENT cho bảng `comment`
 --
 ALTER TABLE `comment`
-  MODIFY `id_comment` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
+  MODIFY `id_comment` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
 
 --
--- AUTO_INCREMENT for table `momo`
+-- AUTO_INCREMENT cho bảng `momo`
 --
 ALTER TABLE `momo`
-  MODIFY `id_momo` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `id_momo` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
 
 --
--- AUTO_INCREMENT for table `order`
+-- AUTO_INCREMENT cho bảng `order`
 --
 ALTER TABLE `order`
-  MODIFY `id_order` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=212;
+  MODIFY `id_order` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=221;
 
 --
--- AUTO_INCREMENT for table `order_total`
+-- AUTO_INCREMENT cho bảng `order_total`
 --
 ALTER TABLE `order_total`
-  MODIFY `id_order_total` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=440;
+  MODIFY `id_order_total` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=449;
 
 --
--- AUTO_INCREMENT for table `product`
+-- AUTO_INCREMENT cho bảng `product`
 --
 ALTER TABLE `product`
   MODIFY `id_pro` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=43;
 
 --
--- AUTO_INCREMENT for table `product_brand`
+-- AUTO_INCREMENT cho bảng `product_brand`
 --
 ALTER TABLE `product_brand`
   MODIFY `id_brand` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
--- AUTO_INCREMENT for table `product_color`
+-- AUTO_INCREMENT cho bảng `product_color`
 --
 ALTER TABLE `product_color`
   MODIFY `id_pro_color` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=44;
 
 --
--- AUTO_INCREMENT for table `product_detail_img`
+-- AUTO_INCREMENT cho bảng `product_detail_img`
 --
 ALTER TABLE `product_detail_img`
   MODIFY `id_pro_detail_img` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=218;
 
 --
--- AUTO_INCREMENT for table `product_size`
+-- AUTO_INCREMENT cho bảng `product_size`
 --
 ALTER TABLE `product_size`
   MODIFY `id_pro_size` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=238;
 
 --
--- AUTO_INCREMENT for table `vnpay`
+-- AUTO_INCREMENT cho bảng `vnpay`
 --
 ALTER TABLE `vnpay`
   MODIFY `id_vnpay` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=144;
