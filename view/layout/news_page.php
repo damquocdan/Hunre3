@@ -28,14 +28,12 @@
               <div class="news-page-content">
                 <h2 class="news-page-title">
                   <a href="#">
-                    8 Cách Thắt Dây Giày Đá Bóng Chuẩn Kỹ Thuật, Chắc Chắn
-                    Không Tuột
+                  Top 20 phòng ở khu vực được yêu thích nhất
                   </a>
                 </h2>
                 <p class="news-page-desc">
-                  Đối với môn thể thao bóng đá thì việc chọn giày cực kỳ
-                  quan trọng. Một đôi giày chất lượng sẽ giúp bạn có những
-                  bước chạy tự tin và an toàn. Không ...
+                  Đẹp đẽ, tiện nghi, giá cả hợp lý là những gì khác hàng nói về những căn phòng được yêu thích nhất.
+                  Hãy cùng xem qua những căn phòng đó có "ngoại hình" như thế nào và tọa lạc tại đâu
                 </p>
                 <a href="#" class="news-page-link">Xem thêm</a>
               </div>
@@ -50,14 +48,11 @@
               <div class="news-page-content">
                 <h2 class="news-page-title">
                   <a href="#">
-                    Cách Thắt Dây Giày Theo Từng Bước Đơn Giản, Phù Hợp
-                    Thời Trang
+                  Sinh viên các trường đại học nên thuê phòng trọ như nào
                   </a>
                 </h2>
                 <p class="news-page-desc">
-                  Biết nhiều cách buộc dây giày sẽ giúp cho đôi giày của
-                  bạn trông nổi bật hơn. Nếu trước giờ bạn chỉ quen với 1
-                  cách buộc dây giày thì đừng vội bỏ q...
+                  Nên thuê phòng như nào là câu hỏi được đại đa số tân sinh viên thắc mắc. Hãy cùng điểm qua các tiêu chí thuê trọ mà tân sinh viên cần biết
                 </p>
                 <a href="#" class="news-page-link">Xem thêm</a>
               </div>
@@ -72,14 +67,13 @@
               <div class="news-page-content">
                 <h2 class="news-page-title">
                   <a href="#">
-                    10 Cách Vệ Sinh Giày Thể Thao Đúng Cách Nhanh Chóng Và
-                    Sạch Như Mới
+                  Những khu vực có giá trọ tiền đắt giá nhất
                   </a>
                 </h2>
                 <p class="news-page-desc">
-                  Giày thể thao là một trong những item “must-have” mà hầu
-                  như ai cũng có. Nhưng sau một thời gian sử dụng, những
-                  đôi giày này sẽ bắt đầu có hiện tượ...
+                  chắc hẳn giá tiền thuê phòng là thứ được đa số khách hàng quan tâm.
+                  Tùy vào vị trí cũng như nội thất mà sẽ có giá cả khác nhau. Hãy cùng điểm qua 
+                  những vị trí có giá thuê đắt đỏ nhất khu vực hà thành
                 </p>
                 <a href="#" class="news-page-link">Xem thêm</a>
               </div>
