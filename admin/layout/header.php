@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>Quản trị web - ShoeLike</title>
+  <title>Quản trị web - THEHOUSES</title>
   <!-- Bootstrap -->
   <link rel="stylesheet" href="../public/css/bootstrap.min.css" type="text/css" />
   <!-- Font awesome -->
@@ -18,6 +18,7 @@
   <link rel="stylesheet" href="../public/css/dashboard.css" type="text/css" />
   <link rel="stylesheet" href="../public/css/custom.css" type="text/css" />
   <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.css">
+  <!-- <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"> -->
 </head>
 
 <body>

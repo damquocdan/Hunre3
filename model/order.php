@@ -145,6 +145,11 @@ function insertOrderMoMo($partnerCode, $orderId, $amount, $orderInfo, $orderType
   pdo_execute($sql_insert_momo);
 }
 
+function updateStatus($id_pro){
+  $sql_update_status = "UPDATE `product` SET `status` = '1' WHERE `product`.`id_pro` = $id_pro ";
+  pdo_execute($sql_update_status);
+}
+
 function checkOrderVnpay($id_bill)
 {
   $sql = "SELECT * FROM `order`, vnpay WHERE `order`.`id_bill` = vnpay.id_bill AND vnpay.id_bill = '$id_bill'";
