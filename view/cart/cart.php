@@ -11,7 +11,7 @@
 
   <section class="cart">
     <div class="container">
-      <h3 class="cart-title heading">Giỏ phòng của bạn</h3>
+      <h3 class="cart-title heading">Danh sách phòng của bạn</h3>
       <div class="cart-container">
         <div class="cart-table-form">
           <table class="cart-table">
@@ -100,7 +100,7 @@
           </table>
           <div class="cart-checkout-button">
             <button class="cart-checkout-submit">
-              <a href="index.php?act=products">Tiếp tục thuê phòng</a>
+              <a href="index.php?act=products">Xem thêm các phòng khác</a>
             </button>
           </div>
         </div>
@@ -108,7 +108,7 @@
         <div class="cart-checkout">
           <div class="cart-checkout-header">
             <div class="cart-checkout-container">
-              <h4 class="heading-small">Tóm tắt giỏ phòng</h4>
+              <h4 class="heading-small">Tóm tắt hóa đơn</h4>
             </div>
           </div>
           <div class="cart-checkout-container">

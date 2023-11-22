@@ -140,12 +140,12 @@
 							if (isset($_SESSION['cart']) && ($_SESSION['cart'] > 0)) {
 								echo " <a href='index.php?act=cart' class='header-cart-submit button        button-white'>
                        <i class='fa-solid fa-cart-shopping header-cart-icon'></i>
-                      Giỏ phòng (" . count($_SESSION['cart']) . ")
+                      Danh sách phòng (" . count($_SESSION['cart']) . ")
                      </a>";
 							} else {
 								echo "<a href='index.php?act=cart' class='header-cart-submit button button-white'>
                 <i class='fa-solid fa-cart-shopping header-cart-icon'></i>
-                Giỏ phòng (0)
+                Danh sách phòng (0)
               </a>";
 							}
 							?>

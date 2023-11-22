@@ -91,18 +91,18 @@ $product_detail_image = $img_path_view . $image;
                         ?>
                     </div>
                     <div class="product-detail-color">
-                        <h4 class="product-detail-heading">MÀU SẮC</h4>
+                        <!-- <h4 class="product-detail-heading">MÀU SẮC</h4>
                         <div class="product-detail-radios">
                             <div class="product-detail-radio product-detail-color-radio">
                                 <input type="radio" id="<?= $id_pro_color ?>" class="product-detail-radio-input" name="color" value="<?= $color ?>" checked />
                                 <label for="<?= $id_pro_color ?>" class="product-detail-radio-label" name="color"><?= $color ?></label>
                             </div>
-                        </div>
+                        </div> -->
                     </div>
                     <div class="product-detail-size">
-                        <h4 class="product-detail-heading">Kích thước</h4>
+                        <!-- <h4 class="product-detail-heading">Kích thước</h4> -->
                         <div class="product-detail-radios">
-                            <?php
+                            <!-- <?php
                             foreach ($product_size as $key => $value) {
                                 // extract($ps);
                             ?>
@@ -110,9 +110,8 @@ $product_detail_image = $img_path_view . $image;
                                     <input type="radio" name="size" id="<?= $value['size']  ?>" class="product-detail-radio-input" value="<?= $value['size'] ?>" <?= ($key === 0) ? "checked" : "" ?> />
                                     <label for="<?= $value['size'] ?>" class="product-detail-radio-label"><?= $value['size'] ?></label>
                                 </div>
-                            <?php
-                            }
-                            ?>
+                            <?php }
+                            ?> -->
                             <!-- <div class="product-detail-radio product-detail-size-radio">
                 <input type="radio" name="size" id="39" class="product-detail-radio-input" />
                 <label for="39" class="product-detail-radio-label" name="size">39</label>
@@ -128,8 +127,8 @@ $product_detail_image = $img_path_view . $image;
                         </div>
                     </div>
                     <div class="product-detail-size-tutor">
-                        <i class="fa-regular fa-ruler"></i>
-                        <a href="#">Hướng dẫn chọn kích thước</a>
+                        <!-- <i class="fa-regular fa-ruler"></i>
+                        <a href="#">Hướng dẫn chọn kích thước</a> -->
                     </div>
                     <div class="product-detail-mani">
                         <h4 class="product-detail-heading">Số lượng</h4>
@@ -143,7 +142,7 @@ $product_detail_image = $img_path_view . $image;
                             <input type="hidden" name="image" value="<?= $image ?>">
                             <!-- <input type="hidden" name="quantity" value="1"> -->
                             <button class="product-detail-addcart" name="btn_insert_cart">
-                                Thêm vào giỏ phòng
+                                Thuê ngay
                             </button>
                         </div>
                     </div>
