@@ -310,8 +310,8 @@ if (isset($_GET['act'])) {
 					$orderInfo = "Thanh toán qua MoMo ATM";
 					$amount = $total_order;
 					$orderId = $id_bill;
-					$redirectUrl = "http://localhost:3000/PRO1014_WE17313/index.php?act=bill_confirm_momo";
-					$ipnUrl = "http://localhost:3000/PRO1014_WE17313/index.php?act=bill_confirm_momo";
+					$redirectUrl = "http://localhost:3000/index.php?act=bill_confirm_momo";
+					$ipnUrl = "http://localhost:3000/index.php?act=bill_confirm_momo";
 					$extraData = "";
 
 					if (!empty($_POST)) {
