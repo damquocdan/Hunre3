@@ -16,7 +16,7 @@
           </div>
         </div>
 
-        <div id="chart" style="height: 250px;"></div>
+        <div id="chart" style="height: 250px;">chart</div>
       </div>
     </div>
   </div>

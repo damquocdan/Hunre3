@@ -18,8 +18,8 @@
         </div>
 
         <div class="signup">
-          <form action="" class="signup-form">
-            <input type="text" class="signup-input" placeholder="Nhập email của bạn để nhận khuyến mãi mới nhất" />
+          <form action="index.php?act=signup" class="signup-form" method="post" enctype="multipart/form-data">
+            <input type="text" class="signup-input" name="email" placeholder="Nhập email của bạn để nhận khuyến mãi mới nhất" />
             <button class="button button-green signup-button">
               Đăng ký
             </button>
