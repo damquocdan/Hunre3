@@ -8,9 +8,9 @@
         <thead class="thead-dark">
           <tr>
             <th>Phòng</th>
-            <th>Số lượng kích thước</th>
-            <th>Kích thước bé nhất</th>
-            <th>Kích thước lớn nhất</th>
+            <th>Số lượng</th>
+            <th>Kích thước</th>
+            <!-- <th>Kích thước lớn nhất</th> -->
             <th>
               <a href="index.php?act=add_product" class="btn btn-success text-white">Thêm mới <i class="fas fa-plus-circle"></i></a>
             </th>
@@ -26,7 +26,7 @@
               <td><?= $pro_name ?></td>
               <td><?= $quantity ?></td>
               <td><?= $size_min ?></td>
-              <td><?= $size_max ?></td>
+              <!-- <td><?//= $size_max ?></td> -->
               <td class="text-end">
                 <a href="<?= $link_pro_size ?>" class=" btn btn-outline-info btn-rounded">Chi tiết <i class="fas fa-info-circle"></i></i></a>
               </td>
